@@ -4,6 +4,7 @@
 # name of the character.
 
 define e = Character("Eileen")
+define s = Character("ESMAUGUE", color="#ed5a64")
 
 
 # The game starts here.
@@ -23,7 +24,8 @@ label start:
     show eileen happy
 
     # These display lines of dialogue.
-
+    "Medo do esmaugyee"
+    s "{b}RAAAAURRRRR{/b}" 
 
     # This ends the game.
 
