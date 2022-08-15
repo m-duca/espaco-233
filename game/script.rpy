@@ -4,7 +4,6 @@
 # name of the character.
 
 define e = Character("Eileen")
-define f = Character("Frederico")
 
 
 # The game starts here.
@@ -25,11 +24,6 @@ label start:
 
     # These display lines of dialogue.
 
-    e "toma no cu"
-
-    e "vai embora"
-
-    f "Vai vc arrombado!"
 
     # This ends the game.
 
