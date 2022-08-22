@@ -1,39 +1,48 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 7, in script
-    define s = Character("ESMAUGUE", 99e550)
-  File "game/script.rpy", line 7, in script
-    define s = Character("ESMAUGUE", 99e550)
-  File "game/script.rpy", line 7, in <module>
-    define s = Character("ESMAUGUE", 99e550)
-TypeError: float() takes no keyword arguments
+After initialization, but before game start.
+  File "game/Myscreens.rpy", line 2, in prepare_screen
+    screen doors_test:
+  File "game/Myscreens.rpy", line 2, in prepare
+    screen doors_test:
+  File "game/Myscreens.rpy", line 3, in prepare
+    imagebutton:
+  File "game/Myscreens.rpy", line 3, in prepare
+    imagebutton:
+SyntaxError: invalid syntax (game/Myscreens.rpy, line 8)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\bootstrap.py", line 274, in bootstrap
     renpy.main.main()
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\main.py", line 558, in main
-    renpy.game.context().run(node)
-  File "game/script.rpy", line 7, in script
-    define s = Character("ESMAUGUE", 99e550)
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
-  File "game/script.rpy", line 7, in script
-    define s = Character("ESMAUGUE", 99e550)
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\ast.py", line 2441, in execute
-    self.set()
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\ast.py", line 2455, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\python.py", line 1073, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 7, in <module>
-    define s = Character("ESMAUGUE", 99e550)
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\character.py", line 1580, in Character
-    return type(kind)(name, kind=kind, **properties)
-TypeError: float() takes no keyword arguments
+  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\main.py", line 660, in main
+    run(restart)
+  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\main.py", line 95, in run
+    renpy.display.screen.prepare_screens()
+  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\display\screen.py", line 976, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/Myscreens.rpy", line 2, in prepare_screen
+    screen doors_test:
+  File "game/Myscreens.rpy", line 2, in prepare
+    screen doors_test:
+  File "game/Myscreens.rpy", line 3, in prepare
+    imagebutton:
+  File "game/Myscreens.rpy", line 3, in prepare
+    imagebutton:
+  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\py3analysis.py", line 790, in ast_eval
+    return self.ast_eval_literal(expr)[0]
+  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\py3analysis.py", line 772, in ast_eval_literal
+    expr = py_compile(expr, 'eval', ast_node=True)
+  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\python.py", line 1015, in py_compile
+    raise e
+  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\python.py", line 967, in py_compile
+    raise orig_e
+  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\python.py", line 960, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/Myscreens.rpy, line 8)
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.0.1.22070801
 ESMAUGUE 1.0
-Mon Aug 15 15:22:00 2022
+Mon Aug 22 20:24:54 2022

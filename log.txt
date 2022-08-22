@@ -1,48 +1,72 @@
-Sat Aug 20 12:16:17 2022
+Mon Aug 22 20:24:53 2022
 Windows-10-10.0.19041
 Ren'Py 8.0.1.22070801
  
 
-Bootstrap to the start of init.init took 0.03s
+Bootstrap to the start of init.init took 0.07s
 Early init took 0.00s
-Loader init took 0.01s
-Loading error handling took 0.02s
-Loading script took 0.40s
-Loading save slot metadata. took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.04s
+Loading script took 0.34s
+Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Renpy\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.05s
-Loading analysis data took 0.01s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\lucas\\OneDrive\\Documentos\\renpy-8.0.1-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.10s
+Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Dump and make backups. took 0.03s
+Backing up script files to 'C:\\Users\\lucas\\AppData\\Roaming/RenPy/backups\\visual-novel':
+Dump and make backups. took 0.08s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.01s
+Initial gc. took 0.02s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.17s
+Creating interface object took 0.42s
 Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.06s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
 
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 516.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
-Maximum texture size: 4096x4096
+Full traceback:
+  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\bootstrap.py", line 274, in bootstrap
+    renpy.main.main()
+  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\main.py", line 660, in main
+    run(restart)
+  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\main.py", line 95, in run
+    renpy.display.screen.prepare_screens()
+  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\display\screen.py", line 976, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/Myscreens.rpy", line 2, in prepare_screen
+    screen doors_test:
+  File "game/Myscreens.rpy", line 2, in prepare
+    screen doors_test:
+  File "game/Myscreens.rpy", line 3, in prepare
+    imagebutton:
+  File "game/Myscreens.rpy", line 3, in prepare
+    imagebutton:
+  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\py3analysis.py", line 790, in ast_eval
+    return self.ast_eval_literal(expr)[0]
+  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\py3analysis.py", line 772, in ast_eval_literal
+    expr = py_compile(expr, 'eval', ast_node=True)
+  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\python.py", line 1015, in py_compile
+    raise e
+  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\python.py", line 967, in py_compile
+    raise orig_e
+  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\python.py", line 960, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/Myscreens.rpy, line 8)
+
+After initialization, but before game start.
+  File "game/Myscreens.rpy", line 2, in prepare_screen
+    screen doors_test:
+  File "game/Myscreens.rpy", line 2, in prepare
+    screen doors_test:
+  File "game/Myscreens.rpy", line 3, in prepare
+    imagebutton:
+  File "game/Myscreens.rpy", line 3, in prepare
+    imagebutton:
+SyntaxError: invalid syntax (game/Myscreens.rpy, line 8)

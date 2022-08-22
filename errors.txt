@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/Myscreens.rpy", line 7: expected a keyword argument or end of line.
+    action [endings] = 1
+                     ^
+
+Ren'Py Version: Ren'Py 8.0.1.22070801
+Mon Aug 22 20:20:03 2022
