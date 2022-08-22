@@ -23,16 +23,20 @@ label start:
 
         "DIREITA":
             python:
-                goto_store.go_to_right(cur_location)
-        "ESQUERDA":
-            python:
-                goto_store.go_to_left(cur_location)
-        "CIMA":
-            python:
-                goto_store.go_to_up(cur_location)
-        "BAIXO":
-            python:
-                goto_store.go_to_down(cur_location)
+                go_to_next()
+        #"ESQUERDA":
+            #python:
+                #goto_store.go_to_left(cur_location)
+        #"CIMA":
+            #python:
+                #goto_store.go_to_up(cur_location)
+        #"BAIXO":
+            #python:
+                #goto_store.go_to_down(cur_location)
 
 
+    return
+
+label corredor:
+    "Corredor legal bonito formoso"
     return
