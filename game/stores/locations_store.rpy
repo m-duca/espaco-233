@@ -1,4 +1,5 @@
 init python in locations_store:
+    
 
     #################################################################
     #                        DICIONÁRIOS                            #
@@ -36,5 +37,5 @@ init python in locations_store:
 
     # Escolhendo a próxima label, passando o dicionário da direção  
     def switch_next(dictionary, cur_location):
-        #return dict.get(get_cur_location(), "start")
+        #return dictionary.get(get_cur_location(), "start")
         return dictionary.get(cur_location, "sala")

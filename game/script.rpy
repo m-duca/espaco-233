@@ -8,7 +8,6 @@ define s = Character("ESMAUGUE", color="#ed5a64")
 define cur_location = ""
 
 # Início do Jogo
-
 label start:
 
     scene bg room
