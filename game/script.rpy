@@ -1,14 +1,13 @@
 ﻿# The script of the game goes in this file.
 
-default endings = 0
-
 # Definindo os personagens
-
 define e = Character("Eileen")
 define s = Character("ESMAUGUE", color="#ed5a64")
 
-# Início do Jogo
+# Minha localização atual
+define cur_location = ""
 
+# Início do Jogo
 label start:
 
     scene bg room
@@ -16,25 +15,27 @@ label start:
     show eileen happy
 
     "Medo do esmaugyee"
-    s "{b}RAAAAURRRRR{/b}" 
+    s "{b}RAAAAURRRRR{/b}"
 
-    call doors
+    menu:
+        "QUAL DIREÇÃO?"
+
+        "DIREITA":
+            python:
+                go_to_next()
+        #"ESQUERDA":
+            #python:
+                #goto_store.go_to_left(cur_location)
+        #"CIMA":
+            #python:
+                #goto_store.go_to_up(cur_location)
+        #"BAIXO":
+            #python:
+                #goto_store.go_to_down(cur_location)
+
 
     return
 
-label doors:
-
-    scene bg doors
-    call screen doors_test
-
-
-    return
-
-label end:
-    if endings == 1:
-        scene gato
-    if endings == 2:
-        scene mike
-    if endings == 3:
-        scene sully
+label corredor:
+    "Corredor legal bonito formoso"
     return
