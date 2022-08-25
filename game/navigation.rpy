@@ -1,4 +1,5 @@
-init python in locations_store:
+# Código da Navegação entre salas
+init python:
     
 
     #################################################################
@@ -10,6 +11,7 @@ init python in locations_store:
 
     # Dicionário da Direita
     possibilities_right = {
+        "start" : "corredor",
         "quarto" : "corredor",
         "corredor" : "banheiro",
         "sala" : "cozinha"
@@ -30,12 +32,24 @@ init python in locations_store:
 
     }
 
+    # Armazeno a label que está sendo executada atualmente na variável current_label
+    def label_callback(name, abnormal):
+        store.current_label = name
 
-    # Retorna a localização atual / label que está sendo executado
-    def get_cur_location():
-        return
+    # Atualizo a label atual
+    config.label_callback = label_callback
+
+    # Dou jump para determinado Label
+    def go_to_next(dictionary):
+        renpy.jump(switch_next(dictionary))
 
     # Escolhendo a próxima label, passando o dicionário da direção  
-    def switch_next(dictionary, cur_location):
+    def switch_next(dictionary):
         #return dictionary.get(get_cur_location(), "start")
-        return dictionary.get(cur_location, "sala")
+        return dictionary.get(current_label, "sala")
+
+    
+
+
+
+    

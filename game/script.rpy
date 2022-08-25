@@ -16,13 +16,14 @@ label start:
 
     "Medo do esmaugyee"
     s "{b}RAAAAURRRRR{/b}"
+    $ go_to_next(possibilities_right)
 
-    menu:
-        "QUAL DIREÇÃO?"
+    #menu:
+        #"QUAL DIREÇÃO?"
 
-        "DIREITA":
-            python:
-                go_to_next()
+        #"DIREITA":
+            #python:
+                #go_to_next()
         #"ESQUERDA":
             #python:
                 #goto_store.go_to_left(cur_location)
