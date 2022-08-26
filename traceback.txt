@@ -1,34 +1,34 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 25, in script
-    python:
-  File "game/script.rpy", line 26, in <module>
-    go_to_next()
+  File "game/script.rpy", line 19, in script
+    $ go_to_next(locations_store.possibilities_right)
+  File "game/script.rpy", line 19, in <module>
+    $ go_to_next(locations_store.possibilities_right)
   File "game/functions/go_to_next_function.rpy", line 7, in go_to_next
-    renpy.jump(locations_store.switch_next(locations_store.possibilities_right, "quarto"))
-  File "game/stores/locations_store.rpy", line 40, in switch_next
-    return dictionary.get(dictionary, cur_location)
-TypeError: unhashable type: 'RevertableDict'
+    renpy.jump(locations_store.switch_next(dictionary))
+  File "game/stores/locations_store.rpy", line 45, in switch_next
+    return dictionary.get(store.current_label, "sala")
+NameError: name 'store' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 25, in script
-    python:
+  File "game/script.rpy", line 19, in script
+    $ go_to_next(locations_store.possibilities_right)
   File "C:\Renpy\renpy\ast.py", line 1131, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "C:\Renpy\renpy\python.py", line 1049, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/script.rpy", line 26, in <module>
-    go_to_next()
+  File "game/script.rpy", line 19, in <module>
+    $ go_to_next(locations_store.possibilities_right)
   File "game/functions/go_to_next_function.rpy", line 7, in go_to_next
-    renpy.jump(locations_store.switch_next(locations_store.possibilities_right, "quarto"))
-  File "game/stores/locations_store.rpy", line 40, in switch_next
-    return dictionary.get(dictionary, cur_location)
-TypeError: unhashable type: 'RevertableDict'
+    renpy.jump(locations_store.switch_next(dictionary))
+  File "game/stores/locations_store.rpy", line 45, in switch_next
+    return dictionary.get(store.current_label, "sala")
+NameError: name 'store' is not defined
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.0.1.22070801
 ESMAUGUE 1.0
-Mon Aug 22 20:07:04 2022
+Thu Aug 25 17:39:10 2022
