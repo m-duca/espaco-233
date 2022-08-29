@@ -38,5 +38,10 @@ label start:
     return
 
 label corredor:
+    scene bg corridor
     "Corredor legal bonito formoso"
+    return
+
+label banheiro:
+    "Esse é o banheiro"
     return
