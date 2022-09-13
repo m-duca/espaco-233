@@ -22,12 +22,12 @@ label start:
 
 label corredor:
     scene bg doors
-    call screen buttons_navigation
+    call screen buttons_navigation(True, True, False, False, Vector(1543, 493), Vector(427, 493))
     "Corredor legal bonito formoso"
     return
 
 label banheiro:
     scene button1
-    call screen buttons_navigation
+    call  screen buttons_navigation(False, False, True, True, 0, 0, Vector(800, 240), Vector(800, 600))
     "banheiro pinico"
     return

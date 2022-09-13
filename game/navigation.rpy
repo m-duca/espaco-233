@@ -1,6 +1,6 @@
 # Código da Navegação entre salas
 init python:
-    
+
 
     #################################################################
     #                        DICIONÁRIOS                            #
@@ -17,17 +17,20 @@ init python:
 
     # Dicionário da Esquerda
     possibilities_left = {
-
+        "start" : "corredor",
+        "corredor" : "banheiro"
     }
 
     # Dicionário de Cima
     possibilities_up = {
-
+        "start" : "corredor",
+        "corredor" : "banheiro"
     }
 
     # Dicionário de Baixo
     possibilities_down = {
-
+        "start" : "corredor",
+        "corredor" : "banheiro"
     }
 
     # Armazeno a label que está sendo executada atualmente na variável current_label
@@ -41,32 +44,59 @@ init python:
     def go_to_next(dictionary):
         renpy.jump(switch_next(dictionary))
 
-    # Escolhendo a próxima label, passando o dicionário da direção  
+    # Escolhendo a próxima label, passando o dicionário da direção
     def switch_next(dictionary):
         #return dictionary.get(get_cur_location(), "start")
         return dictionary.get(current_label, "start")
 
-    
+
 #SCREENS REFERENTES AOS BOTÕES ABAIXO:
 
-screen buttons_navigation:
-    imagebutton:
-        xpos 1543
-        ypos 493
-        xanchor 0
-        yanchor 0
-        idle "button1.png"
-        hover "button2.png"
-        action Jump(switch_next(possibilities_right))
+# show_right, show_left, show_up e show_down ===> Mostrar os Botões
+# pos_right, pos_left, pos_up, pos_down ===> Posições dos Botões
 
-    imagebutton:
-        xpos 427
-        ypos 493
-        xanchor 0
-        yanchor 0
-        idle "button1.png"
-        hover "button2.png"
-        action Jump(switch_next(possibilities_right))
-    
+screen buttons_navigation (show_right, show_left, show_up, show_down, pos_right = Vector(),
+    pos_left = Vector(), pos_up = Vector(), pos_down = Vector()):
+    # BOTÃO DIREITA
+    if show_right:
+        imagebutton:
+            xpos pos_right.x
+            ypos pos_right.y
+            xanchor 0
+            yanchor 0
+            idle "button1.png"
+            hover "button2.png"
+            action Jump(switch_next(possibilities_right))
 
-    
+    # BOTÃO ESQUERDA
+    if show_left:
+        imagebutton:
+            xpos pos_left.x
+            ypos pos_left.y
+            xanchor 0
+            yanchor 0
+            idle "button1.png"
+            hover "button2.png"
+            action Jump(switch_next(possibilities_left))
+
+    # BOTÃO CIMA
+    if show_up:
+        imagebutton:
+            xpos pos_up.x
+            ypos pos_up.y
+            xanchor 0
+            yanchor 0
+            idle "button1.png"
+            hover "button2.png"
+            action Jump(switch_next(possibilities_up))
+
+    # BOTÃO BAIXO
+    if show_down:
+        imagebutton:
+            xpos pos_down.x
+            ypos pos_down.y
+            xanchor 0
+            yanchor 0
+            idle "button1.png"
+            hover "button2.png"
+            action Jump(switch_next(possibilities_down))

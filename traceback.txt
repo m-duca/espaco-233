@@ -1,34 +1,39 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 15, in script
-    "Medo do esmaugyee"
-Exception: ui.interact called with non-empty widget/layer stack. Did you forget a ui.close() somewhere?
-Stack was <Layer: 'transient'>
-<Many: <renpy.display.layout.Fixed object at 0x00000000050ea6a0>>
+  File "game/vector.rpy", line 1, in script
+    init python:
+  File "game/vector.rpy", line 1, in script
+    init python:
+  File "game/vector.rpy", line 2, in <module>
+    class Vector:
+  File "game/vector.rpy", line 3, in Vector
+    x
+NameError: name 'x' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 15, in script
-    "Medo do esmaugyee"
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\exports.py", line 1373, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\character.py", line 1266, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\character.py", line 927, in do_display
-    display_say(who,
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\character.py", line 666, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\ui.py", line 293, in interact
-    raise Exception("ui.interact called with non-empty widget/layer stack. Did you forget a ui.close() somewhere?\nStack was " + ('\n'.join([str(item) for item in stack])))
-Exception: ui.interact called with non-empty widget/layer stack. Did you forget a ui.close() somewhere?
-Stack was <Layer: 'transient'>
-<Many: <renpy.display.layout.Fixed object at 0x00000000050ea6a0>>
+  File "C:\Renpy\renpy\bootstrap.py", line 274, in bootstrap
+    renpy.main.main()
+  File "C:\Renpy\renpy\main.py", line 558, in main
+    renpy.game.context().run(node)
+  File "game/vector.rpy", line 1, in script
+    init python:
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "game/vector.rpy", line 1, in script
+    init python:
+  File "C:\Renpy\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Renpy\renpy\python.py", line 1052, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/vector.rpy", line 2, in <module>
+    class Vector:
+  File "game/vector.rpy", line 3, in Vector
+    x
+NameError: name 'x' is not defined
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.0.2.22081402
 ESMAUGUE 1.0
-Tue Sep 13 18:27:01 2022
+Tue Sep 13 19:07:52 2022
