@@ -12,9 +12,7 @@ init python:
     # Dicionário da Direita
     possibilities_right = {
         "start" : "corredor",
-        "quarto" : "corredor",
-        "corredor" : "banheiro",
-        "sala" : "cozinha"
+        "corredor" : "banheiro"
     }
 
     # Dicionário da Esquerda
@@ -46,10 +44,29 @@ init python:
     # Escolhendo a próxima label, passando o dicionário da direção  
     def switch_next(dictionary):
         #return dictionary.get(get_cur_location(), "start")
-        return dictionary.get(current_label, "sala")
+        return dictionary.get(current_label, "start")
 
     
+#SCREENS REFERENTES AOS BOTÕES ABAIXO:
 
+screen buttons_navigation:
+    imagebutton:
+        xpos 1543
+        ypos 493
+        xanchor 0
+        yanchor 0
+        idle "button1.png"
+        hover "button2.png"
+        action Jump(switch_next(possibilities_right))
 
+    imagebutton:
+        xpos 427
+        ypos 493
+        xanchor 0
+        yanchor 0
+        idle "button1.png"
+        hover "button2.png"
+        action Jump(switch_next(possibilities_right))
+    
 
     
