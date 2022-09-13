@@ -4,6 +4,7 @@
 define e = Character("Eileen")
 define s = Character("ESMAUGUE", color="#ed5a64")
 
+
 # Início do Jogo
 label start:
 
@@ -17,6 +18,16 @@ label start:
 
     return
 
+
+
 label corredor:
+    scene bg doors
+    call screen buttons_navigation
     "Corredor legal bonito formoso"
+    return
+
+label banheiro:
+    scene button1
+    call screen buttons_navigation
+    "banheiro pinico"
     return
