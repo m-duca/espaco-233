@@ -1,9 +1,5 @@
 ﻿# The script of the game goes in this file.
-
-# Definindo os personagens
-define e = Character("Eileen")
-define s = Character("ESMAUGUE", color="#ed5a64")
-
+# Primeira parte do código
 
 # Início do Jogo
 label start:
