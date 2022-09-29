@@ -4,6 +4,8 @@
 # Início do Jogo
 label start:
 
+    jump introduction
+
     scene bg room
 
     show eileen happy

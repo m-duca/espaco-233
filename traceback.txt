@@ -1,39 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/vector.rpy", line 1, in script
-    init python:
-  File "game/vector.rpy", line 1, in script
-    init python:
-  File "game/vector.rpy", line 2, in <module>
-    class Vector:
-  File "game/vector.rpy", line 3, in Vector
-    x
-NameError: name 'x' is not defined
+  File "game/code/chapters/introduction.rpy", line 27, in script
+    scene black with fadein
+  File "game/code/chapters/introduction.rpy", line 27, in <module>
+    scene black with fadein
+NameError: name 'fadein' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Renpy\renpy\bootstrap.py", line 274, in bootstrap
-    renpy.main.main()
-  File "C:\Renpy\renpy\main.py", line 558, in main
-    renpy.game.context().run(node)
-  File "game/vector.rpy", line 1, in script
-    init python:
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
-  File "game/vector.rpy", line 1, in script
-    init python:
-  File "C:\Renpy\renpy\ast.py", line 1131, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Renpy\renpy\python.py", line 1052, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/vector.rpy", line 2, in <module>
-    class Vector:
-  File "game/vector.rpy", line 3, in Vector
-    x
-NameError: name 'x' is not defined
+  File "game/code/chapters/introduction.rpy", line 27, in script
+    scene black with fadein
+  File "C:\Renpy\renpy\ast.py", line 1654, in execute
+    paired = renpy.python.py_eval(self.paired)
+  File "C:\Renpy\renpy\python.py", line 1083, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Renpy\renpy\python.py", line 1076, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/code/chapters/introduction.rpy", line 27, in <module>
+    scene black with fadein
+NameError: name 'fadein' is not defined
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.0.2.22081402
 ESMAUGUE 1.0
-Tue Sep 13 19:07:52 2022
+Thu Sep 29 19:50:15 2022
