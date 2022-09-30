@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 19: expected statement.
-    go_to_next(locations_store.possibilities_right)
-                                                   ^
+File "game/code/chapters/introduction.rpy", line 105: expected statement.
+    "Chegando na sala, esta completamente sozinha, ela se senta feliz pensando novamente estar adiantada e comemora levemente por sua "\conquista\"."
+                                                                                                                                       ^
 
-Ren'Py Version: Ren'Py 8.0.1.22070801
-Thu Aug 25 17:37:30 2022
+Ren'Py Version: Ren'Py 8.0.2.22081402
+Fri Sep 30 18:40:45 2022
