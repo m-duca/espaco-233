@@ -1,11 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/code/chapters/introduction.rpy", line 51, in script
-    "{i}Alguns minutos depois caminhando, o assistente a leva para a sala de preservação e redução de sentidos para uma criogenização perfeita, para que seja possível sua viajem sem parecer que envelheceu um ano se quer.{/i}"
-  File "game/code/chapters/introduction.rpy", line 51, in script
-    "{i}Alguns minutos depois caminhando, o assistente a leva para a sala de preservação e redução de sentidos para uma criogenização perfeita, para que seja possível sua viajem sem parecer que envelheceu um ano se quer.{/i}"
-Exception: Could not find font 'fonts/.ttf'.
+  File "game/code/chapters/introduction.rpy", line 3, in script
+    "{i}10 de julho de 2095, a era da mais alta tecnologia no mundo.{/i}"
+  File "game/code/chapters/introduction.rpy", line 3, in script
+    "{i}10 de julho de 2095, a era da mais alta tecnologia no mundo.{/i}"
+  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
+    _window_show(auto=True)
+  File "renpy/common/000window.rpy", line 69, in _window_show
+    renpy.with_statement(trans)
+Exception: Could not find font 'fonts/TitilliumWeb-Regular.ttf'.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -18,23 +22,23 @@ Full traceback:
     renpy.execution.run_context(True)
   File "C:\Renpy\renpy\execution.py", line 938, in run_context
     context.run()
-  File "game/code/chapters/introduction.rpy", line 51, in script
-    "{i}Alguns minutos depois caminhando, o assistente a leva para a sala de preservação e redução de sentidos para uma criogenização perfeita, para que seja possível sua viajem sem parecer que envelheceu um ano se quer.{/i}"
+  File "game/code/chapters/introduction.rpy", line 3, in script
+    "{i}10 de julho de 2095, a era da mais alta tecnologia no mundo.{/i}"
   File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
-  File "game/code/chapters/introduction.rpy", line 51, in script
-    "{i}Alguns minutos depois caminhando, o assistente a leva para a sala de preservação e redução de sentidos para uma criogenização perfeita, para que seja possível sua viajem sem parecer que envelheceu um ano se quer.{/i}"
-  File "C:\Renpy\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Renpy\renpy\exports.py", line 1373, in say
-    who(what, *args, **kwargs)
-  File "C:\Renpy\renpy\character.py", line 1266, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "C:\Renpy\renpy\character.py", line 927, in do_display
-    display_say(who,
-  File "C:\Renpy\renpy\character.py", line 666, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Renpy\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "game/code/chapters/introduction.rpy", line 3, in script
+    "{i}10 de julho de 2095, a era da mais alta tecnologia no mundo.{/i}"
+  File "C:\Renpy\renpy\ast.py", line 891, in execute
+    statement_name("say")
+  File "C:\Renpy\renpy\ast.py", line 47, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
+    _window_show(auto=True)
+  File "renpy/common/000window.rpy", line 69, in _window_show
+    renpy.with_statement(trans)
+  File "C:\Renpy\renpy\exports.py", line 1653, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Renpy\renpy\display\core.py", line 2798, in do_with
+    return self.interact(trans_pause=True,
   File "C:\Renpy\renpy\display\core.py", line 3377, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs) # type: ignore
   File "C:\Renpy\renpy\display\core.py", line 3906, in interact_core
@@ -45,6 +49,10 @@ Full traceback:
   File "render.pyx", line 266, in renpy.display.render.render
   File "C:\Renpy\renpy\display\layout.py", line 884, in render
     surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Renpy\renpy\display\transition.py", line 378, in render
+    top = render(self.new_widget, width, height, st, at)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 266, in renpy.display.render.render
   File "C:\Renpy\renpy\display\layout.py", line 884, in render
@@ -77,9 +85,9 @@ Full traceback:
     face = load_face(fn)
   File "C:\Renpy\renpy\text\font.py", line 658, in load_face
     raise Exception("Could not find font {0!r}.".format(orig_fn))
-Exception: Could not find font 'fonts/.ttf'.
+Exception: Could not find font 'fonts/TitilliumWeb-Regular.ttf'.
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.0.2.22081402
 Espaço 233 1.0
-Fri Sep 30 19:38:14 2022
+Fri Sep 30 19:43:21 2022
