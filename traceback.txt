@@ -1,15 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/code/chapters/introduction.rpy", line 23, in script
-    t "Lo por favor me dei..."
-Exception: Could not find font 'space age.ttf'.
+  File "game/code/chapters/introduction.rpy", line 51, in script
+    "{i}Alguns minutos depois caminhando, o assistente a leva para a sala de preservação e redução de sentidos para uma criogenização perfeita, para que seja possível sua viajem sem parecer que envelheceu um ano se quer.{/i}"
+  File "game/code/chapters/introduction.rpy", line 51, in script
+    "{i}Alguns minutos depois caminhando, o assistente a leva para a sala de preservação e redução de sentidos para uma criogenização perfeita, para que seja possível sua viajem sem parecer que envelheceu um ano se quer.{/i}"
+Exception: Could not find font 'fonts/.ttf'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/code/chapters/introduction.rpy", line 23, in script
-    t "Lo por favor me dei..."
+  File "C:\Renpy\renpy\bootstrap.py", line 274, in bootstrap
+    renpy.main.main()
+  File "C:\Renpy\renpy\main.py", line 660, in main
+    run(restart)
+  File "C:\Renpy\renpy\main.py", line 146, in run
+    renpy.execution.run_context(True)
+  File "C:\Renpy\renpy\execution.py", line 938, in run_context
+    context.run()
+  File "game/code/chapters/introduction.rpy", line 51, in script
+    "{i}Alguns minutos depois caminhando, o assistente a leva para a sala de preservação e redução de sentidos para uma criogenização perfeita, para que seja possível sua viajem sem parecer que envelheceu um ano se quer.{/i}"
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "game/code/chapters/introduction.rpy", line 51, in script
+    "{i}Alguns minutos depois caminhando, o assistente a leva para a sala de preservação e redução de sentidos para uma criogenização perfeita, para que seja possível sua viajem sem parecer que envelheceu um ano se quer.{/i}"
   File "C:\Renpy\renpy\ast.py", line 921, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "C:\Renpy\renpy\exports.py", line 1373, in say
@@ -54,14 +67,6 @@ Full traceback:
     surf = render(child,
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Renpy\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Renpy\renpy\display\layout.py", line 1334, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
   File "C:\Renpy\renpy\text\text.py", line 2109, in render
     virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
   File "C:\Renpy\renpy\text\text.py", line 656, in __init__
@@ -72,9 +77,9 @@ Full traceback:
     face = load_face(fn)
   File "C:\Renpy\renpy\text\font.py", line 658, in load_face
     raise Exception("Could not find font {0!r}.".format(orig_fn))
-Exception: Could not find font 'space age.ttf'.
+Exception: Could not find font 'fonts/.ttf'.
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.0.2.22081402
 Espaço 233 1.0
-Fri Sep 30 19:00:51 2022
+Fri Sep 30 19:38:14 2022
