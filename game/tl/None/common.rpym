@@ -435,55 +435,55 @@ translate None strings:
 
     # renpy/common/00gui.rpy:435
     old "Are you sure?"
-    new "Are you sure?"
+    new "Tem certeza"
 
     # renpy/common/00gui.rpy:436
     old "Are you sure you want to delete this save?"
-    new "Are you sure you want to delete this save?"
+    new "Apagar espaço de salvamento?"
 
     # renpy/common/00gui.rpy:437
     old "Are you sure you want to overwrite your save?"
-    new "Are you sure you want to overwrite your save?"
+    new "Reescrever espaço de salvamento?"
 
     # renpy/common/00gui.rpy:438
     old "Loading will lose unsaved progress.\nAre you sure you want to do this?"
-    new "Loading will lose unsaved progress.\nAre you sure you want to do this?"
+    new "Carregar irá causar perda de progresso, tem certeza?"
 
     # renpy/common/00gui.rpy:439
-    old "Sair do jogo?"
+    old "Are you sure you want to quit?"
     new "Sair do jogo?"
 
     # renpy/common/00gui.rpy:440
     old "Are you sure you want to return to the main menu?\nThis will lose unsaved progress."
-    new "Are you sure you want to return to the main menu?\nThis will lose unsaved progress."
+    new "Voltar para o menu principal?"
 
     # renpy/common/00gui.rpy:441
     old "Are you sure you want to end the replay?"
-    new "Are you sure you want to end the replay?"
+    new "Terminar replay?"
 
     # renpy/common/00gui.rpy:442
     old "Are you sure you want to begin skipping?"
-    new "Are you sure you want to begin skipping?"
+    new "Começar avanço automático?"
 
     # renpy/common/00gui.rpy:443
     old "Are you sure you want to skip to the next choice?"
-    new "Are you sure you want to skip to the next choice?"
+    new "Pular para a próxima escolha?"
 
     # renpy/common/00gui.rpy:444
     old "Are you sure you want to skip unseen dialogue to the next choice?"
-    new "Are you sure you want to skip unseen dialogue to the next choice?"
+    new "Pular diálogos não vistos?"
 
     # renpy/common/00keymap.rpy:310
     old "Failed to save screenshot as %s."
-    new "Failed to save screenshot as %s."
+    new "Erro ao salvar captura de tela %s."
 
     # renpy/common/00keymap.rpy:322
     old "Saved screenshot as %s."
-    new "Saved screenshot as %s."
+    new "Captura de tela salva %s."
 
     # renpy/common/00library.rpy:211
     old "Skip Mode"
-    new "Skip Mode"
+    new "Avançando..."
 
     # renpy/common/00library.rpy:297
     old "This program contains free software under a number of licenses, including the MIT License and GNU Lesser General Public License. A complete list of software, including links to full source code, can be found {a=https://www.renpy.org/l/license}here{/a}."
