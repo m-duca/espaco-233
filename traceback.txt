@@ -1,93 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/code/chapters/introduction.rpy", line 3, in script
-    "{i}10 de julho de 2095, a era da mais alta tecnologia no mundo.{/i}"
-  File "game/code/chapters/introduction.rpy", line 3, in script
-    "{i}10 de julho de 2095, a era da mais alta tecnologia no mundo.{/i}"
-  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 69, in _window_show
-    renpy.with_statement(trans)
-Exception: Could not find font 'fonts/TitilliumWeb-Regular.ttf'.
+  File "renpy/common/00start.rpy", line 240, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/code/core/script.rpy", line 13, in script
+    show logo_smaug at truecenter with transition
+TypeError: __init__() missing 1 required positional argument: 'steps'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Renpy\renpy\bootstrap.py", line 274, in bootstrap
-    renpy.main.main()
-  File "C:\Renpy\renpy\main.py", line 660, in main
-    run(restart)
-  File "C:\Renpy\renpy\main.py", line 146, in run
-    renpy.execution.run_context(True)
-  File "C:\Renpy\renpy\execution.py", line 938, in run_context
-    context.run()
-  File "game/code/chapters/introduction.rpy", line 3, in script
-    "{i}10 de julho de 2095, a era da mais alta tecnologia no mundo.{/i}"
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
-  File "game/code/chapters/introduction.rpy", line 3, in script
-    "{i}10 de julho de 2095, a era da mais alta tecnologia no mundo.{/i}"
-  File "C:\Renpy\renpy\ast.py", line 891, in execute
-    statement_name("say")
-  File "C:\Renpy\renpy\ast.py", line 47, in statement_name
-    i(name)
-  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 69, in _window_show
-    renpy.with_statement(trans)
+  File "renpy/common/00start.rpy", line 240, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/code/core/script.rpy", line 13, in script
+    show logo_smaug at truecenter with transition
+  File "C:\Renpy\renpy\ast.py", line 1658, in execute
+    renpy.exports.with_statement(trans, paired=paired)
   File "C:\Renpy\renpy\exports.py", line 1653, in with_statement
     return renpy.game.interface.do_with(trans, paired, clear=clear)
   File "C:\Renpy\renpy\display\core.py", line 2798, in do_with
     return self.interact(trans_pause=True,
   File "C:\Renpy\renpy\display\core.py", line 3377, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs) # type: ignore
-  File "C:\Renpy\renpy\display\core.py", line 3906, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Renpy\renpy\display\core.py", line 2602, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 495, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Renpy\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Renpy\renpy\display\transition.py", line 378, in render
-    top = render(self.new_widget, width, height, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Renpy\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Renpy\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Renpy\renpy\display\screen.py", line 704, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Renpy\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Renpy\renpy\display\layout.py", line 1334, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Renpy\renpy\text\text.py", line 2109, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "C:\Renpy\renpy\text\text.py", line 656, in __init__
-    glyphs = ts.glyphs(s, self)
-  File "C:\Renpy\renpy\text\text.py", line 255, in glyphs
-    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample)
-  File "C:\Renpy\renpy\text\font.py", line 717, in get_font
-    face = load_face(fn)
-  File "C:\Renpy\renpy\text\font.py", line 658, in load_face
-    raise Exception("Could not find font {0!r}.".format(orig_fn))
-Exception: Could not find font 'fonts/TitilliumWeb-Regular.ttf'.
+  File "C:\Renpy\renpy\display\core.py", line 3746, in interact_core
+    trans = self.ongoing_transition[None](
+TypeError: __init__() missing 1 required positional argument: 'steps'
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.0.2.22081402
 Espaço 233 1.0
-Fri Sep 30 19:43:21 2022
+Sun Oct  9 11:38:52 2022

@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/code/chapters/introduction.rpy", line 105: expected statement.
-    "Chegando na sala, esta completamente sozinha, ela se senta feliz pensando novamente estar adiantada e comemora levemente por sua "\conquista\"."
-                                                                                                                                       ^
+File "game/code/core/script.rpy", line 7: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
+    yalign 0.5
+    ^
+
+File "game/code/core/script.rpy", line 11: end of line expected.
+    show logo_404 with fade at center
+                            ^
 
 Ren'Py Version: Ren'Py 8.0.2.22081402
-Fri Sep 30 18:40:45 2022
+Sun Oct  9 11:17:12 2022

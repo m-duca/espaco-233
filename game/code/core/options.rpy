@@ -108,6 +108,8 @@ define config.end_game_transition = None
 
 define config.window = "auto"
 
+## Used when entering the main menu from the splashscreen.
+define config.end_splash_transition = Pixellate(1, 10)
 
 ## Transitions used to show and hide the dialogue window
 
