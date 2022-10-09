@@ -5,6 +5,10 @@
 ## may want to uncomment them when appropriate.
 
 
+# Cursor Mouse
+define config.mouse = { 'default' : [ ('gui/arrow.png', 0, 0) ] }
+
+
 ## Basics ######################################################################
 
 ## A human-readable name of the game. This is used to set the default window
