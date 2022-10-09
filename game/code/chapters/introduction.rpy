@@ -4,9 +4,9 @@ label introduction:
 
     "A vida na Terra chega a níveis completamente diferentes do que qualquer cientista poderia imaginar, mesmo com cálculos e predições realizadas, o futuro que ocorre nos dias presentes não é nada que ninguém pensou."
 
-    "O planeta Terra de forma vasta e abrangente se tornou dois pólos de grande desastre, um lado uma poluição enorme que diminui a capacidade de vida e outro com uma tecnologia muito avançada que causa grandes problemas econômicos."
+    "O planeta Terra de forma vasta e abrangente se tornou dois polos de grande desastre, de um lado uma poluição enorme que diminui a capacidade de vida e de outro uma tecnologia muito avançada que causa grandes problemas econômicos."
 
-    "Lazer, a maior detentora de monopólio e inovação da Terra cria novos projetos para o bem estar da civilização."
+    "Lazer, a maior detentora de monopólio e inovação da Terra, cria novos projetos para o bem estar da civilização."
 
     "Como Marte já não é mais um sonho e sim uma antiga conquista, a gigante Lazer define que o próximo passo para a humanidade seria a busca de novos locais para onde se ter um lar."
 
@@ -14,7 +14,7 @@ label introduction:
 
     "Sendo assim, Loren aos seus 35 anos se oferece a uma viagem para um planeta observado com enormes capacidades de sobrevivência e expansão terrestre."
 
-    "Ela decide que como sua vida na Terra já não parece mais ter objetivo, acredita que uma nova vida em um novo planeta pode ser uma enorme possibilidade para ter algo melhor do que tinha antes."
+    "Ela decide que como sua vida na Terra já não parece mais ter objetivo, acredita que uma nova vida em um novo planeta possa ser uma enorme possibilidade para ter algo melhor do que tinha antes."
 
     "Se decidindo totalmente, antes de viajar, Loren avisa sua irmã o que estava prestes a fazer."
 
@@ -32,7 +32,7 @@ label introduction:
 
     l "{b}*Gargalha*{/b} Não decidi ir me mudar pra casa do caralho simplesmente pelo o que aconteceu, eu realmente estou até bem, me sinto livre depois de tudo."
 
-    l "Você pode continuar o que estava fazendo à vontade. Fala como se não se parece verdade. Eu quero ter uma nova vida fora daqui, a viajem é daqui uma semana, só preciso terminar de enviar os documentos e fazer minhas malas."
+    l "Você pode continuar o que estava fazendo à vontade. Fala como se não parecesse verdade. Eu quero ter uma nova vida fora daqui, a viagem é daqui uma semana, só preciso terminar de enviar os documentos e fazer minhas malas."
 
     t "Então é isso, você nem vai ter um pingo de consideração pela sua irmã e simplesmente vai embora."
 
@@ -48,7 +48,7 @@ label introduction:
 
     a "A pois bem, me acompanhe por favor."
 
-    "Alguns minutos depois caminhando, o assistente a leva para a sala de preservação e redução de sentidos para uma criogenização perfeita, para que seja possível sua viajem sem parecer que envelheceu um ano se quer."
+    "Alguns minutos depois caminhando, o assistente a leva para a sala de preservação e redução de sentidos para uma criogenização perfeita, para que seja possível sua viagem sem parecer que envelheceu um ano se quer."
 
     "Ela passa por todos os procedimentos e antes de adormecer e ser mantida em sua câmara, o assistente a pergunta se tem mais alguma mensagem que ela gostaria de mandar ou falar com alguém."
 
@@ -58,13 +58,13 @@ label introduction:
 
     "{b}*Toooo* *Toooo*{/b}"
 
-    b "Alo?"
+    b "Alô?"
 
     l "Oi mãe, sou eu, a Lo."
 
     b "Oie minha filha, por que está me ligando a essa hora, aconteceu algo?"
 
-    l "Nada mãe, eu só vim me despedir da senhora, estou indo viajar para muito longe e não irei mais ver você.” -Diz já soluçando de tristeza e começa a chorar."
+    l "Nada mãe, eu só vim me despedir da senhora, estou indo viajar para muito longe e não irei mais ver você. -Diz já soluçando de tristeza e começa a chorar."
 
     b "Como assim filha, você veio me visitar ontem e não me falou nada disso."
 
@@ -76,11 +76,9 @@ label introduction:
 
     "Loren pede aos médicos que a façam dormir logo e não espera sua mãe terminar de falar."
 
-    l "Loren pede aos médicos que a façam dormir logo e não espera sua mãe terminar de falar."
+    b "Não minha filha por favor não faça isso, eu te imploro volte para casa!"
 
-    b "Não minha filha por favor não faça isso, eu te imploro volte para casa."
-
-    l "Não da mais mãe eu já estou indo."
+    l "Não da mais mãe... Eu já estou indo."
 
     "Loren começa a cair no sono escutando as últimas palavras de sua mãe e sentindo um pouco de arrependimento por estar ali, mas já não conseguia dizer mais nenhuma palavra pois a anestesia geral estava quase completa."
 
@@ -88,17 +86,21 @@ label introduction:
 
     b "Eu te amo também minha filha volta pra ca...sa por...favor vol..."
 
-    "Dentro da nave mais nada acontece, sua viajem inicia todos os passageiros estão adormecidos em suas capsulas para que dali 95 anos todos acordem esperando os últimos 5 anos de viajem interestrelar para a chegada em sua nova casa."
+    "Dentro da nave nada mais acontece, sua viagem inicia, todos os passageiros estão adormecidos em suas cápsulas."
 
-    "Após a decolagem concluída os últimos tripulantes da nave se alto colocam para adormecerem, o capitão sendo o último chega tudo antes de continuar com a viajem, todos os parâmetros estão corretos, combustível necessário cheio e com tanques reservas carregados, tudo no seu devido lugar, traça a rota e está tudo como deveria estar, nada iria atrapalhar essa viajem."
+    "Para que daqui 95 anos todos acordem esperando os últimos 5 anos de viagem interestelar para a chegada em sua nova casa."
 
-    i "Bem vinda a sua viagem espacial para o planeta Gilon, você deve estar se sentindo um pouco zonza no momento Loren, mas logo mais estará bem melhor, só precisa se acostumar a voltar com do funcionamento do seu corpo."
+    "Após a decolagem concluída os últimos tripulantes da nave se auto colocam para adormecerem, o capitão sendo o último a chegar, checa tudo antes de continuar com a viagem."
+
+    "Todos os parâmetros estão corretos, combustível necessário cheio e com tanques reservas carregados, tudo no seu devido lugar, traça a rota e está tudo como deveria estar, nada iria atrapalhar essa viagem."
+
+    i "Bem vinda a sua viagem espacial para o planeta Gilon, você deve estar se sentindo um pouco zonza no momento Loren, mas logo mais estará bem melhor, só precisa se acostumar a voltar com o funcionamento do seu corpo."
 
     "Loren escuta a voz como se estivesse falando no seu ouvido enquanto começa a acordar de vez após todo o tempo em hibernação. Ela finalmente acorda de verdade em seu quarto na nave, seus pertences estão todos guardados em seu armário e com isso ela recebe mais uma instrução."
 
-    i "Por favor após se arrumar dirija-se a sala de instruções, onde recebera uma pequena tutoria com os outros viajantes de seu setor para se prepararem pra o resto de sua viagem."
+    i "Por favor após se arrumar dirija-se a sala de instruções, onde receberá uma pequena tutoria com os outros viajantes de seu setor para se prepararem pra o resto de sua viagem."
 
-    "Loren se prepara rapidamente e ansiosa por finalmente estar acordada, ela imagina tudo o que pode acontecer, as pessoas que vai conhecer, e toda a sua vida neste novo planeta que logo chamara de lar."
+    "Loren se prepara rapidamente e ansiosa por finalmente estar acordada, ela imagina tudo o que pode acontecer, as pessoas que vai conhecer, e toda a sua vida neste novo planeta que logo chamará de lar."
 
     "Ela sai de seu quarto e não vê ninguém, talvez todos de seu setor já tenham ido e só ela achando que estava bem adiantada está atrasada."
 
