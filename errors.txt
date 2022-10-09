@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/code/core/script.rpy", line 7: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
-    yalign 0.5
+File "game/tl/None/common.rpym", line 492: unknown statement
+    n
     ^
 
-File "game/code/core/script.rpy", line 11: end of line expected.
-    show logo_404 with fade at center
-                            ^
-
 Ren'Py Version: Ren'Py 8.0.2.22081402
-Sun Oct  9 11:17:12 2022
+Sun Oct  9 17:20:55 2022

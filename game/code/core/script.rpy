@@ -8,6 +8,9 @@ label splashscreen:
     $hide_time = 1
     $transition = Pixellate(1, 10)
 
+    scene bg splashscreen with fade
+    #pause show_time
+
     # Aparece Logo Smaug
     show logo_smaug at truecenter with transition
     pause show_time
@@ -21,8 +24,8 @@ label splashscreen:
     pause show_time
 
     # Desaparece Logo 404
-    hide logo_404 with transition
-    pause hide_time
+    #hide logo_404 with transition
+    #pause hide_time
 
     return
 

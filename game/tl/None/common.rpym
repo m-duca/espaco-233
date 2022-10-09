@@ -450,8 +450,8 @@ translate None strings:
     new "Loading will lose unsaved progress.\nAre you sure you want to do this?"
 
     # renpy/common/00gui.rpy:439
-    old "Are you sure you want to quit?"
-    new "Are you sure you want to quit?"
+    old "Sair do jogo?"
+    new "Sair do jogo?"
 
     # renpy/common/00gui.rpy:440
     old "Are you sure you want to return to the main menu?\nThis will lose unsaved progress."
@@ -1268,4 +1268,3 @@ translate None strings:
     # renpy/common/00console.rpy:970
     old "unescape: Disables escaping of unicode symbols in unicode strings and print it as is (default)."
     new "unescape: Disables escaping of unicode symbols in unicode strings and print it as is (default)."
-
