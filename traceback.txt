@@ -1,32 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 240, in script call
-    call _splashscreen from _call_splashscreen_1
-  File "game/code/core/script.rpy", line 13, in script
-    show logo_smaug at truecenter with transition
-TypeError: __init__() missing 1 required positional argument: 'steps'
+FileNotFoundError: [Errno 2] No such file or directory: "D:\\Ren'Py Games\\visual-novel\\game\\saves\\persistent.1665359705.tmp"
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 240, in script call
-    call _splashscreen from _call_splashscreen_1
-  File "game/code/core/script.rpy", line 13, in script
-    show logo_smaug at truecenter with transition
-  File "C:\Renpy\renpy\ast.py", line 1658, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "C:\Renpy\renpy\exports.py", line 1653, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Renpy\renpy\display\core.py", line 2798, in do_with
-    return self.interact(trans_pause=True,
-  File "C:\Renpy\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs) # type: ignore
-  File "C:\Renpy\renpy\display\core.py", line 3746, in interact_core
-    trans = self.ongoing_transition[None](
-TypeError: __init__() missing 1 required positional argument: 'steps'
+  File "C:\Renpy\renpy\bootstrap.py", line 274, in bootstrap
+    renpy.main.main()
+  File "C:\Renpy\renpy\main.py", line 663, in main
+    renpy.persistent.update(True)
+  File "C:\Renpy\renpy\persistent.py", line 397, in update
+    save()
+  File "C:\Renpy\renpy\persistent.py", line 413, in save
+    renpy.loadsave.location.save_persistent(data)
+  File "C:\Renpy\renpy\savelocation.py", line 494, in save_persistent
+    l.save_persistent(data)
+  File "C:\Renpy\renpy\savelocation.py", line 345, in save_persistent
+    with open(fn_tmp, "wb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: "D:\\Ren'Py Games\\visual-novel\\game\\saves\\persistent.1665359705.tmp"
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.0.2.22081402
 Espaço 233 1.0
-Sun Oct  9 11:38:52 2022
+Sun Oct  9 20:57:11 2022
