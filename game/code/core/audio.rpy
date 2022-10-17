@@ -3,7 +3,7 @@
 
 # SFX
 # sempre declare a variável como "audio.nome"
-define audio.glitch = "sfx/glitch.mp3" 
+define audio.glitch = "sfx/glitch.mp3"
 
 
 
@@ -13,7 +13,14 @@ define audio.glitch = "sfx/glitch.mp3"
 # Volume Inicial do Jogo
 label initial_volume:
 
-    $ renpy.music.set_volume(0.75)
-    $ renpy.sound.set_volume(0.75)
+    python:
+        if not persistent.set_volumes:
+            persistent.set_volumes = True
+        try:
+            _preferences.volumes['music'] *= .50
+            _preferences.volumes['sfx'] *= .50
+        except KeyError:
+            _preferences.volumes['music'] *= .50
+            _preferences.volumes['sfx'] *= .50
 
     return
