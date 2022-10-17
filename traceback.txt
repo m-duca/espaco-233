@@ -1,34 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 240, in script call
-    call _splashscreen from _call_splashscreen_1
-  File "game/code/core/script.rpy", line 7, in script call
-    call initial_volume
-  File "game/code/core/audio.rpy", line 16, in script
-    $ renpy.audio.set_volume(0.0)
-  File "game/code/core/audio.rpy", line 16, in <module>
-    $ renpy.audio.set_volume(0.0)
-AttributeError: module 'renpy.audio' has no attribute 'set_volume'
+  File "game/code/chapters/chapter1.rpy", line 87, in script
+    i "E se a nave não está a 100% de velocidade, poderia não chegar a tempo em nosso destino por conta do combustível."
+TypeError: %d format: a number is required, not TagQuotingDict
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 240, in script call
-    call _splashscreen from _call_splashscreen_1
-  File "game/code/core/script.rpy", line 7, in script call
-    call initial_volume
-  File "game/code/core/audio.rpy", line 16, in script
-    $ renpy.audio.set_volume(0.0)
-  File "C:\Renpy\renpy\ast.py", line 1131, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Renpy\renpy\python.py", line 1052, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/code/core/audio.rpy", line 16, in <module>
-    $ renpy.audio.set_volume(0.0)
-AttributeError: module 'renpy.audio' has no attribute 'set_volume'
+  File "game/code/chapters/chapter1.rpy", line 87, in script
+    i "E se a nave não está a 100% de velocidade, poderia não chegar a tempo em nosso destino por conta do combustível."
+  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\ast.py", line 921, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\exports.py", line 1362, in say
+    what = what % tag_quoting_dict
+TypeError: %d format: a number is required, not TagQuotingDict
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.0.2.22081402
 Espaço 233 1.0
-Mon Oct 10 14:02:13 2022
+Mon Oct 17 19:26:46 2022

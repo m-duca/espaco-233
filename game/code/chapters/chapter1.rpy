@@ -2,9 +2,13 @@ label chapter1:
 
     scene black with fade
 
-    i "Bem vinda a sua viagem espacial para o planeta Gilon, você deve estar se sentindo um pouco zonza no momento Loren, mas logo mais estará bem melhor, só precisa se acostumar a voltar com 100% do funcionamento do seu corpo."
+    i "Bem vinda a sua viagem espacial para o planeta Gilon, você deve estar se sentindo um pouco zonza no momento Loren, mas logo mais estará bem melhor."
 
-    "Loren escuta a voz como se estivesse falando no seu ouvido enquanto começa a acordar de vez após todo o tempo em hibernação. Ela finalmente acorda de verdade em seu quarto na nave, seus pertences estão todos guardados em seu armário e com isso ela recebe mais uma instrução."
+    i "Só precisa se acostumar a voltar com 100\% do funcionamento do seu corpo."
+
+    "Loren escuta a voz como se estivesse falando no seu ouvido enquanto começa a acordar de vez após todo o tempo em hibernação."
+
+    "Ela finalmente acorda de verdade em seu quarto na nave, seus pertences estão todos guardados em seu armário e com isso ela recebe mais uma instrução."
 
     i "Por favor, após se arrumar dirija-se a sala de instruções, onde receberá uma pequena tutoria com os outros viajantes de seu setor para se prepararem para o resto de sua viagem."
 
@@ -20,7 +24,9 @@ label chapter1:
 
     i "Desculpe senhorita Loren, mas todos que deveriam estar aqui já chegaram."
 
-    "Com receio, ela estranha totalmente a situação e sai da apresentação procurando por alguém, ela corre desesperadamente e acha um ponto de informações e pergunta aonde estão todos, e tem uma resposta muito desagradável."
+    "Com receio, ela estranha totalmente a situação e sai da apresentação procurando por alguém."
+
+    "Ela corre desesperadamente e acha um ponto de informações e pergunta aonde estão todos, e tem uma resposta muito desagradável."
 
     i "Não há ninguém acordado."
 
@@ -58,7 +64,9 @@ label chapter1:
 
     l "De que jeito?"
 
-    i "Vejo que a senhorita é formada em mecânica e também em engenharia avançada, então dessa forma poderia com meu auxílio consertar todos os defeitos da nave, fazendo assim com que eu possa ativar sua cabine de hibernação e tudo ficar resolvido."
+    i "Vejo que a senhorita é formada em mecânica e também em engenharia avançada."
+
+    i "Então dessa forma poderia com meu auxílio consertar todos os defeitos da nave, fazendo assim com que eu possa ativar sua cabine de hibernação e tudo ficar resolvido."
 
     l "Certo e como é que eu faço isso?"
 
@@ -66,7 +74,7 @@ label chapter1:
 
     scene black with fade
 
-    i "Existem 3 erros ocorrendo atulamente na nave, e você pode consertá-los na ordem que quiser:"
+    i "Existem 3 erros ocorrendo atualmente na nave, e você pode consertá-los na ordem que quiser:"
 
     i "1º Um dos propulsores da nave está falhando e desse jeito a nave não está em velocidade máxima."
 
@@ -76,7 +84,7 @@ label chapter1:
 
     i "Dessa forma eu recomendo que faça uma das duas primeiras opções que eu lhe dei, pois não queremos mais problemas."
 
-    i "E se a nave não está a 100% de velocidade, poderia não chegar a tempo em nosso destino por conta do combustível."
+    i "E se a nave não está a 100\% de velocidade, poderia não chegar a tempo em nosso destino por conta do combustível."
 
     l "Okay, okay, vamos lá"
 

@@ -17,10 +17,10 @@ label initial_volume:
         if not persistent.set_volumes:
             persistent.set_volumes = True
         try:
-            _preferences.volumes['music'] *= .50
-            _preferences.volumes['sfx'] *= .50
+            _preferences.volumes['music'] = .50
+            _preferences.volumes['sfx'] = .50
         except KeyError:
-            _preferences.volumes['music'] *= .50
-            _preferences.volumes['sfx'] *= .50
+            _preferences.volumes['music'] = .50
+            _preferences.volumes['sfx'] = .50
 
     return
