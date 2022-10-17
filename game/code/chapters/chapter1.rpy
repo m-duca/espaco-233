@@ -74,4 +74,15 @@ label chapter1:
 
     i "3º Pelo visto o sistema de análise da nave está comprometido, e a porta que abre aquela ala não parece funcionar, então você teria que descobrir um jeito de abrir a porta e depois arrumar o que danificou o sistema."
 
+    i "Dessa forma eu recomendo que faça uma das duas primeiras opções que eu lhe dei, pois não queremos mais problemas."
+
+    i "E se a nave não está a 100% de velocidade, poderia não chegar a tempo em nosso destino por conta do combustível."
+
+    l "Okay, okay, vamos lá"
+
+    l "Qual eu devo escolher?"
+    #Coloca uma escolha aqui?
+
+    jump finalChapter
+
     return
