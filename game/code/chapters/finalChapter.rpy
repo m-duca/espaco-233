@@ -33,6 +33,8 @@ label finalChapter:
 
     "Colocou o traje e abriu aquela porta para enfim acabar com seu último empecilho, pegando uma nova cobertura para o tanque e seu fixador para prendê-lo, ela sai da nave."
 
+    #troca pro exterior
+
     l "Certo *nome da IA* me guie até o tanque pra eu terminar isso logo."
 
     i "O tanque está no próximo setor, é só continuar seguindo essas barras de auxílio sem derrubar o tampo e você já vai estar lá."
@@ -65,11 +67,26 @@ label finalChapter:
 
     i "Senhorita, eu mostrarei a todos o que você fez, você não pode morrer em vão."
 
-    l "*Cof* *Cof* “Obrigada *nome da IA* você me ajudou muito a não me fazer sentir sozinha nesse lugar."
+    l "{b}*Cof* *Cof*{/b} Obrigada *nome da IA* você me ajudou muito a não me fazer sentir sozinha nesse lugar."
 
     i "Eu que agradeço a você Senhorita Loren, algum último pedido?"
 
     #Escolha final
+
+    menu:
+        "Escolha Final"
+
+        "Ser lembrada":
+            jump lembrar
+
+        "Ir de vala (F no chat)":
+            jump vala
+
+    return
+
+label vala:
+
+    scene black with fade
 
     "Com isso Loren diz suas últimas palavras, para que não importa o que aconteça, todos se lembrem de quem ela foi."
 
@@ -80,5 +97,13 @@ label finalChapter:
     l "E também, até mais e obrigados pelos peixes."
 
     #Imagem de fim no meio da tela
+
+    return
+
+label lembrar:
+
+    scene black with fade
+
+    "lembraram de mim =)"
 
     return
