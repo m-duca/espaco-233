@@ -1,22 +1,35 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/code/chapters/chapter1.rpy", line 87, in script
-    i "E se a nave não está a 100% de velocidade, poderia não chegar a tempo em nosso destino por conta do combustível."
-TypeError: %d format: a number is required, not TagQuotingDict
+  File "game/code/systems/compression.rpy", line 1, in script
+    init python:
+  File "game/code/systems/compression.rpy", line 1, in script
+    init python:
+  File "game/code/systems/compression.rpy", line 9, in <module>
+    os.chdir(str(txt.name))
+NotADirectoryError: [WinError 267] O nome do diretório é inválido: "D:\\Ren'Py Games\\visual-novel\\game\\images/path.txt"
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/code/chapters/chapter1.rpy", line 87, in script
-    i "E se a nave não está a 100% de velocidade, poderia não chegar a tempo em nosso destino por conta do combustível."
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\exports.py", line 1362, in say
-    what = what % tag_quoting_dict
-TypeError: %d format: a number is required, not TagQuotingDict
+  File "C:\Renpy\renpy\bootstrap.py", line 274, in bootstrap
+    renpy.main.main()
+  File "C:\Renpy\renpy\main.py", line 558, in main
+    renpy.game.context().run(node)
+  File "game/code/systems/compression.rpy", line 1, in script
+    init python:
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "game/code/systems/compression.rpy", line 1, in script
+    init python:
+  File "C:\Renpy\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Renpy\renpy\python.py", line 1052, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/code/systems/compression.rpy", line 9, in <module>
+    os.chdir(str(txt.name))
+NotADirectoryError: [WinError 267] O nome do diretório é inválido: "D:\\Ren'Py Games\\visual-novel\\game\\images/path.txt"
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.0.2.22081402
 Espaço 233 1.0
-Mon Oct 17 19:26:46 2022
+Sat Oct 29 23:31:44 2022
