@@ -1,10 +1,9 @@
 # Código da Navegação entre salas
 init python:
 
-
     #################################################################
     #                        DICIONÁRIOS                            #
-    ################################################################
+    #################################################################
 
     # Armazenam as possibilidades de cada direção com base na localização atual
     # Coloque sempre na ordem em que aparecem no jogo
@@ -46,18 +45,18 @@ init python:
 
     # Escolhendo a próxima label, passando o dicionário da direção
     def switch_next(dictionary):
-        #return dictionary.get(get_cur_location(), "start")
         return dictionary.get(current_label, "start")
 
 
-#SCREENS REFERENTES AOS BOTÕES ABAIXO:
+# Screen dos botões de navegação
 
+# Parametros:
 # show_right, show_left, show_up e show_down ===> Mostrar os Botões
 # pos_right, pos_left, pos_up, pos_down ===> Posições dos Botões
 
 screen buttons_navigation (show_right, show_left, show_up, show_down, pos_right = Vector(),
     pos_left = Vector(), pos_up = Vector(), pos_down = Vector()):
-    # BOTÃO DIREITA
+    # Mostrar botão da direita
     if show_right:
         imagebutton:
             xpos pos_right.x
@@ -68,7 +67,7 @@ screen buttons_navigation (show_right, show_left, show_up, show_down, pos_right 
             hover "button2.png"
             action Jump(switch_next(possibilities_right))
 
-    # BOTÃO ESQUERDA
+    # Mostrar botão da esquerda
     if show_left:
         imagebutton:
             xpos pos_left.x
@@ -79,7 +78,7 @@ screen buttons_navigation (show_right, show_left, show_up, show_down, pos_right 
             hover "button2.png"
             action Jump(switch_next(possibilities_left))
 
-    # BOTÃO CIMA
+    # Mostrar botão de cima
     if show_up:
         imagebutton:
             xpos pos_up.x
@@ -90,7 +89,7 @@ screen buttons_navigation (show_right, show_left, show_up, show_down, pos_right 
             hover "button2.png"
             action Jump(switch_next(possibilities_up))
 
-    # BOTÃO BAIXO
+    # Mostrar botão de baixo
     if show_down:
         imagebutton:
             xpos pos_down.x

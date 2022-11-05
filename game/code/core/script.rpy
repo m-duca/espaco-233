@@ -1,4 +1,3 @@
-﻿# The script of the game goes in this file.
 # Primeira parte do código
 
 # Antes do Menu Principal
@@ -11,6 +10,7 @@ label splashscreen:
     $hide_time = 1
     $transition = Pixellate(1, 10)
 
+    # Mostre o fundo e a screen de efeito scanline
     scene bg splashscreen with fade
     show screen scanline
 
@@ -32,20 +32,13 @@ label splashscreen:
 # Início do Jogo
 label start:
 
+    # Pule para a introdução
     jump introduction
-
-    scene bg room
-
-    show eileen happy
-
-    "Medo do esmaugyee"
-    s "{b}RAAAAURRRRR{/b}"
-    $ go_to_next(possibilities_right)
 
     return
 
 
-
+# Testes point and click
 label corredor:
     scene bg doors
     call screen buttons_navigation(True, True, False, False, Vector(1543, 493), Vector(427, 493))
