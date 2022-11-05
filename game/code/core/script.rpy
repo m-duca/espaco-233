@@ -15,7 +15,7 @@ label splashscreen:
     show screen scanline
 
     # Aparece Logo Smaug
-    play sound glitch volume 0.5
+    play sound glitch
     show logo_smaug at truecenter with transition
     pause show_time
 
