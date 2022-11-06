@@ -2,6 +2,10 @@
 
 # Antes do Menu Principal
 label splashscreen:
+    python:
+        compress("logos", "logo", 2)
+        decompress("logos")
+
     # Troque o volume para o valor inicial
     call initial_volume
 
@@ -16,15 +20,15 @@ label splashscreen:
 
     # Aparece Logo Smaug
     play sound glitch
-    show logo_smaug at truecenter with transition
+    show logo0 at truecenter with transition
     pause show_time
 
     # Desaparece Logo Smaug
-    hide logo_smaug with transition
+    hide logo0 with transition
 
     # Aparece Logo 404
     play sound glitch
-    show logo_404 at truecenter with transition
+    show logo1 at truecenter with transition
     pause show_time
 
     return

@@ -1,5 +1,7 @@
 label introduction:
 
+    $ decompress("logos")
+
     scene black with fade
 
     "10 de julho de 2095, a era da mais alta tecnologia no mundo."

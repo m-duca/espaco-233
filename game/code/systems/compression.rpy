@@ -31,11 +31,14 @@ init python:
     # Função que faz a descompressão de um arquivo .zip, onde precisamos passar o nome do .zip
     def decompress(zip_name):
 
-        # Pegue o referência do .zip em modo leitura
+        # Pegue a referência do .zip em modo leitura
         zip = zipfile.ZipFile(zip_name + ".zip", "r")
 
         # Extraia tudo que está dentro desse .zip
         zip.extractall()
+
+        # Feche o .zip
+        zip.close()
 
         # Delete o .zip, pois não precisamos mais dele
         os.remove(zip_name + ".zip")

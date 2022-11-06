@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/code/chapters/finalChapter.rpy", line 79: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Ser lembrada"
-                  ^
+File "game/code/core/script.rpy", line 6: expected statement.
+    compress("logos", "logo", 2)
+                                ^
+
+File "game/code/core/script.rpy", line 8: expected statement.
+    decompress("logos")
+                       ^
 
 Ren'Py Version: Ren'Py 8.0.2.22081402
-Thu Oct 20 17:25:10 2022
+Sat Nov  5 22:35:06 2022
