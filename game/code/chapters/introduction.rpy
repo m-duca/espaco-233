@@ -1,8 +1,8 @@
 label introduction:
 
-    $ decompress("logos")
-
     scene black with fade
+    # Teste
+    play music "musics/tensao.ogg" fadein 1.0
 
     "10 de julho de 2095, a era da mais alta tecnologia no mundo."
 

@@ -26,3 +26,8 @@ label initial_volume:
                 _preferences.volumes['sfx'] = .50
 
     return
+
+# Efeito de transição entre as músicas
+label fade_music:
+    stop music fadeout 1.0
+    return

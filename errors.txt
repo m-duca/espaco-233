@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/code/core/script.rpy", line 6: expected statement.
-    compress("logos", "logo", 2)
-                                ^
-
-File "game/code/core/script.rpy", line 8: expected statement.
-    decompress("logos")
+File "game/code/core/options.rpy", line 69: invalid syntax
+    "musics/menu.ogg" fadein 1.0
                        ^
 
 Ren'Py Version: Ren'Py 8.0.2.22081402
-Sat Nov  5 22:35:06 2022
+Sun Nov  6 18:57:15 2022

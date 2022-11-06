@@ -1,34 +1,31 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 240, in script call
-    call _splashscreen from _call_splashscreen_1
-  File "game/code/core/script.rpy", line 5, in script
-    python:
-  File "game/code/core/script.rpy", line 9, in <module>
-    decompress("logos")
-  File "game/code/systems/compression.rpy", line 41, in decompress
-    os.remove(zip_name + ".zip")
-PermissionError: [WinError 32] O arquivo já está sendo usado por outro processo: 'logos.zip'
+  File "game/code/chapters/introduction.rpy", line 3, in script
+    $ decompress("logos")
+  File "game/code/chapters/introduction.rpy", line 3, in <module>
+    $ decompress("logos")
+  File "game/code/systems/compression.rpy", line 35, in decompress
+    zip = zipfile.ZipFile(zip_name + ".zip", "r")
+FileNotFoundError: [Errno 2] No such file or directory: 'logos.zip'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 240, in script call
-    call _splashscreen from _call_splashscreen_1
-  File "game/code/core/script.rpy", line 5, in script
-    python:
+  File "game/code/chapters/introduction.rpy", line 3, in script
+    $ decompress("logos")
   File "C:\Renpy\renpy\ast.py", line 1131, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "C:\Renpy\renpy\python.py", line 1052, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/code/core/script.rpy", line 9, in <module>
-    decompress("logos")
-  File "game/code/systems/compression.rpy", line 41, in decompress
-    os.remove(zip_name + ".zip")
-PermissionError: [WinError 32] O arquivo já está sendo usado por outro processo: 'logos.zip'
+  File "game/code/chapters/introduction.rpy", line 3, in <module>
+    $ decompress("logos")
+  File "game/code/systems/compression.rpy", line 35, in decompress
+    zip = zipfile.ZipFile(zip_name + ".zip", "r")
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/zipfile.py", line 1239, in __init__
+FileNotFoundError: [Errno 2] No such file or directory: 'logos.zip'
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.0.2.22081402
 Espaço 233 1.0
-Sat Nov  5 22:35:25 2022
+Sun Nov  6 18:53:22 2022

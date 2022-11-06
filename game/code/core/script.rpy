@@ -36,6 +36,7 @@ label splashscreen:
 # Início do Jogo
 label start:
 
+    call fade_music
     # Pule para a introdução
     jump introduction
 
