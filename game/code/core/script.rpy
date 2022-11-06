@@ -19,7 +19,7 @@ label splashscreen:
     show screen scanline
 
     # Aparece Logo Smaug
-    play sound glitch
+    play sound "sfxs/glitch.mp3"
     show logo0 at truecenter with transition
     pause show_time
 
@@ -27,7 +27,7 @@ label splashscreen:
     hide logo0 with transition
 
     # Aparece Logo 404
-    play sound glitch
+    play sound "sfxs/glitch.mp3"
     show logo1 at truecenter with transition
     pause show_time
 
