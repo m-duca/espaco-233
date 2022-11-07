@@ -1,6 +1,9 @@
 label chapter1:
+    call fade_music
 
     scene black with fade
+
+    play music "musics/tensao.ogg" fadein 1.0
 
     i "Bem vinda a sua viagem espacial para o planeta Gilon, você deve estar se sentindo um pouco zonza no momento Loren, mas logo mais estará bem melhor."
 
