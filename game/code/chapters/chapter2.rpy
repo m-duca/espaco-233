@@ -1,6 +1,10 @@
 label chapter2:
+    # CENAS: SALA DE INSTRUÇÕES (bg chapter2_0), AMBIENTE DA NAVE (bg chapter2_1)
+
+    call fade_music
 
     scene black with fade
+    #scene bg chapter2_0 with fade
 
     "Ao se sentar a apresentação começa automaticamente, ela estranha pois achava que mais pessoas deveriam chegar antes de sua viagem começar. Ela levanta a mão e faz uma pergunta à inteligência artificial."
 
@@ -10,13 +14,16 @@ label chapter2:
 
     "Com receio, ela estranha totalmente a situação e sai da apresentação procurando por alguém."
 
+    scene black with hpunch
+    #scene bg chapter2_1 with hpunch
+
     "Ela corre desesperadamente e acha um ponto de informações e pergunta aonde estão todos, e tem uma resposta muito desagradável."
 
     i "Não há ninguém acordado."
 
     l "Como assim? E como eu posso estar acordada."
 
-    i "Isso não seria possível pois faltam {b}712500000000000km{/b} para o destino final, ou seja, 75 anos."
+    i "Isso não seria possível pois faltam 712500000000000km para o destino final, ou seja, 75 anos."
 
     l "COMO ASSIM CARALHO, EU TÔ PRESA NO ESPAÇO POR UMA MERDA DE MÁ SORTE?"
 
@@ -36,9 +43,9 @@ label chapter2:
 
     l "PORQUE NÃO?"
 
-    i "Eu não tenho acesso as cabines de hibernação, e nenhuma delas poderia ativar ou deativar pois existem alguns problemas na nave?"
+    i "Eu não tenho acesso as cabines de hibernação, e nenhuma delas poderia ativar ou desativar pois existem alguns problemas na nave?"
 
-    l "PROBLEMAS? Então eu faço o que agora, sento-me no chão e espero morrer com o tempo nessa nave?"
+    l "PROBLEMAS? Então eu faço o que agora, sento no chão e espero morrer com o tempo nessa nave?"
 
     i "Seria uma opção."
 
@@ -57,6 +64,7 @@ label chapter2:
     i "Apenas siga minhas instruções."
 
     scene black with fade
+    #scene bg chapter2_1 with fade
 
     i "Existem 3 erros ocorrendo atualmente na nave, e você pode consertá-los na ordem que quiser:"
 
@@ -73,6 +81,9 @@ label chapter2:
     l "Okay, okay, vamos lá"
 
     l "Qual eu devo escolher?"
+
+    scene black with fade
+    #scene bg chapter2_1 with fade
 
     #gameplay começa aqui
 

@@ -1,5 +1,3 @@
-# Primeira parte do código
-
 # Antes do Menu Principal
 label splashscreen:
     python:
@@ -36,8 +34,6 @@ label splashscreen:
 # Início do Jogo
 label start:
 
-    call fade_music
-    # Pule para a introdução
     jump introduction
 
     return

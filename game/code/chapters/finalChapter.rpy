@@ -1,4 +1,9 @@
 label finalChapter:
+    # CENAS: AMBIENTE DA NAVE (bg finalchapter_0), SAÍDAS DA NAVE (bg finachapter_1), CONSERTANDO O TANQUE (bg final_chapter2),
+    # DESPEDIDA (bg finalchapter_3)
+
+    call fade_music
+
     scene black with fade
 
     "Após todo o sufoco e determinação de Loren ela consegue consertar todos os defeitos encontrados na nave e sua esperança é finalmente restaurada, ela corre alegremente pelos corredores, pulando e saltitando pra lá e pra cá."
@@ -76,15 +81,15 @@ label finalChapter:
     menu:
         "Escolha Final"
 
-        "Ser lembrada":
-            jump lembrar
+        "Conte o que aconteceu para a tripulação":
+            jump remember
 
-        "Ir de vala (F no chat)":
-            jump vala
+        "Não conte":
+            jump dont_remember
 
     return
 
-label vala:
+label remember:
 
     scene black with fade
 
@@ -96,11 +101,9 @@ label vala:
 
     l "E também, até mais e obrigados pelos peixes."
 
-    #Imagem de fim no meio da tela
-
     return
 
-label lembrar:
+label dont_remember:
 
     scene black with fade
 

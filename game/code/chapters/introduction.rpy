@@ -1,6 +1,11 @@
 label introduction:
+    # Cenas: TERRA FUTURISTA (bg intro_0), PRÉDIO DA LAZER (bg intro_1), CASA DA LOREN (bg intro_2), NAVE ESTACIONADA (bg intro_3)
+    # CÁPSULA DA NAVE (bg intro_4)
+
+    call fade_music
 
     scene black with fade
+    # scene bg intro_0 with fade
 
     play music "musics/introducao.ogg" fadein 1.0
 
@@ -9,6 +14,9 @@ label introduction:
     "A vida na Terra chega a níveis completamente diferentes do que qualquer cientista poderia imaginar, mesmo com cálculos e predições realizadas, o futuro que ocorre nos dias presentes não é nada que ninguém pensou."
 
     "O planeta Terra de forma vasta e abrangente se tornou dois pólos de grande desastre, de um lado uma poluição enorme que diminui a capacidade de vida e outro com uma tecnologia muito avançada mas que causa grandes problemas econômicos."
+
+    scene black with zoomin
+    # scene bg intro_1 with zoomin
 
     "Lazer, a maior detentora de monopólio e inovação da Terra cria novos projetos para o bem estar da civilização."
 
@@ -20,9 +28,10 @@ label introduction:
 
     "Ela decide que como sua vida na Terra já não parece mais ter objetivo, acredita que uma nova vida em um novo planeta possa ser uma enorme possibilidade para ter algo melhor do que tinha antes."
 
-    "Se decidindo totalmente, antes de viajar, Loren avisa sua irmã o que estava prestes a fazer."
+    "Antes de viajar, Loren avisa sua irmã o que estava prestes a fazer."
 
     scene black with fade
+    # scene bg intro_2 with fade
 
     t "Lo por favor me dei..."
 
@@ -47,6 +56,7 @@ label introduction:
     l "Relaxa, a Lazer vai te mandar um dinheiro por conta da minha falta, ajuda sua família com isso. Agora eu vou indo, tchau maninha."
 
     scene black with fade
+    # scene bg intro_3 with fade
 
     "No dia da viagem, Loren está totalmente preparada, sem remorso algum ela entra na estação de lançamento, tudo já está quase pronto para a decolagem. Nisso ela é recebida por um dos trabalhadores da Lazer."
 
@@ -55,6 +65,9 @@ label introduction:
     l "Oie, vim para embarcar mesmo, viajante número 233 direto para o planeta Gilon."
 
     a "A pois bem, me acompanhe por favor."
+
+    scene black with fade
+    # scene bg intro_4 with fade
 
     "Alguns minutos depois caminhando, o assistente a leva para a sala de preservação e redução de sentidos para uma criogenização perfeita, para que seja possível sua viagem sem parecer que envelheceu um ano sequer."
 
