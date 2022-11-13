@@ -63,19 +63,17 @@ screen buttons_navigation (show_right, show_left, show_up, show_down, pos_right 
             ypos pos_right.y
             xanchor 0
             yanchor 0
-            idle "button1.png"
-            hover "button2.png"
+            idle "button_0.png"
             action Jump(switch_next(possibilities_right))
-
     # Mostrar botão da esquerda
+
     if show_left:
         imagebutton:
             xpos pos_left.x
             ypos pos_left.y
             xanchor 0
             yanchor 0
-            idle "button1.png"
-            hover "button2.png"
+            idle "button_1.png"
             action Jump(switch_next(possibilities_left))
 
     # Mostrar botão de cima
@@ -85,8 +83,7 @@ screen buttons_navigation (show_right, show_left, show_up, show_down, pos_right 
             ypos pos_up.y
             xanchor 0
             yanchor 0
-            idle "button1.png"
-            hover "button2.png"
+            idle "button_2.png"
             action Jump(switch_next(possibilities_up))
 
     # Mostrar botão de baixo
@@ -96,6 +93,5 @@ screen buttons_navigation (show_right, show_left, show_up, show_down, pos_right 
             ypos pos_down.y
             xanchor 0
             yanchor 0
-            idle "button1.png"
-            hover "button2.png"
+            idle "button_3.png"
             action Jump(switch_next(possibilities_down))

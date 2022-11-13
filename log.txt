@@ -1,4 +1,4 @@
-Sat Nov 12 15:52:04 2022
+Sun Nov 13 18:32:24 2022
 Windows-10-10.0.19041
 Ren'Py 8.0.2.22081402
  
@@ -6,12 +6,12 @@ Ren'Py 8.0.2.22081402
 Bootstrap to the start of init.init took 0.03s
 Early init took 0.00s
 Loader init took 0.02s
-Loading error handling took 0.03s
-Loading script took 0.19s
-Loading save slot metadata. took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.09s
+Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Renpy\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.05s
+Running init code took 0.03s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s

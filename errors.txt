@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/code/core/options.rpy", line 69: invalid syntax
-    "musics/menu.ogg" fadein 1.0
-                       ^
+File "game/code/core/script.rpy", line 36: expected 'label_name' not found.
+    call call screen buttons_navigation(True, False, False, False, Vector(1543, 493), Vector(427, 493))
+        ^
 
 Ren'Py Version: Ren'Py 8.0.2.22081402
-Sun Nov  6 18:57:15 2022
+Sun Nov 13 18:19:31 2022

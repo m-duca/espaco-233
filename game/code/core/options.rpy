@@ -6,7 +6,7 @@
 
 
 # Cursor Mouse
-define config.mouse = { 'default' : [ ('gui/arrow.png', 0, 0) ] }
+define config.mouse = { 'default' : [ ('gui/cursor_idle.png', 0, 0) ] }
 
 
 ## Basics ######################################################################
