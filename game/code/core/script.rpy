@@ -2,7 +2,7 @@
 label splashscreen:
     #python:
         #compress("logos", "logo_", 2)
-        #compress("buttons", "button_", 4)
+        #compress("buttons", "button_", 8)
 
 
     # Troque o volume para o valor inicial
@@ -34,10 +34,7 @@ label splashscreen:
 
 # Início do Jogo
 label start:
-    #$ decompress("buttons")
-    scene bg doors
-    #jump introduction
-
+    jump introduction
     return
 
 

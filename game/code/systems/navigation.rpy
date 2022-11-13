@@ -64,6 +64,7 @@ screen buttons_navigation (show_right, show_left, show_up, show_down, pos_right 
             xanchor 0
             yanchor 0
             idle "button_0.png"
+            hover "button_4.png"
             action Jump(switch_next(possibilities_right))
     # Mostrar botão da esquerda
 
@@ -74,6 +75,7 @@ screen buttons_navigation (show_right, show_left, show_up, show_down, pos_right 
             xanchor 0
             yanchor 0
             idle "button_1.png"
+            hover "button_5.png"
             action Jump(switch_next(possibilities_left))
 
     # Mostrar botão de cima
@@ -84,6 +86,7 @@ screen buttons_navigation (show_right, show_left, show_up, show_down, pos_right 
             xanchor 0
             yanchor 0
             idle "button_2.png"
+            hover "button_6.png"
             action Jump(switch_next(possibilities_up))
 
     # Mostrar botão de baixo
@@ -94,4 +97,5 @@ screen buttons_navigation (show_right, show_left, show_up, show_down, pos_right 
             xanchor 0
             yanchor 0
             idle "button_3.png"
+            hover "button_7.png"
             action Jump(switch_next(possibilities_down))
