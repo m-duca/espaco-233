@@ -64,7 +64,7 @@ label introduction:
 
     a "Bom dia, vai embarcar conosco hoje ou apenas veio para ver o lançamento na nave?"
 
-    l "Oie, vim para embarcar mesmo, viajante número 233 direto para o planeta Gilon."
+    l "Oi, vim para embarcar mesmo, viajante número 233 direto para o planeta Gilon."
 
     a "A pois bem, me acompanhe por favor."
 
@@ -89,7 +89,7 @@ label introduction:
 
     l "Oi mãe, sou eu, a Lo."
 
-    b "Oie minha filha, por que está me ligando a essa hora, aconteceu algo?"
+    b "Oi minha filha, por que está me ligando a essa hora, aconteceu algo?"
 
     l "Nada mãe, eu só vim me despedir da senhora, estou indo viajar para muito longe e não irei mais ver você. {i}Diz já soluçando de tristeza e começa a chorar{/i}."
 
@@ -108,7 +108,7 @@ label introduction:
     b "Não minha filha por favor não faça isso, eu te imploro volte para casa!"
 
     play sound "sfxs/voice/pensativa.ogg"
-    l "Não da mais mãe... Eu já estou indo."
+    l "Não dá mais mãe... Eu já estou indo."
 
     play sound "sfxs/tecla 1.ogg"
     pause 1.0

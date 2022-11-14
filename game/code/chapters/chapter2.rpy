@@ -16,7 +16,7 @@ label chapter2:
     play sound "sfxs/voice/risada.ogg"
     pause 1.0
 
-    "Ao se sentar a apresentação começa automaticamente, ela estranha pois achava que mais pessoas deveriam chegar antes de sua viagem começar."
+    "Ao se sentar a apresentação começa automaticamente, ela estranha pois achava que mais pessoas deveriam chegar antes de tudo começar."
 
     "Ela levanta a mão e faz uma pergunta à inteligência artificial."
 
@@ -105,7 +105,7 @@ label chapter2:
 
     i "E se a nave não está a 100\% de velocidade, poderia não chegar a tempo em nosso destino por conta do combustível."
 
-    l "Okay, okay, vamos lá"
+    l "Okay, okay, vamos lá."
 
     l "Qual eu devo escolher?"
 
