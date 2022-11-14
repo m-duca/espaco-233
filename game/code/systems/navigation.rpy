@@ -10,26 +10,27 @@ init python:
 
     # Dicionário da Direita
     possibilities_right = {
-    "start" : "corredor",
-    "corredor" : "banheiro"
+        "corridor" : "capsule"
+        "instruction_room" : "corridor"
+        "central" : "instruction_room"
     }
 
     # Dicionário da Esquerda
     possibilities_left = {
-    "start" : "corredor",
-    "corredor" : "banheiro"
+        "corridor" : "instruction_room"
+        "instruction_room" : "central"
+        "central" : "puzzle2"
     }
 
     # Dicionário de Cima
     possibilities_up = {
-    "start" : "corredor",
-    "corredor" : "banheiro"
+        "central" : "puzzle1"
     }
 
     # Dicionário de Baixo
     possibilities_down = {
-    "start" : "corredor",
-    "corredor" : "banheiro"
+        "capsule" : "corridor"
+        "central" : "puzzle3"
     }
 
     # Armazeno a label que está sendo executada atualmente na variável current_label
