@@ -1,36 +1,49 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 240, in script call
-    call _splashscreen from _call_splashscreen_1
-  File "game/code/core/script.rpy", line 3, in script
-    python:
-  File "game/code/core/script.rpy", line 5, in <module>
-    compress("buttons", "button_", 4)
-  File "game/code/systems/compression.rpy", line 23, in compress
-    zip.write(image_prefix + str(i) + ".png")
-FileNotFoundError: [WinError 2] O sistema não pode encontrar o arquivo especificado: 'button_0.png'
+  File "game/code/chapters/chapter1.rpy", line 6, in script
+    pause 3.0
+  File "renpy/common/000statements.rpy", line 453, in execute_pause
+    renpy.pause(delay)
+OSError: Couldn't find file 'sfxs/voices/laser.ogg'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 240, in script call
-    call _splashscreen from _call_splashscreen_1
-  File "game/code/core/script.rpy", line 3, in script
-    python:
-  File "C:\Renpy\renpy\ast.py", line 1131, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Renpy\renpy\python.py", line 1052, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/code/core/script.rpy", line 5, in <module>
-    compress("buttons", "button_", 4)
-  File "game/code/systems/compression.rpy", line 23, in compress
-    zip.write(image_prefix + str(i) + ".png")
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/zipfile.py", line 1727, in write
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/zipfile.py", line 501, in from_file
-FileNotFoundError: [WinError 2] O sistema não pode encontrar o arquivo especificado: 'button_0.png'
+  File "game/code/chapters/chapter1.rpy", line 6, in script
+    pause 3.0
+  File "C:\Renpy\renpy\ast.py", line 2232, in execute
+    self.call("execute")
+  File "C:\Renpy\renpy\ast.py", line 2220, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Renpy\renpy\statements.py", line 281, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 453, in execute_pause
+    renpy.pause(delay)
+  File "C:\Renpy\renpy\exports.py", line 1533, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay)
+  File "C:\Renpy\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Renpy\renpy\display\core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs) # type: ignore
+  File "C:\Renpy\renpy\display\core.py", line 4097, in interact_core
+    renpy.audio.audio.periodic()
+  File "C:\Renpy\renpy\audio\audio.py", line 1166, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "C:\Renpy\renpy\audio\audio.py", line 1144, in periodic_thread_main
+    periodic_pass()
+  File "C:\Renpy\renpy\audio\audio.py", line 1086, in periodic_pass
+    c.periodic()
+  File "C:\Renpy\renpy\audio\audio.py", line 517, in periodic
+    topf = load(filename)
+  File "C:\Renpy\renpy\audio\audio.py", line 70, in load
+    rv = renpy.loader.load(fn)
+  File "C:\Renpy\renpy\loader.py", line 820, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'sfxs/voices/laser.ogg'.
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.0.2.22081402
 Espaço 233 1.0
-Sun Nov 13 18:30:24 2022
+Mon Nov 14 10:52:06 2022

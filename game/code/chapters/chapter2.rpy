@@ -6,6 +6,9 @@ label chapter2:
     scene black with fade
     #scene bg chapter2_0 with fade
 
+    play sound "sfxs/voice/risada.ogg"
+    "Chegando na sala, está completamente sozinha, ela se sentia feliz pensando novamente estar adiantada e comemora levemente por sua conquista."
+
     "Ao se sentar a apresentação começa automaticamente, ela estranha pois achava que mais pessoas deveriam chegar antes de sua viagem começar. Ela levanta a mão e faz uma pergunta à inteligência artificial."
 
     l "Com licença, não era pra ter mais pessoas aqui antes de começarem as explicações?"

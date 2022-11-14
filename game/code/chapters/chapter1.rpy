@@ -2,6 +2,10 @@ label chapter1:
     # Cenas: CÁPSULA DA NAVE (bg firstchapter0)
 
     call fade_music
+    pause 1.0
+
+    play sound "sfxs/voice/laser.ogg" fadeout 0.0
+    pause 2.0
 
     scene black with fade
     # scene bg chapter1_0 with fade
@@ -14,7 +18,7 @@ label chapter1:
 
     "Loren escuta a voz como se estivesse falando no seu ouvido enquanto começa a acordar de vez após todo o tempo em hibernação."
 
-    "Ela finalmente acorda de verdade em seu quarto na nave, seus pertences estão todos guardados em seu armário e com isso ela recebe mais uma instrução."
+    "Ela finalmente acorda em seu quarto na nave, seus pertences estão todos guardados em seu armário e com isso ela recebe mais uma instrução."
 
     i "Por favor, após se arrumar dirija-se a sala de instruções, onde receberá uma pequena tutoria com os outros viajantes de seu setor para se prepararem para o resto de sua viagem."
 
@@ -24,8 +28,6 @@ label chapter1:
     # scene bg chapter1_0 with fade
 
     # "Ela sai de seu quarto e não vê ninguém, talvez todos de seu setor já tenham ido e só ela achando que estava bem adiantada está atrasada."
-
-    # "Chegando na sala, está completamente sozinha, ela se sentia feliz pensando novamente estar adiantada e comemora levemente por sua \"conquista\"."
 
     #começa gameplay, ir pra sala de instruções
 
