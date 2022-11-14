@@ -34,5 +34,6 @@ label splashscreen:
 
 # Início do Jogo
 label start:
-    jump introduction
+    #jump introduction
+    jump capsule
     return
