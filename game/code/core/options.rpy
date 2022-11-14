@@ -7,7 +7,7 @@
 
 # Cursor Mouse
 define config.mouse = { 'default' : [ ('gui/cursor_idle.png', 0, 0) ] }
-
+define config.rollback_enabled = True
 
 ## Basics ######################################################################
 
