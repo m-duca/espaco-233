@@ -3,18 +3,28 @@ label chapter2:
 
     call fade_music
 
+    play sound "sfxs/porta nave.ogg"
+    pause 3.0
+
     scene black with fade
     #scene bg chapter2_0 with fade
 
-    play sound "sfxs/voice/risada.ogg"
+    play music "musics/ambiente nave.ogg" fadein 1.0
+
     "Chegando na sala, está completamente sozinha, ela se sentia feliz pensando novamente estar adiantada e comemora levemente por sua conquista."
 
-    "Ao se sentar a apresentação começa automaticamente, ela estranha pois achava que mais pessoas deveriam chegar antes de sua viagem começar. Ela levanta a mão e faz uma pergunta à inteligência artificial."
+    play sound "sfxs/voice/risada.ogg"
+    pause 1.0
+
+    "Ao se sentar a apresentação começa automaticamente, ela estranha pois achava que mais pessoas deveriam chegar antes de sua viagem começar."
+
+    "Ela levanta a mão e faz uma pergunta à inteligência artificial."
 
     l "Com licença, não era pra ter mais pessoas aqui antes de começarem as explicações?"
 
     i "Desculpe senhorita Loren, mas todos que deveriam estar aqui já chegaram."
 
+    play sound "sfxs/voice/pensativa.ogg"
     "Com receio, ela estranha totalmente a situação e sai da apresentação procurando por alguém."
 
     scene black with hpunch
@@ -28,6 +38,9 @@ label chapter2:
 
     i "Isso não seria possível pois faltam 712500000000000km para o destino final, ou seja, 75 anos."
 
+    scene black with vpunch
+    #scene bg chapter2_1 with vpunch
+    play sound "sfxs/voice/surpresa.ogg"
     l "COMO ASSIM CARALHO, EU TÔ PRESA NO ESPAÇO POR UMA MERDA DE MÁ SORTE?"
 
     i "Não má sorte, ou talvez azar, mas pelo simples fato de… pelo fato de… desculpe, mas não sei o motivo de você estar acordada."
@@ -36,7 +49,18 @@ label chapter2:
 
     i "Claro, seria um prazer."
 
-    # Pequena pausa
+    play sound "sfxs/tecla 1.ogg"
+    pause 1.0
+    play sound "sfxs/tecla 2.ogg"
+    pause 1.0
+    play sound "sfxs/tecla 1.ogg"
+    pause 1.0
+    play sound "sfxs/tecla 2.ogg"
+    pause 1.0
+    play sound "sfxs/som ambiente.ogg"
+    pause 1.0
+
+    i "..."
 
     i "Opa, tenho um pequeno problema."
 
