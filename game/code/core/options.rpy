@@ -41,7 +41,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "visualnovel"
+define build.name = "espaco-233"
 
 
 ## Sounds and music ############################################################
@@ -53,7 +53,6 @@ define build.name = "visualnovel"
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = False
-
 
 ## To allow the user to play a test sound on the sound or voice channel,
 ## uncomment a line below and use it to set a sample sound to play.

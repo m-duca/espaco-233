@@ -30,6 +30,8 @@ label splashscreen:
     show logo_1 at truecenter with transition
     pause show_time
 
+    hide screen scanline 
+
     return
 
 # Início do Jogo
