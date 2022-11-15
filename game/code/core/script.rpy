@@ -30,8 +30,11 @@ label splashscreen:
     show logo_1 at truecenter with transition
     pause show_time
 
+<<<<<<< HEAD
     hide screen scanline
 
+=======
+>>>>>>> parent of 32da1ef (Scanline fix)
     return
 
 # Início do Jogo
