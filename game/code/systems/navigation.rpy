@@ -10,6 +10,7 @@ init python:
 
     # Dicionário da Direita
     possibilities_right = {
+        "start" : "splashscreen",
         "corridor" : "capsule",
         "instruction_room" : "corridor",
         "central" : "instruction_room",
@@ -18,6 +19,7 @@ init python:
 
     # Dicionário da Esquerda
     possibilities_left = {
+        "start" : "splashscreen",
         "corridor" : "instruction_room",
         "instruction_room" : "central",
         "central" : "puzzle2"
@@ -25,6 +27,7 @@ init python:
 
     # Dicionário de Cima
     possibilities_up = {
+        "start" : "splashscreen",
         "central" : "puzzle1",
         "puzzle3" : "central"
 
@@ -32,6 +35,7 @@ init python:
 
     # Dicionário de Baixo
     possibilities_down = {
+        "start" : "splashscreen",
         "capsule" : "corridor",
         "central" : "puzzle3",
         "puzzle1" : "central"

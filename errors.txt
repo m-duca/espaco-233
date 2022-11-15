@@ -2,10 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/code/systems/navigation.rpy", line 29: invalid syntax
-        }   "puzzle1" : "central"
-             ^
-    
+File "game/code/places/capsule.rpy", line 6: expected statement.
+    first_time_capsule = False
+                       ^
 
 Ren'Py Version: Ren'Py 8.0.2.22081402
-Mon Nov 14 16:18:18 2022
+Tue Nov 15 10:05:07 2022

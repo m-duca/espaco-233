@@ -30,12 +30,11 @@ label splashscreen:
     show logo_1 at truecenter with transition
     pause show_time
 
-    hide screen scanline 
+    hide screen scanline
 
     return
 
 # Início do Jogo
 label start:
-    #jump introduction
-    jump capsule
+    jump introduction
     return

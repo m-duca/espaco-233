@@ -24,13 +24,14 @@ label chapter1:
 
     "Loren se prepara rapidamente e ansiosa por finalmente estar acordada, ela imagina tudo o que pode acontecer, as pessoas que vai conhecer, e toda a sua vida neste novo planeta que logo chamará de lar."
 
-    scene black with fade
+    #scene black with fade
     # scene bg chapter1_0 with fade
 
     # "Ela sai de seu quarto e não vê ninguém, talvez todos de seu setor já tenham ido e só ela achando que estava bem adiantada está atrasada."
 
     #começa gameplay, ir pra sala de instruções
+    call fade_music
 
-    jump chapter2
-
+    jump capsule
+    
     return
