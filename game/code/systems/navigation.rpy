@@ -10,35 +10,55 @@ init python:
 
     # Dicionário da Direita
     possibilities_right = {
+<<<<<<< HEAD
         "start" : "splashscreen",
         "corridor" : "capsule",
         "instruction_room" : "corridor",
         "central" : "instruction_room",
         "puzzle2" : "central"
+=======
+        "corridor" : "capsule"
+        "instruction_room" : "corridor"
+        "central" : "instruction_room"
+>>>>>>> parent of 1411a3b (Navigation update)
     }
 
     # Dicionário da Esquerda
     possibilities_left = {
+<<<<<<< HEAD
         "start" : "splashscreen",
         "corridor" : "instruction_room",
         "instruction_room" : "central",
+=======
+        "corridor" : "instruction_room"
+        "instruction_room" : "central"
+>>>>>>> parent of 1411a3b (Navigation update)
         "central" : "puzzle2"
     }
 
     # Dicionário de Cima
     possibilities_up = {
+<<<<<<< HEAD
         "start" : "splashscreen",
         "central" : "puzzle1",
         "puzzle3" : "central"
 
+=======
+        "central" : "puzzle1"
+>>>>>>> parent of 1411a3b (Navigation update)
     }
 
     # Dicionário de Baixo
     possibilities_down = {
+<<<<<<< HEAD
         "start" : "splashscreen",
         "capsule" : "corridor",
         "central" : "puzzle3",
         "puzzle1" : "central"
+=======
+        "capsule" : "corridor"
+        "central" : "puzzle3"
+>>>>>>> parent of 1411a3b (Navigation update)
     }
 
     # Armazeno a label que está sendo executada atualmente na variável current_label
@@ -63,12 +83,13 @@ init python:
 # show_right, show_left, show_up e show_down ===> Mostrar os Botões
 # pos_right, pos_left, pos_up, pos_down ===> Posições dos Botões
 
-screen buttons_navigation (show_right, show_left, show_up, show_down):
+screen buttons_navigation (show_right, show_left, show_up, show_down, pos_right = Vector(),
+    pos_left = Vector(), pos_up = Vector(), pos_down = Vector()):
     # Mostrar botão da direita
     if show_right:
         imagebutton:
-            xpos 1768
-            ypos 478
+            xpos pos_right.x
+            ypos pos_right.y
             xanchor 0
             yanchor 0
             idle "button_0.png"
@@ -78,8 +99,8 @@ screen buttons_navigation (show_right, show_left, show_up, show_down):
 
     if show_left:
         imagebutton:
-            xpos 32
-            ypos 478
+            xpos pos_left.x
+            ypos pos_left.y
             xanchor 0
             yanchor 0
             idle "button_1.png"
@@ -89,8 +110,8 @@ screen buttons_navigation (show_right, show_left, show_up, show_down):
     # Mostrar botão de cima
     if show_up:
         imagebutton:
-            xpos 898
-            ypos 28
+            xpos pos_up.x
+            ypos pos_up.y
             xanchor 0
             yanchor 0
             idle "button_2.png"
@@ -100,8 +121,8 @@ screen buttons_navigation (show_right, show_left, show_up, show_down):
     # Mostrar botão de baixo
     if show_down:
         imagebutton:
-            xpos 898
-            ypos 930
+            xpos pos_down.x
+            ypos pos_down.y
             xanchor 0
             yanchor 0
             idle "button_3.png"

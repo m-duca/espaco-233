@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 label corridor:
 
     call steps
@@ -7,3 +8,5 @@ label corridor:
     call screen buttons_navigation (True, True, False, False)
 
 return
+=======
+>>>>>>> parent of 1411a3b (Navigation update)

@@ -1,6 +1,7 @@
 define first_time_capsule = True
 
 label capsule:
+<<<<<<< HEAD
 
     if first_time_capsule == True:
         $ first_time_capsule = False
@@ -10,5 +11,7 @@ label capsule:
         call steps
 
     call screen buttons_navigation (False, False, False, True)
+=======
+>>>>>>> parent of 1411a3b (Navigation update)
 
 return

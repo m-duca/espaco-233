@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 renpy.texture renpy.texture
 <<<<<<< HEAD
 renpy.dissolve renpy.geometry
@@ -11,12 +12,24 @@ renpy.dissolve renpy.dissolve
 renpy.alpha renpy.geometry renpy.texture
 =======
 renpy.solid
+=======
+renpy.geometry renpy.solid
+renpy.dissolve renpy.geometry
+>>>>>>> parent of 1411a3b (Navigation update)
 renpy.texture
+renpy.alpha renpy.texture
+renpy.alpha renpy.geometry renpy.texture
+renpy.texture renpy.texture
+renpy.geometry renpy.texture
 renpy.dissolve renpy.dissolve
 renpy.ftl
+<<<<<<< HEAD
 renpy.geometry renpy.solid
 renpy.alpha renpy.texture
 renpy.geometry renpy.texture
 renpy.alpha renpy.geometry renpy.texture
 renpy.dissolve renpy.geometry
 >>>>>>> parent of 32da1ef (Scanline fix)
+=======
+renpy.solid
+>>>>>>> parent of 1411a3b (Navigation update)
