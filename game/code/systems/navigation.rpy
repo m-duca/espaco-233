@@ -39,7 +39,7 @@ init python:
 
     # Armazeno a label que está sendo executada atualmente na variável current_label
     def label_callback(name, abnormal):
-        if name != "fade_music" and name != "steps":
+        if name != "fade_music" and name != "steps" and name != "initial_volume":
             store.current_label = name
 
     # Atualizo a label atual
@@ -51,7 +51,7 @@ init python:
 
     # Escolhendo a próxima label, passando o dicionário da direção
     def switch_next(dictionary):
-        return dictionary.get(current_label, "start")
+        return dictionary.get(current_label, "capsule")
 
 
 # Screen dos botões de navegação

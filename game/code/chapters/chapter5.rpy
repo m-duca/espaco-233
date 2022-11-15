@@ -6,7 +6,7 @@ label chapter5:
 
     i "Senhorita rápido, volte imediatamente para a cabine não a tempo, ou a senhorita não irá sobreviver!"
 
-    l "Não tem mais o que fazer *nome da IA*, eu tenho dois rompimentos no meu traje, o oxigênio vai acabar mais rápido do que eu chegar até a porta."
+    l "Não tem mais o que fazer Aiden, eu tenho dois rompimentos no meu traje, o oxigênio vai acabar mais rápido do que eu chegar até a porta."
 
     i "Mas isso não é possível, por favor ten..."
 
@@ -14,7 +14,7 @@ label chapter5:
 
     l "Foi um bom fim."
 
-    l "{b}*Cof* *Cof*{/b} Obrigada *nome da IA* você me ajudou muito a não me fazer sentir sozinha nesse lugar."
+    l "{b}*Cof* *Cof*{/b} Obrigada Aiden você me ajudou muito a não me fazer sentir sozinha nesse lugar."
 
     i "Eu que agradeço a você Senhorita Loren, algum último pedido?"
 

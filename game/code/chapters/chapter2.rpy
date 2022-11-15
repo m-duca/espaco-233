@@ -68,13 +68,17 @@ label chapter2:
 
     i "Eu não posso fazer isso."
 
-    l "PORQUE NÃO?"
+    play sound "sfxs/voice/duvida.ogg"
+
+    l "POR QUE NÃO?"
 
     i "Eu não tenho acesso as cabines de hibernação, e nenhuma delas poderia ativar ou desativar pois existem alguns problemas na nave?"
 
     l "PROBLEMAS? Então eu faço o que agora, sento no chão e espero morrer com o tempo nessa nave?"
 
     i "Seria uma opção."
+
+    # Voz brava
 
     l "VAI CAGAR!"
 
@@ -106,6 +110,8 @@ label chapter2:
     i "E se a nave não está a 100\% de velocidade, poderia não chegar a tempo em nosso destino por conta do combustível."
 
     l "Okay, okay, vamos lá."
+
+    play sound "sfxs/voice/pensativa.ogg"
 
     l "Qual eu devo escolher?"
 

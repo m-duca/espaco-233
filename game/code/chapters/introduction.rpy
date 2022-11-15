@@ -13,7 +13,9 @@ label introduction:
 
     "A vida na Terra chega a níveis completamente diferentes do que qualquer cientista poderia imaginar, mesmo com cálculos e predições realizadas, o futuro que ocorre nos dias presentes não é nada que ninguém pensou."
 
-    "O planeta Terra de forma vasta e abrangente se tornou dois pólos de grande desastre, de um lado uma poluição enorme que diminui a capacidade de vida e outro com uma tecnologia muito avançada mas que causa grandes problemas econômicos."
+    "O planeta Terra de forma vasta e abrangente se tornou dois pólos de grande desastre."
+
+    "De um lado uma poluição enorme que diminui a capacidade de vida e outro com uma tecnologia muito avançada mas que causa grandes problemas econômicos."
 
     scene black with zoomin
     # scene bg intro_1 with zoomin

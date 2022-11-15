@@ -30,6 +30,6 @@ label steps:
 
     play sound "sfxs/passos metal.ogg" fadein 1.0 fadeout 0.0
 
-    pause 2.0
+    pause 2.5
 
     return
