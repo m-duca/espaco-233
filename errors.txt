@@ -1,0 +1,11 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/code/systems/navigation.rpy", line 29: invalid syntax
+        }   "puzzle1" : "central"
+             ^
+    
+
+Ren'Py Version: Ren'Py 8.0.2.22081402
+Mon Nov 14 16:18:18 2022
