@@ -27,10 +27,7 @@ label chapter1:
     scene black with fade
     # scene bg chapter1_0 with fade
 
-    # "Ela sai de seu quarto e não vê ninguém, talvez todos de seu setor já tenham ido e só ela achando que estava bem adiantada está atrasada."
-
     #começa gameplay, ir pra sala de instruções
-
-    jump chapter2
+    jump capsule
 
     return

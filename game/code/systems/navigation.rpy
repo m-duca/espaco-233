@@ -39,7 +39,8 @@ init python:
 
     # Armazeno a label que está sendo executada atualmente na variável current_label
     def label_callback(name, abnormal):
-        store.current_label = name
+        if name != "fade_music" and name != "steps":
+            store.current_label = name
 
     # Atualizo a label atual
     config.label_callback = label_callback
