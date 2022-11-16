@@ -1,5 +1,9 @@
 label chapter5:
 
+    call fade_music
+
+    scene black with fade
+
     "O oxigênio do traje começa a sair e não a mais nada que Loren possa fazer."
 
     "Ela já tinha aceitado que seu fim estava próximo, mas como uma última esperança, corta um pedaço de seu traje e faz uma isolação com sucesso no tanque e ele para de vazar."

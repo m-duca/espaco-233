@@ -1,5 +1,7 @@
 label puzzle2:
 
+    #$ puzzle2_completed = True
+
     call steps
 
     scene black with fade

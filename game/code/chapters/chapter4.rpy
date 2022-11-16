@@ -1,5 +1,9 @@
 label chapter4:
 
+    call fade_music
+
+    scene black with fade
+
     "Chegando perto de uma das saídas da nave, Aiden explica que a única forma de tampar o tanque é o selando por fora."
 
     "Pois a ruptura dele é externa, e Loren teria que colocar um traje e sair pela nave presa a um cabo para não sair voando e flutuar pelo espaço infinito."
@@ -28,8 +32,8 @@ label chapter4:
 
     # Começa o último puzzle
 
-    # play music "musics/final.ogg"
+    jump puzzle4
 
-    "Loren começa a colocar o tampo no buraco do tanque, ela pega o fixador em seu bolso, mas quando iria começar a fechar o tanque, o tampo escorrega de sua mão bate em seu capacete e abre uma brecha."
+    #"Loren começa a colocar o tampo no buraco do tanque, ela pega o fixador em seu bolso, mas quando iria começar a fechar o tanque, o tampo escorrega de sua mão bate em seu capacete e abre uma brecha."
 
     return

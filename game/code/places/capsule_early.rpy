@@ -1,4 +1,4 @@
-define first_time_capsule = True
+default first_time_capsule = True
 
 label capsule_early:
     if first_time_capsule == True:

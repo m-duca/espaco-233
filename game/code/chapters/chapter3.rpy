@@ -24,7 +24,7 @@ label chapter3:
     i "Me desculpe, até aquele momento eu achava que só existiam aqueles defeitos, mas como o sistema estava danificado, eu não consegui identificar todos eles."
 
     # Voz brava
-    
+
     l "DROGA!"
 
     l "Qual é o problema? Se for urgente me diz logo."
@@ -34,5 +34,7 @@ label chapter3:
     i "Mas por conta de todo o tempo que estamos arrumando as outras partes da nave, o combustível já está quase acabando nesse tanque, e com isso se ele se esgotar eu não conseguirei te pôr novamente em sua cabine."
 
     l "QUAL É UNIVERSO, beleza deixa eu ir logo."
+
+    jump chapter4
 
     return
