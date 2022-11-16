@@ -28,6 +28,6 @@ label chapter1:
     # scene bg chapter1_0 with fade
 
     #começa gameplay, ir pra sala de instruções
-    jump capsule
+    jump capsule_early
 
     return

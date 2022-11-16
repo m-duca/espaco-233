@@ -1,74 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/code/places/capsule.rpy", line 4, in script
-    call screen buttons_navigation (False, False, True, True)
-  File "renpy/common/000statements.rpy", line 609, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/code/systems/navigation.rpy", line 58, in execute
-    screen buttons_navigation (show_right, show_left, show_up, show_down):
-  File "game/code/systems/navigation.rpy", line 58, in execute
-    screen buttons_navigation (show_right, show_left, show_up, show_down):
-  File "game/code/systems/navigation.rpy", line 82, in execute
-    if show_up:
-  File "game/code/systems/navigation.rpy", line 83, in execute
-    imagebutton:
-  File "game/code/systems/navigation.rpy", line 83, in keywords
-    imagebutton:
-  File "game/code/systems/navigation.rpy", line 84, in <module>
-    xpos pos_up.x
-NameError: name 'pos_up' is not defined
+  File "game/code/places/capsule_early.rpy", line 2, in script
+    if first_time_capsule == True:
+  File "game/code/places/capsule_early.rpy", line 2, in <module>
+    if first_time_capsule == True:
+NameError: name 'first_time_capsule' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/code/places/capsule.rpy", line 4, in script
-    call screen buttons_navigation (False, False, True, True)
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\ast.py", line 2232, in execute
-    self.call("execute")
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\ast.py", line 2220, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\statements.py", line 281, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 609, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\exports.py", line 3174, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs) # type: ignore
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\display\core.py", line 3804, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\display\screen.py", line 451, in visit_all
-    callback(self)
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\display\core.py", line 3804, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\display\screen.py", line 462, in per_interact
-    self.update()
-  File "C:\Users\lucas\OneDrive\Documentos\renpy-8.0.1-sdk\renpy\display\screen.py", line 653, in update
-    self.screen.function(**self.scope)
-  File "game/code/systems/navigation.rpy", line 58, in execute
-    screen buttons_navigation (show_right, show_left, show_up, show_down):
-  File "game/code/systems/navigation.rpy", line 58, in execute
-    screen buttons_navigation (show_right, show_left, show_up, show_down):
-  File "game/code/systems/navigation.rpy", line 82, in execute
-    if show_up:
-  File "game/code/systems/navigation.rpy", line 83, in execute
-    imagebutton:
-  File "game/code/systems/navigation.rpy", line 83, in keywords
-    imagebutton:
-  File "game/code/systems/navigation.rpy", line 84, in <module>
-    xpos pos_up.x
-NameError: name 'pos_up' is not defined
+  File "game/code/places/capsule_early.rpy", line 2, in script
+    if first_time_capsule == True:
+  File "C:\Renpy\renpy\ast.py", line 2115, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Renpy\renpy\python.py", line 1083, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Renpy\renpy\python.py", line 1076, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/code/places/capsule_early.rpy", line 2, in <module>
+    if first_time_capsule == True:
+NameError: name 'first_time_capsule' is not defined
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.0.2.22081402
 Espaço 233 1.0
-Mon Nov 14 15:54:06 2022
+Tue Nov 15 22:11:07 2022

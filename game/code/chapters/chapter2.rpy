@@ -119,5 +119,6 @@ label chapter2:
     #scene bg chapter2_1 with fade
 
     #gameplay começa aqui
+    jump central
 
     return
