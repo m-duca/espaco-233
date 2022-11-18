@@ -40,7 +40,6 @@ label chapter5:
             scene black with fade
     pause 3.0
     call credits
-    pause 10.0
 
     scene black with fade
 
@@ -48,7 +47,8 @@ label chapter5:
 
 label credits:
     window hide
-    $ credits_speed = 30
+    $ show_quick_menu = False
+    $ credits_speed = 20
     #show bg splashscreen
     with dissolve
     show theend:
@@ -63,7 +63,7 @@ label credits:
         yanchor 0.5 ypos 0.5
         xanchor 0.5 xpos 0.5
     with dissolve
-    with Pause(3)
+    with Pause(5.0)
     hide thanks with dissolve
     return
 

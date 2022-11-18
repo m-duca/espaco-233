@@ -241,7 +241,7 @@ screen quick_menu():
     ## Ensure this appears on top of other screens.
     zorder 100
 
-    if quick_menu:
+    if quick_menu and show_quick_menu:
 
         hbox:
             style_prefix "quick"

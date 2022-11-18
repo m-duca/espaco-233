@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/code/chapters/chapter5.rpy", line 57: expected 'comma or end of line' not found.
-    with fade
-    ^
-
-File "game/code/chapters/chapter5.rpy", line 66: expected 'comma or end of line' not found.
-    with fade
-    ^
+File "game/code/chapters/chapter5.rpy", line 50: expected statement.
+    show_quick_menu = False
+                    ^
 
 Ren'Py Version: Ren'Py 8.0.2.22081402
-Fri Nov 18 19:17:25 2022
+Fri Nov 18 19:53:54 2022

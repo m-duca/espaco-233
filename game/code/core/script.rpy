@@ -1,9 +1,12 @@
+default show_quick_menu = True
+
 # Antes do Menu Principal
 label splashscreen:
     #python:
         #compress("logos", "logo_", 2)
         #compress("buttons", "button_", 8)
 
+    $ show_quick_menu = True
 
     # Troque o volume para o valor inicial
     call initial_volume
