@@ -727,12 +727,12 @@ screen preferences():
                         textbutton _("Janela") action Preference("display", "window")
                         textbutton _("Tela Cheia") action Preference("display", "fullscreen")
 
-                vbox:
-                    style_prefix "check"
-                    label _("Pular")
-                    textbutton _("Não visto") action Preference("skip", "toggle")
-                    textbutton _("Após escolhas") action Preference("after choices", "toggle")
-                    textbutton _("Transições") action InvertSelected(Preference("transitions", "toggle"))
+                #vbox:
+                    #style_prefix "check"
+                    #label _("Pular")
+                    #textbutton _("Não visto") action Preference("skip", "toggle")
+                    #textbutton _("Após escolhas") action Preference("after choices", "toggle")
+                    #textbutton _("Transições") action InvertSelected(Preference("transitions", "toggle"))
 
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.

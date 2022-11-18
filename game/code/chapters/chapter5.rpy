@@ -40,7 +40,7 @@ label chapter5:
             scene black with fade
     pause 3.0
     call credits
-    pause 20.0
+    pause 10.0
 
     scene black with fade
 
