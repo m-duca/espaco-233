@@ -14,7 +14,7 @@ label chapter4:
 
     "Colocou o traje e abriu aquela porta para enfim acabar com seu último empecilho, pegando uma nova cobertura para o tanque e seu fixador para prendê-lo, ela sai da nave."
 
-    play music "musics/ambiente espaço.ogg"
+    play music "musics/ambiente espaço.ogg" fadein 1.0
 
     l "Certo Aiden me guie até o tanque pra eu terminar isso logo."
 
@@ -29,6 +29,10 @@ label chapter4:
     i "Muito bem senhorita, agora é só selar o buraco."
 
     l "Vamos nessa Aiden."
+
+    call fade_music
+
+    play music "musics/final creditos.ogg" fadein 1.0
 
     # Começa o último puzzle
 

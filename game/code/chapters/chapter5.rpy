@@ -1,7 +1,5 @@
 label chapter5:
 
-    call fade_music
-
     scene black with fade
 
     "O oxigênio do traje começa a sair e não a mais nada que Loren possa fazer."
@@ -33,12 +31,55 @@ label chapter5:
 
             l "De tudo, desculpe mãe, e de nada a todos vocês da nave."
 
-            l "*Cof* *Cof* “Há, verdade, e pra não esquecer, se fodam Saul e Tina."
+            l "{b}*Cof* *Cof*{/b} Há, verdade, e pra não esquecer, se fodam Saul e Tina."
 
             l "E também, até mais e obrigados pelos peixes."
 
         "Não falar nada...":
 
             scene black with fade
+    pause 3.0
+    call credits
+    pause 20.0
+
+    scene black with fade
 
     return
+
+label credits:
+    window hide
+    $ credits_speed = 30
+    #show bg splashscreen
+    with dissolve
+    show theend:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with dissolve
+    with Pause(3.0)
+    hide theend with dissolve
+    show cred at Move((0.5, 5.0), (0.5, 0.0), credits_speed, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
+    with Pause(credits_speed)
+    show thanks:
+        yanchor 0.5 ypos 0.5
+        xanchor 0.5 xpos 0.5
+    with dissolve
+    with Pause(3)
+    hide thanks with dissolve
+    return
+
+
+init python:
+    credits = ('Caike Grion dos Santos', 'Game Design'), ('João Pedro Queiroz de Melo', 'Arte'), ('Lucas Neves Timar', 'Programação'), ('Lucas Proetti Quadros', 'Som'), ('Matheus Santos Duca', 'Programação')
+    credits_s = "{size=80}EQUIPE 404\n\n"
+    c1 = ''
+    for c in credits:
+        if not c1==c[0]:
+            credits_s += "\n{size=40}" + c[0] + "\n"
+        credits_s += "{size=60}" + c[1] + "\n"
+        c1=c[0]
+
+init:
+    image cred = Text(credits_s, font="space age.ttf", text_align=0.5)
+    image cred = Text(credits_s, text_align=0.5)
+    image theend = Text("{size=80}FIM", text_align=0.5)
+    image thanks = Text("{size=80}Obrigado por Jogar!", text_align=0.5)

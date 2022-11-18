@@ -23,7 +23,7 @@ label chapter3:
 
     i "Me desculpe, até aquele momento eu achava que só existiam aqueles defeitos, mas como o sistema estava danificado, eu não consegui identificar todos eles."
 
-    # Voz brava
+    play sound "sfxs/voice/resmungo.ogg"
 
     l "DROGA!"
 
@@ -32,6 +32,8 @@ label chapter3:
     i "Pelo jeito um dos tanques reservas está com um vazamento, e como é pequeno por isso não foi perceptível para mim sem a ajuda do sistema."
 
     i "Mas por conta de todo o tempo que estamos arrumando as outras partes da nave, o combustível já está quase acabando nesse tanque, e com isso se ele se esgotar eu não conseguirei te pôr novamente em sua cabine."
+
+    play sound "sfxs/voice/resmungo.ogg"
 
     l "QUAL É UNIVERSO, beleza deixa eu ir logo."
 
