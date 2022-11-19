@@ -9,3 +9,14 @@ label puzzle2:
     call screen buttons_navigation (True, False, False, False)
 
 return
+
+label intro_puzzle2:
+
+
+    return
+
+
+label do_puzzle2:
+
+
+    return

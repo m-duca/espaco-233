@@ -24,10 +24,6 @@ label intro_puzzle1:
 
 label do_puzzle1:
 
-    "Ao entrar na sala, Loren se depara com uma espécie de caixa de metal contendo fios cortados."
-
-    "Há três fios: um amarelo, um rosa e um azul."
-
     scene black with fade
 
     menu:

@@ -1,28 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/code/chapters/chapter5.rpy", line 42, in script
-    show text "EU QUERO VER A COPA" with zoom
-  File "game/code/chapters/chapter5.rpy", line 42, in <module>
-    show text "EU QUERO VER A COPA" with zoom
-NameError: name 'zoom' is not defined
+  File "game/code/places/puzzle3.rpy", line 34, in script
+    menu:
+ValueError: incomplete format
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/code/chapters/chapter5.rpy", line 42, in script
-    show text "EU QUERO VER A COPA" with zoom
-  File "C:\Renpy\renpy\ast.py", line 1654, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "C:\Renpy\renpy\python.py", line 1083, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Renpy\renpy\python.py", line 1076, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/code/chapters/chapter5.rpy", line 42, in <module>
-    show text "EU QUERO VER A COPA" with zoom
-NameError: name 'zoom' is not defined
+  File "game/code/places/puzzle3.rpy", line 34, in script
+    menu:
+  File "C:\Renpy\renpy\ast.py", line 1899, in execute
+    renpy.exports.say(None, "\n".join(narration), interact=False)
+  File "C:\Renpy\renpy\exports.py", line 1362, in say
+    what = what % tag_quoting_dict
+ValueError: incomplete format
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.0.2.22081402
 Espaço 233 1.0
-Fri Nov 18 18:50:49 2022
+Sat Nov 19 19:08:52 2022
