@@ -22,7 +22,7 @@ label chapter2:
 
     l "Com licença, não era pra ter mais pessoas aqui antes de começarem as explicações?"
 
-    i "Desculpe senhorita Loren, mas todos que deveriam estar aqui já chegaram."
+    i2 "Desculpe senhorita Loren, mas todos que deveriam estar aqui já chegaram."
 
     play sound "sfxs/voice/pensativa.ogg"
     "Com receio, ela estranha totalmente a situação e sai da apresentação procurando por alguém."
@@ -78,7 +78,7 @@ label chapter2:
 
     i "Seria uma opção."
 
-    play sound "sfxs/voice/resmoungo.ogg"
+    play sound "sfxs/voice/resmungo.ogg"
 
     l "VAI CAGAR!"
 
