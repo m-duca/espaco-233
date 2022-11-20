@@ -20,8 +20,6 @@ label introduction:
     scene black with zoomin
     # scene bg intro_1 with zoomin
 
-    #Som da Laser??
-
     "Laser, a maior detentora de monopólio e inovação da Terra cria novos projetos para o bem estar da civilização."
 
     "Como Marte já não é mais um sonho e sim uma antiga conquista, a gigante Laser define que o próximo passo para a humanidade seria a busca de novos locais para onde se ter um lar."
@@ -124,8 +122,7 @@ label introduction:
 
     "Loren começa a cair no sono escutando as últimas palavras de sua mãe e sentindo um pouco de arrependimento por estar ali, mas já não conseguia dizer mais nenhuma palavra pois a anestesia geral estava quase completa."
     #tava escrito "Nos últimos segundos consciente, Loren apenas escuta a voz de sua mãe a chamar."
-    "Em seus últimos segundos consciente, Loren consegue apenas escutar a voz de sua mãe a chamando."
-
+    #"Em seus últimos segundos consciente, Loren consegue apenas escutar a voz de sua mãe a chamando."
     b "Eu te amo também minha filha volta pra ca...sa por...favor vol..."
 
     play sound "sfxs/motor ligando.ogg" fadein 1.0 fadeout 0.0

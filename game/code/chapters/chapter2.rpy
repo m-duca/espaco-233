@@ -99,11 +99,14 @@ label chapter2:
 
     i "Existem 3 erros ocorrendo atualmente na nave, e você pode consertá-los na ordem que quiser:"
 
-    i "{b}1º{/b} Um dos propulsores da nave está falhando e desse jeito a nave não está em velocidade máxima."
+    i "{b}1º{/b} Pelo visto o sistema de análises da nave está comprometido, é preciso localizar o problema e arrumar o que danificou o sistema."
 
     i "{b}2º{/b} Tem uma parte da nave onde o sistema de gravidade não está funcionando, fazendo com que objetos estejam flutuando por aí, podendo causar mais danos à nave."
 
-    i "{b}3º{/b} Pelo visto o sistema de análise da nave está comprometido, e a porta que abre aquela ala não parece funcionar, então você teria que descobrir um jeito de abrir a porta e depois arrumar o que danificou o sistema."
+    i "{b}3º{/b} Um dos propulsores da nave está falhando e desse jeito a nave não está em sua velocidade máxima."
+
+    #Pelo visto o sistema de análise da nave está comprometido, e a porta que abre aquela ala não parece funcionar,
+    #então você teria que descobrir um jeito de abrir a porta e depois arrumar o que danificou o sistema.
 
     i "Dessa forma eu recomendo que faça uma das duas primeiras opções que eu lhe dei, pois não queremos mais problemas."
 
