@@ -61,7 +61,7 @@ label do_puzzle2:
         "Correr":
             jump intro_puzzle2
 
-        "Desviar para a direita":
+        "Ir calmamente":
             $ puzzle2_completed = True
             l "Pregos?! Tá de brincadeira comigo..."
 
