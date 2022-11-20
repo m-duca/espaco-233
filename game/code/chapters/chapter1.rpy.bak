@@ -2,7 +2,7 @@ label chapter1:
     # Cenas: CÁPSULA DA NAVE (bg firstchapter0)
 
     scene black with fade
-    call fade_music from _call_fade_music
+    call fade_music
     pause 1.0
 
     play sound "sfxs/voice/laser.ogg" fadeout 0.0

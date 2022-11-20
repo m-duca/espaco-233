@@ -1,4 +1,4 @@
-label corridor:
+label corridor_early:
 
     call steps
 

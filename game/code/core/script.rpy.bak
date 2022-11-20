@@ -9,7 +9,7 @@ label splashscreen:
     $ show_quick_menu = True
 
     # Troque o volume para o valor inicial
-    call initial_volume from _call_initial_volume
+    call initial_volume
 
     # Controla o tempo de pausa
     $show_time = 2

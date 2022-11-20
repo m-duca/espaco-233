@@ -1,6 +1,6 @@
 label chapter2:
     # CENAS: SALA DE INSTRUÇÕES (bg chapter2_0), AMBIENTE DA NAVE (bg chapter2_1)
-    call steps from _call_steps
+    call steps
     call fade_music
 
     play sound "sfxs/porta nave.ogg"
