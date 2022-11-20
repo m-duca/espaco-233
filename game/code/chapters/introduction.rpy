@@ -1,7 +1,7 @@
 label introduction:
     # Cenas: TERRA FUTURISTA (bg intro_0), PRÉDIO DA LASER (bg intro_1), CASA DA LOREN (bg intro_2), NAVE ESTACIONADA (bg intro_3)
     # CÁPSULA DA NAVE (bg intro_4)
-
+    $ show_quick_menu = True
     call fade_music
 
     scene black with fade
