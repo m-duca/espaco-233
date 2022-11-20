@@ -20,9 +20,9 @@ label chapter4:
 
     i "O tanque está no próximo setor, é só continuar seguindo essas barras de auxílio sem derrubar o tampo e você já vai estar lá."
 
-    l "Certo!"
+    l "Entendido!"
 
-    "Nossa heroína chega ao tanque e se prepara para realizar seu último desafio."
+    "Loren chega ao tanque e se prepara para realizar seu último desafio."
 
     l "Achei a ruptura!"
 
