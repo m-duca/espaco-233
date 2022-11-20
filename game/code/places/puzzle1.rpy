@@ -2,7 +2,7 @@ label puzzle1:
 
     call steps
 
-    scene black with fade
+    scene bgship_4 with fade
 
     if puzzle1_completed == False:
         jump intro_puzzle1
@@ -12,7 +12,7 @@ label puzzle1:
 return
 
 label intro_puzzle1:
-    scene black with fade
+    scene bgship_4 with fade
 
     "Ao entrar na sala, Loren se depara com uma espécie de caixa de metal contendo fios cortados."
 
@@ -24,7 +24,7 @@ label intro_puzzle1:
 
 label do_puzzle1:
 
-    scene black with fade
+    scene bgship_4 with fade
 
     menu:
         "Escolha um dos fios soltos para conectar:"
@@ -45,7 +45,7 @@ label do_puzzle1:
             jump central
 
 
-    scene black with fade
+    scene bgship_4 with fade
 
     menu:
         "Escolha o próximo fio solto para conectar:"
@@ -61,7 +61,7 @@ label do_puzzle1:
         "Deixar para fazer depois":
             jump central
 
-    scene black with fade
+    scene bgship_4 with fade
     menu:
         "Escolha o último fio solto para conectar:"
 

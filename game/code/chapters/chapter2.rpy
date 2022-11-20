@@ -6,8 +6,7 @@ label chapter2:
     play sound "sfxs/porta nave.ogg"
     pause 3.0
 
-    scene black with fade
-    #scene bg chapter2_0 with fade
+    scene bgship_2 with fade
 
     play music "musics/ambiente nave.ogg" fadein 1.0
 
@@ -27,8 +26,7 @@ label chapter2:
     play sound "sfxs/voice/pensativa.ogg"
     "Com receio, ela estranha totalmente a situação e sai da apresentação procurando por alguém."
 
-    scene black with hpunch
-    #scene bg chapter2_1 with hpunch
+    scene bgship_3 with hpunch
 
     "Ela corre desesperadamente e acha um ponto de informações e pergunta aonde estão todos, e tem uma resposta muito desagradável."
 
@@ -38,8 +36,7 @@ label chapter2:
 
     i "Isso não seria possível pois faltam 712500000000000km para o destino final, ou seja, 75 anos."
 
-    scene black with vpunch
-    #scene bg chapter2_1 with vpunch
+    scene bgship_3 with vpunch
     play sound "sfxs/voice/surpresa.ogg"
     l "COMO ASSIM CARALHO, EU TÔ PRESA NO ESPAÇO POR UMA MERDA DE MÁ SORTE?"
 
@@ -94,8 +91,7 @@ label chapter2:
 
     i "Apenas siga minhas instruções."
 
-    scene black with fade
-    #scene bg chapter2_1 with fade
+    scene bgship_3 with fade
 
     i "Existem 3 erros ocorrendo atualmente na nave, e você pode consertá-los na ordem que quiser:"
 
@@ -114,8 +110,7 @@ label chapter2:
 
     l "Okay, okay, vamos lá."
 
-    scene black with fade
-    #scene bg chapter2_1 with fade
+    scene bgship_3 with fade
 
     #gameplay começa aqui
     jump central

@@ -1,6 +1,6 @@
 label chapter5:
 
-    scene black with fade
+    scene bgspace_0 with fade
 
     "O oxigênio do traje começa a sair e não a mais nada que Loren possa fazer."
 
@@ -29,7 +29,7 @@ label chapter5:
 
         "Conte o que aconteceu para a tripulação...":
 
-            scene black with fade
+            scene bgspace_0 with fade
 
             "Com isso Loren diz suas últimas palavras, para que não importa o que aconteça, todos se lembrem de quem ela foi."
 
@@ -41,11 +41,12 @@ label chapter5:
 
         "Não falar nada...":
 
-            scene black with fade
+            scene bgspace_0 with fade
+
     pause 3.0
     call credits
 
-    scene black with fade
+    scene bgspace_0 with fade
 
     return
 

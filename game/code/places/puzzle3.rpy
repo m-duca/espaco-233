@@ -4,7 +4,7 @@ label puzzle3:
 
     call steps
 
-    scene black with fade
+    scene bgship_6 with fade
 
     if puzzle3_completed == False:
         jump intro_puzzle3
@@ -15,7 +15,8 @@ return
 
 
 label intro_puzzle3:
-    scene black with fade
+
+    scene bgship_6 with fade
 
     #play sound "sfxs/eletronicos.ogg"
 
@@ -28,7 +29,8 @@ label intro_puzzle3:
     return
 
 label mid_puzzle3:
-    scene black with fade
+
+    scene bgship_6 with fade
 
     "Loren liga o computador e então começa a acessar o sistema."
 
@@ -40,7 +42,8 @@ label mid_puzzle3:
 
 
 label do_puzzle3:
-    scene black with fade
+
+    scene bgship_6 with fade
     menu:
         "Progresso das Turbinas: 0\%"
 
@@ -63,7 +66,7 @@ label do_puzzle3:
         "Deixar para fazer depois":
             jump central
 
-    scene black with fade
+    scene bgship_6 with fade
     menu:
         "Progresso das Turbinas: 25\%"
 
@@ -86,7 +89,7 @@ label do_puzzle3:
         "Deixar para fazer depois":
             jump central
 
-    scene black with fade
+    scene bgship_6 with fade
     menu:
         "Progresso das Turbinas: 50\%"
 
@@ -109,7 +112,7 @@ label do_puzzle3:
         "Deixar para fazer depois":
             jump central
 
-    scene black with fade
+    scene bgship_6 with fade
     menu:
         "Progresso das Turbinas: 75\%"
 

@@ -4,7 +4,7 @@ label chapter3:
     stop sound
     call fade_music
 
-    scene black with fade
+    scene bg_ship3 with fade
 
     "Após todo o sufoco e determinação de Loren ela consegue consertar todos os defeitos encontrados na nave e sua esperança é finalmente restaurada, ela corre alegremente pelos corredores, pulando e saltitando pra lá e pra cá."
 

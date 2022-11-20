@@ -1,14 +1,14 @@
 label chapter1:
     # Cenas: CÁPSULA DA NAVE (bg firstchapter0)
 
+    scene black with fade
     call fade_music
     pause 1.0
 
     play sound "sfxs/voice/laser.ogg" fadeout 0.0
     pause 2.0
 
-    scene black with fade
-    # scene bg chapter1_0 with fade
+    scene bgship_0 with fade
 
     play music "musics/tensao.ogg" fadein 1.0
 
@@ -24,8 +24,7 @@ label chapter1:
 
     "Loren se prepara rapidamente e ansiosa por finalmente estar acordada, ela imagina tudo o que pode acontecer, as pessoas que vai conhecer, e toda a sua vida neste novo planeta que logo chamará de lar."
 
-    scene black with fade
-    # scene bg chapter1_0 with fade
+    call fade_music
 
     #começa gameplay, ir pra sala de instruções
     jump capsule_early

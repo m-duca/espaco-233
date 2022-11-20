@@ -2,7 +2,7 @@ label chapter4:
 
     call fade_music
 
-    scene black with fade
+    scene bg_ship3 with fade
 
     "Chegando perto de uma das saídas da nave, Aiden explica que a única forma de tampar o tanque é o selando por fora."
 
