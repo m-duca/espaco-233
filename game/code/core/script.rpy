@@ -17,20 +17,20 @@ label splashscreen:
     $transition = Pixellate(1, 10)
 
     # Mostre o fundo e a screen de efeito scanline
-    scene bg splashscreen with fade
+    scene splashscreen_0 with fade
     show screen scanline
 
     # Aparece Logo Smaug
     play sound "sfxs/glitch.ogg" volume 0.08
-    show logo_0 at truecenter with transition
+    show splashscreen_1 at truecenter with transition
     pause show_time
 
     # Desaparece Logo Smaug
-    hide logo_0 with transition
+    hide splashscreen_1 with transition
 
     # Aparece Logo 404
     play sound "sfxs/glitch.ogg" volume 0.08
-    show logo_1 at truecenter with transition
+    show splashscreen_2 at truecenter with transition
     pause show_time
 
     hide screen scanline
