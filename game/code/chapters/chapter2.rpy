@@ -1,6 +1,6 @@
 label chapter2:
     # CENAS: SALA DE INSTRUÇÕES (bg chapter2_0), AMBIENTE DA NAVE (bg chapter2_1)
-
+    call steps
     call fade_music
 
     play sound "sfxs/porta nave.ogg"
@@ -110,10 +110,6 @@ label chapter2:
     i "E se a nave não está a 100\% de velocidade, poderia não chegar a tempo em nosso destino por conta do combustível."
 
     l "Okay, okay, vamos lá."
-
-    play sound "sfxs/voice/pensativa.ogg"
-
-    l "Qual eu devo escolher?"
 
     scene black with fade
     #scene bg chapter2_1 with fade

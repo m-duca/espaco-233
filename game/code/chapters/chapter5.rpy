@@ -4,7 +4,11 @@ label chapter5:
 
     "O oxigênio do traje começa a sair e não a mais nada que Loren possa fazer."
 
-    "Ela já tinha aceitado que seu fim estava próximo, mas como uma última esperança, corta um pedaço de seu traje e faz uma isolação com sucesso no tanque e ele para de vazar."
+    play sound "sfxs/soldando.ogg"
+    #tava escrito "e ele para de vazar." no final
+    "Ela já tinha aceitado que seu fim estava próximo, mas como uma última esperança, corta um pedaço de seu traje e faz uma isolação com sucesso no tanque parando o vazamento."
+
+    stop sound
 
     i "Senhorita rápido, volte imediatamente para a cabine não a tempo, ou a senhorita não irá sobreviver!"
 

@@ -1,6 +1,7 @@
 label chapter3:
     # CENAS: AMBIENTE DA NAVE (bg chapter3_0), SAÍDAS DA NAVE (bg chapter3_1), CONSERTANDO O TANQUE (bg chapter3_2)
 
+    stop sound
     call fade_music
 
     scene black with fade

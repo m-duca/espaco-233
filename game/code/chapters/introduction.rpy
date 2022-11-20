@@ -20,6 +20,8 @@ label introduction:
     scene black with zoomin
     # scene bg intro_1 with zoomin
 
+    #Som da Laser??
+
     "Laser, a maior detentora de monopólio e inovação da Terra cria novos projetos para o bem estar da civilização."
 
     "Como Marte já não é mais um sonho e sim uma antiga conquista, a gigante Laser define que o próximo passo para a humanidade seria a busca de novos locais para onde se ter um lar."
@@ -53,7 +55,9 @@ label introduction:
     play sound "sfxs/voice/risada.ogg"
     l "{b}*Gargalha*{/b} Não decidi ir me mudar pra casa do caralho simplesmente pelo o que aconteceu, eu realmente estou até bem, me sinto livre depois de tudo."
 
-    l "Você pode continuar o que estava fazendo à vontade. Fala como se não parecesse verdade. Eu quero ter uma nova vida fora daqui, a viagem é daqui uma semana, só preciso terminar de enviar os documentos e fazer minhas malas."
+    l "Você pode continuar o que estava fazendo à vontade. Fala como se não parecesse verdade."
+
+    l "Eu quero ter uma nova vida fora daqui, a viagem é daqui uma semana, só preciso terminar de enviar os documentos e fazer minhas malas."
 
     t "Então é isso, você nem vai ter um pingo de consideração pela sua irmã e simplesmente vai embora."
 
@@ -62,7 +66,9 @@ label introduction:
     scene black with fade
     # scene bg intro_3 with fade
 
-    "No dia da viagem, Loren está totalmente preparada, sem remorso algum ela entra na estação de lançamento, tudo já está quase pronto para a decolagem. Nisso ela é recebida por um dos trabalhadores da Laser."
+    "No dia da viagem, Loren está totalmente preparada, sem remorso algum ela entra na estação de lançamento, tudo já está quase pronto para a decolagem."
+
+    "Nisso ela é recebida por um dos trabalhadores da Laser."
 
     a "Bom dia, vai embarcar conosco hoje ou apenas veio para ver o lançamento na nave?"
 
@@ -77,8 +83,8 @@ label introduction:
     # scene bg intro_4 with fade
 
     "Alguns minutos depois caminhando, o assistente a leva para a sala de preservação e redução de sentidos para uma criogenização perfeita, para que seja possível sua viagem sem parecer que envelheceu um ano sequer."
-
-    "Ela passa por todos os procedimentos e antes de adormecer e ser mantida em sua câmara, o assistente a pergunta se tem mais alguma mensagem que ela gostaria de mandar ou falar com alguém."
+    #mudei "o assistente a pergunta se tem mais alguma mensagem..."
+    "Ela passa por todos os procedimentos e antes de adormecer e ser mantida em sua câmara, o assistente pergunta a ela se tem mais alguma mensagem que ela gostaria de mandar ou falar com alguém."
 
     l "Eu gostaria de ligar para minha mãe."
 
@@ -117,12 +123,13 @@ label introduction:
     play sound "sfxs/tecla 2.ogg"
 
     "Loren começa a cair no sono escutando as últimas palavras de sua mãe e sentindo um pouco de arrependimento por estar ali, mas já não conseguia dizer mais nenhuma palavra pois a anestesia geral estava quase completa."
-
-    "Nos últimos segundos consciente, Loren apenas escuta a voz de sua mãe a chamar."
+    #tava escrito "Nos últimos segundos consciente, Loren apenas escuta a voz de sua mãe a chamar."
+    "Em seus últimos segundos consciente, Loren consegue apenas escutar a voz de sua mãe a chamando."
 
     b "Eu te amo também minha filha volta pra ca...sa por...favor vol..."
 
     play sound "sfxs/motor ligando.ogg" fadein 1.0 fadeout 0.0
+
     "Dentro da nave nada mais acontece, sua viagem inicia, todos os passageiros estão adormecidos em suas cabines."
 
     "Para que dali 95 anos todos acordem esperando os últimos 5 anos de viagem interestelar para a chegada em sua nova casa."

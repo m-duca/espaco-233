@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/code/chapters/chapter5.rpy", line 50: expected statement.
-    show_quick_menu = False
-                    ^
+File "game/code/places/puzzle3.rpy", line 34: expected ':' not found.
+    label mid_puzzle3
+                     ^
 
 Ren'Py Version: Ren'Py 8.0.2.22081402
-Fri Nov 18 19:53:54 2022
+Sun Nov 20 15:21:14 2022
