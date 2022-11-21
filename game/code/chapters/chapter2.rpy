@@ -1,12 +1,15 @@
 label chapter2:
-    # CENAS: SALA DE INSTRUÇÕES (bg chapter2_0), AMBIENTE DA NAVE (bg chapter2_1)
+
     call steps
     call fade_music
+
+    image b_instruction = "images/bg ship_2.png"
+    image b_central = "images/bg ship_3.png"
 
     play sound "sfxs/porta nave.ogg"
     pause 3.0
 
-    scene bgship_2 with fade
+    scene b_instruction with fade
 
     play music "musics/ambiente nave.ogg" fadein 1.0
 
@@ -26,7 +29,7 @@ label chapter2:
     play sound "sfxs/voice/pensativa.ogg"
     "Com receio, ela estranha totalmente a situação e sai da apresentação procurando por alguém."
 
-    scene bgship_3 with hpunch
+    scene b_central with hpunch
 
     "Ela corre desesperadamente e acha um ponto de informações e pergunta aonde estão todos, e tem uma resposta muito desagradável."
 
@@ -36,7 +39,7 @@ label chapter2:
 
     i "Isso não seria possível pois faltam 712500000000000km para o destino final, ou seja, 75 anos."
 
-    scene bgship_3 with vpunch
+    scene b_central with vpunch
     play sound "sfxs/voice/surpresa.ogg"
     l "COMO ASSIM CARALHO, EU TÔ PRESA NO ESPAÇO POR UMA MERDA DE MÁ SORTE?"
 
@@ -91,7 +94,7 @@ label chapter2:
 
     i "Apenas siga minhas instruções."
 
-    scene bgship_3 with fade
+    scene b_central with fade
 
     i "Existem 3 erros ocorrendo atualmente na nave, e você pode consertá-los na ordem que quiser:"
 
@@ -110,7 +113,7 @@ label chapter2:
 
     l "Okay, okay, vamos lá."
 
-    scene bgship_3 with fade
+    scene b_central with fade
 
     #gameplay começa aqui
     jump central

@@ -1,14 +1,18 @@
 label chapter1:
-    # Cenas: CÁPSULA DA NAVE (bg firstchapter0)
 
     scene black with fade
     call fade_music
+
+    $ decompress("ship")
+
+    image b_capsule = "images/bg ship_0.png"
+
     pause 1.0
 
     play sound "sfxs/voice/laser.ogg" fadeout 0.0
     pause 2.0
 
-    scene bgship_0 with fade
+    scene b_capsule with fade
 
     play music "musics/tensao.ogg" fadein 1.0
 

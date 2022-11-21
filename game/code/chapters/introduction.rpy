@@ -1,10 +1,16 @@
 label introduction:
-    # Cenas: TERRA FUTURISTA (bg intro_0), PRÉDIO DA LASER (bg intro_1), CASA DA LOREN (bg intro_2), NAVE ESTACIONADA (bg intro_3)
-    # CÁPSULA DA NAVE (bg intro_4)
+
     $ show_quick_menu = True
     call fade_music
 
-    scene bg intro_0 with fade
+    $ decompress("intro")
+
+    image b_earth = im.Scale("images/bg intro_0.png", 1920, 1080)
+    image b_room = im.Scale("images/bg intro_1.png", 1920, 1080)
+    image b_ship = im.Scale("images/bg intro_2.png", 1920, 1080)
+    image b_capsule_intro = im.Scale("images/bg intro_3.png", 1920, 1080)
+
+    scene b_earth with fade
 
     play music "musics/introducao.ogg" fadein 1.0
 
@@ -28,7 +34,7 @@ label introduction:
 
     "Antes de viajar, Loren avisa sua irmã o que estava prestes a fazer."
 
-    scene bg intro_1 with fade
+    scene b_room with fade
 
     t "Lo por favor me dei..."
 
@@ -56,7 +62,7 @@ label introduction:
 
     l "Relaxa, a Laser vai te mandar um dinheiro por conta da minha falta, ajuda sua família com isso. Agora eu vou indo, tchau maninha."
 
-    scene bg intro_2 with fade
+    scene b_ship with fade
 
     "No dia da viagem, Loren está totalmente preparada, sem remorso algum ela entra na estação de lançamento, tudo já está quase pronto para a decolagem."
 
@@ -71,7 +77,7 @@ label introduction:
     play sound "sfxs/porta nave.ogg"
     pause 3.0
 
-    scene bg intro_3 with fade
+    scene b_capsule_intro with fade
 
     "Alguns minutos depois caminhando, o assistente a leva para a sala de preservação e redução de sentidos para uma criogenização perfeita, para que seja possível sua viagem sem parecer que envelheceu um ano sequer."
     #mudei "o assistente a pergunta se tem mais alguma mensagem..."
@@ -128,6 +134,8 @@ label introduction:
 
     play sound "sfxs/motor rodando.ogg" fadein 1.0 fadeout 0.0
     "Todos os parâmetros estão corretos, combustível necessário cheio e com tanques reservas carregados, tudo no seu devido lugar, traça a rota e está tudo como deveria estar, nada iria atrapalhar essa viagem."
+
+    $ compress("intro", "bg intro_", 4)
 
     jump chapter1
 

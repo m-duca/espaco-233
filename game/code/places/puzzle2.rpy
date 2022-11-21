@@ -2,7 +2,9 @@ label puzzle2:
 
     call steps
 
-    scene bgship_5 with fade
+    image b_puzzle2 = "images/bg ship_5.png"
+
+    scene b_puzzle2 with fade
 
     if puzzle2_completed == False:
         jump intro_puzzle2
@@ -12,7 +14,10 @@ label puzzle2:
 return
 
 label intro_puzzle2:
-    scene bgship_5 with fade
+
+    image b_puzzle2 = "images/bg ship_5.png"
+
+    scene b_puzzle2 with fade
 
     i "Parece que o sistema de gravidade dessa sala de armazéns está desativado, que tal a senhorita tentar consertá-lo?"
 
@@ -32,8 +37,10 @@ label intro_puzzle2:
 
 
 label do_puzzle2:
+    
+    image b_puzzle2 = "images/bg ship_5.png"
 
-    scene bgship_5 with fade
+    scene b_puzzle2 with fade
 
     menu:
         "Uma caixa está vindo em sua direção!"
@@ -45,7 +52,7 @@ label do_puzzle2:
             play sound "sfxs/voice/resmungo.ogg"
             jump intro_puzzle2
 
-    scene bgship_5 with fade
+    scene b_puzzle2 with fade
     menu:
         "Um armário grande está se aproximando!"
 
@@ -57,7 +64,7 @@ label do_puzzle2:
             jump intro_puzzle2
 
 
-    scene bgship_5 with fade
+    scene b_puzzle2 with fade
     menu:
         "Uma gaveta cheia de pregos começa a chegar perto!"
 

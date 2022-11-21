@@ -2,7 +2,9 @@ label instruction_room:
 
     call steps
 
-    scene bgship_2 with fade
+    image b_instruction = "images/bg ship_2.png"
+
+    scene b_instruction with fade
 
     call screen buttons_navigation (True, True, False, False)
 

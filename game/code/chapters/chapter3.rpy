@@ -1,10 +1,11 @@
 label chapter3:
-    # CENAS: AMBIENTE DA NAVE (bg chapter3_0), SAÍDAS DA NAVE (bg chapter3_1), CONSERTANDO O TANQUE (bg chapter3_2)
 
     stop sound
     call fade_music
 
-    scene bgship_3 with fade
+    image b_central = "images/bg ship_3.png"
+
+    scene b_central with fade
 
     "Após todo o sufoco e determinação de Loren ela consegue consertar todos os defeitos encontrados na nave e sua esperança é finalmente restaurada, ela corre alegremente pelos corredores, pulando e saltitando pra lá e pra cá."
 
@@ -37,6 +38,8 @@ label chapter3:
     play sound "sfxs/voice/resmungo.ogg"
 
     l "QUAL É UNIVERSO, beleza deixa eu ir logo."
+
+    $ compress("ship")
 
     jump chapter4
 

@@ -2,6 +2,8 @@ label puzzle3:
 
     #$ puzzle3_completed = True
 
+    image b_puzzle3 = "images/bg ship_6.png"
+
     call steps
 
     scene bgship_6 with fade
@@ -16,7 +18,9 @@ return
 
 label intro_puzzle3:
 
-    scene bgship_6 with fade
+    image b_puzzle3 = "images/bg ship_6.png"
+
+    scene b_puzzle3 with fade
 
     #play sound "sfxs/eletronicos.ogg"
 
@@ -30,7 +34,9 @@ label intro_puzzle3:
 
 label mid_puzzle3:
 
-    scene bgship_6 with fade
+    image b_puzzle3 = "images/bg ship_6.png"
+
+    scene b_puzzle3 with fade
 
     "Loren liga o computador e então começa a acessar o sistema."
 
@@ -43,7 +49,9 @@ label mid_puzzle3:
 
 label do_puzzle3:
 
-    scene bgship_6 with fade
+    image b_puzzle3 = "images/bg ship_6.png"
+
+    scene b_puzzle3 with fade
     menu:
         "Progresso das Turbinas: 0\%"
 
@@ -66,7 +74,7 @@ label do_puzzle3:
         "Deixar para fazer depois":
             jump central
 
-    scene bgship_6 with fade
+    scene b_puzzle3 with fade
     menu:
         "Progresso das Turbinas: 25\%"
 
@@ -89,7 +97,7 @@ label do_puzzle3:
         "Deixar para fazer depois":
             jump central
 
-    scene bgship_6 with fade
+    scene b_puzzle3 with fade
     menu:
         "Progresso das Turbinas: 50\%"
 
@@ -112,7 +120,7 @@ label do_puzzle3:
         "Deixar para fazer depois":
             jump central
 
-    scene bgship_6 with fade
+    scene b_puzzle3 with fade
     menu:
         "Progresso das Turbinas: 75\%"
 

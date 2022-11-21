@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/code/core/script.rpy", line 43: python block expects a non-empty block.
-    python:
-           ^
+File "game/code/core/screens/scanline.rpy", line 2: 'tsplashscreen_3' is not a keyword argument or valid child for the screen statement.
+    tsplashscreen_3 xalign 0.0 yalign 0.0 xpos 0.0 ypos 0.0
+                   ^
 
 Ren'Py Version: Ren'Py 8.0.2.22081402
-Mon Nov 21 19:10:33 2022
+Mon Nov 21 19:36:46 2022

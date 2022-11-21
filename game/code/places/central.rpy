@@ -2,6 +2,8 @@ default first_time_central = True
 
 label central:
 
+    image b_central = "images/bg ship_3.png"
+
     if puzzle1_completed and puzzle2_completed and puzzle3_completed:
         jump chapter3
 
@@ -10,7 +12,7 @@ label central:
     else:
         call steps
 
-    scene bgship_3 with fade
+    scene b_central with fade
 
     call screen buttons_navigation (True, True, True, True)
 
