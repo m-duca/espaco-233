@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/code/systems/compression.rpy", line 18: invalid syntax
-        if zip_exists(zip_name) == False
-    
+File "game/code/core/script.rpy", line 43: python block expects a non-empty block.
+    python:
+           ^
 
 Ren'Py Version: Ren'Py 8.0.2.22081402
-Mon Nov 21 18:18:18 2022
+Mon Nov 21 19:10:33 2022

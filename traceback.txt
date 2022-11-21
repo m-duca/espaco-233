@@ -7,11 +7,13 @@ While running game code:
     call initial_compression
   File "game/code/core/script.rpy", line 43, in script
     python:
-  File "game/code/core/script.rpy", line 45, in <module>
-    compress("intro", "bg intro_", 4)
-  File "game/code/systems/compression.rpy", line 23, in compress
-    zip.write(image_prefix + str(i) + ".png")
-ValueError: Attempt to write to ZIP archive that was already closed
+  File "game/code/core/script.rpy", line 44, in <module>
+    decompress("splashscreen")
+  File "game/code/systems/compression.rpy", line 34, in decompress
+    if zip_exists(zip_name) == True:
+  File "game/code/systems/compression.rpy", line 48, in zip_exists
+    zip = zipfile.ZipFile(zip_name + ".zip", "r")
+FileNotFoundError: [Errno 2] No such file or directory: 'splashscreen.zip'
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -26,14 +28,16 @@ Full traceback:
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "C:\Renpy\renpy\python.py", line 1052, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/code/core/script.rpy", line 45, in <module>
-    compress("intro", "bg intro_", 4)
-  File "game/code/systems/compression.rpy", line 23, in compress
-    zip.write(image_prefix + str(i) + ".png")
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/zipfile.py", line 1720, in write
-ValueError: Attempt to write to ZIP archive that was already closed
+  File "game/code/core/script.rpy", line 44, in <module>
+    decompress("splashscreen")
+  File "game/code/systems/compression.rpy", line 34, in decompress
+    if zip_exists(zip_name) == True:
+  File "game/code/systems/compression.rpy", line 48, in zip_exists
+    zip = zipfile.ZipFile(zip_name + ".zip", "r")
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/zipfile.py", line 1239, in __init__
+FileNotFoundError: [Errno 2] No such file or directory: 'splashscreen.zip'
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.0.2.22081402
 Espaço 233 1.0
-Mon Nov 21 19:06:39 2022
+Mon Nov 21 19:14:40 2022

@@ -5,8 +5,6 @@ label splashscreen:
 
     call initial_compression
 
-    pause 1
-
     $ show_quick_menu = True
 
     # Troque o volume para o valor inicial
@@ -41,12 +39,14 @@ label splashscreen:
 label initial_compression:
 
     python:
-        #decompress("splashscreen")
-        #compress("intro", "bg intro_", 4)
+        decompress("splashscreen")
+        compress("intro", "bg intro_", 4)
         #compress("buttons", "button_", 8)
         #compress("ship", "bg ship_", 7)
         #compress("space", "bg space_", 1)
         #compress("characters", "character_", 2)
+
+    pause 2
 
     return
 
@@ -54,8 +54,8 @@ label initial_compression:
 label start:
 
     python:
-        #compress("splashscreen", "splashscreen_", 4)
-        #decompress("intro")
+        compress("splashscreen", "splashscreen_", 4)
+        decompress("intro")
 
     jump introduction
 
