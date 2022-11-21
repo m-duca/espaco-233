@@ -3,7 +3,9 @@ label chapter3:
     stop sound
     call fade_music
 
-    image b_central = "images/bg ship_3.png"
+    $ compress("buttons", "button_", 8)
+
+    image b_central = im.Scale("images/bg ship_3.png", 1920, 1080)
 
     scene b_central with fade
 
@@ -38,8 +40,6 @@ label chapter3:
     play sound "sfxs/voice/resmungo.ogg"
 
     l "QUAL É UNIVERSO, beleza deixa eu ir logo."
-
-    $ compress("ship")
 
     jump chapter4
 

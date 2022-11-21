@@ -6,9 +6,9 @@ label splashscreen:
     python:
         decompress("splashscreen")
         compress("intro", "bg intro_", 4)
-        #compress("buttons", "button_", 8)
+        compress("buttons", "button_", 8)
         compress("ship", "bg ship_", 7)
-        #compress("space", "bg space_", 1)
+        compress("space", "bg space_", 1)
         #compress("characters", "character_", 2)
 
     $ show_quick_menu = True
@@ -52,5 +52,12 @@ label splashscreen:
 label start:
 
     jump introduction
+
+    return
+
+# Executada ao fechar o Jogo
+label quit:
+
+    
 
     return

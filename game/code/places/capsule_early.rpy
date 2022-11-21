@@ -2,10 +2,12 @@ default first_time_capsule = True
 
 label capsule_early:
 
-    image b_capsule = "images/bg ship_0.png"
+    image b_capsule = im.Scale("images/bg ship_0.png", 1920, 1080)
 
     if first_time_capsule == True:
         call fade_music
+
+        $ decompress("buttons")
 
         play music "musics/ambiente nave.ogg"
         $ first_time_capsule = False

@@ -5,7 +5,7 @@ label chapter1:
 
     $ decompress("ship")
 
-    image b_capsule = "images/bg ship_0.png"
+    image b_capsule = im.Scale("images/bg ship_0.png", 1920, 1080)
 
     pause 1.0
 

@@ -1,6 +1,7 @@
 label chapter5:
 
-    scene bgspace_0 with fade
+    image b_space = im.Scale("images/bg space_0.png", 1920, 1080)
+    scene b_space with fade
 
     "O oxigênio do traje começa a sair e não a mais nada que Loren possa fazer."
 
@@ -29,7 +30,7 @@ label chapter5:
 
         "Conte o que aconteceu para a tripulação...":
 
-            scene bgspace_0 with fade
+            scene b_space with fade
 
             "Com isso Loren diz suas últimas palavras, para que não importa o que aconteça, todos se lembrem de quem ela foi."
 
@@ -41,12 +42,12 @@ label chapter5:
 
         "Não falar nada...":
 
-            scene bgspace_0 with fade
+            scene b_space with fade
 
     pause 3.0
     call credits
 
-    scene bgspace_0 with fade
+    scene b_space with fade
 
     return
 

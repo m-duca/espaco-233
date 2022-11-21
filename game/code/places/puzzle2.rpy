@@ -2,7 +2,7 @@ label puzzle2:
 
     call steps
 
-    image b_puzzle2 = "images/bg ship_5.png"
+    image b_puzzle2 = im.Scale("images/bg ship_5.png", 1920, 1080)
 
     scene b_puzzle2 with fade
 
@@ -15,7 +15,7 @@ return
 
 label intro_puzzle2:
 
-    image b_puzzle2 = "images/bg ship_5.png"
+    image b_puzzle2 = im.Scale("images/bg ship_5.png", 1920, 1080)
 
     scene b_puzzle2 with fade
 
@@ -37,8 +37,8 @@ label intro_puzzle2:
 
 
 label do_puzzle2:
-    
-    image b_puzzle2 = "images/bg ship_5.png"
+
+    image b_puzzle2 = im.Scale("images/bg ship_5.png", 1920, 1080)
 
     scene b_puzzle2 with fade
 

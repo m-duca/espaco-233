@@ -3,8 +3,8 @@ label chapter2:
     call steps
     call fade_music
 
-    image b_instruction = "images/bg ship_2.png"
-    image b_central = "images/bg ship_3.png"
+    image b_instruction = im.Scale("images/bg ship_2.png", 1920, 1080)
+    image b_central = im.Scale("images/bg ship_3.png", 1920, 1080)
 
     play sound "sfxs/porta nave.ogg"
     pause 3.0

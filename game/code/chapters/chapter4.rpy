@@ -2,7 +2,9 @@ label chapter4:
 
     call fade_music
 
-    scene bgship_3 with fade
+    image b_central = im.Scale("images/bg ship_3.png", 1920, 1080)
+
+    scene b_central with fade
 
     "Chegando perto de uma das saídas da nave, Aiden explica que a única forma de tampar o tanque é o selando por fora."
 
@@ -13,6 +15,13 @@ label chapter4:
     play sound "sfxs/porta nave.ogg"
 
     "Colocou o traje e abriu aquela porta para enfim acabar com seu último empecilho, pegando uma nova cobertura para o tanque e seu fixador para prendê-lo, ela sai da nave."
+
+    $ compress("ship", "bg ship_", 7)
+    $ decompress("space")
+
+    image b_space = im.Scale("images/bg space_0.png", 1920, 1080)
+
+    scene b_space with fade
 
     play music "musics/ambiente espaço.ogg" fadein 1.0
 
@@ -33,6 +42,8 @@ label chapter4:
     call fade_music
 
     play music "musics/final creditos.ogg" fadein 1.0
+
+    $ compress(ship)
 
     # Começa o último puzzle
 

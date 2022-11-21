@@ -2,7 +2,7 @@ label puzzle3:
 
     #$ puzzle3_completed = True
 
-    image b_puzzle3 = "images/bg ship_6.png"
+    image b_puzzle3 = im.Scale("images/bg ship_6.png", 1920, 1080)
 
     call steps
 
@@ -18,7 +18,7 @@ return
 
 label intro_puzzle3:
 
-    image b_puzzle3 = "images/bg ship_6.png"
+    image b_puzzle3 = im.Scale("images/bg ship_6.png", 1920, 1080)
 
     scene b_puzzle3 with fade
 
@@ -34,7 +34,7 @@ label intro_puzzle3:
 
 label mid_puzzle3:
 
-    image b_puzzle3 = "images/bg ship_6.png"
+    image b_puzzle3 = im.Scale("images/bg ship_6.png", 1920, 1080)
 
     scene b_puzzle3 with fade
 
@@ -49,7 +49,7 @@ label mid_puzzle3:
 
 label do_puzzle3:
 
-    image b_puzzle3 = "images/bg ship_6.png"
+    image b_puzzle3 = im.Scale("images/bg ship_6.png", 1920, 1080)
 
     scene b_puzzle3 with fade
     menu:
