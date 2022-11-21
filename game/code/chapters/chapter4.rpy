@@ -43,7 +43,7 @@ label chapter4:
 
     play music "musics/final creditos.ogg" fadein 1.0
 
-    $ compress(ship)
+    $ compress("ship", "bg ship_", 7)
 
     # Começa o último puzzle
 
