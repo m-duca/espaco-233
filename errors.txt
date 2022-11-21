@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/code/places/puzzle3.rpy", line 34: expected ':' not found.
-    label mid_puzzle3
-                     ^
+File "game/code/systems/compression.rpy", line 18: invalid syntax
+        if zip_exists(zip_name) == False
+    
 
 Ren'Py Version: Ren'Py 8.0.2.22081402
-Sun Nov 20 15:21:14 2022
+Mon Nov 21 18:18:18 2022

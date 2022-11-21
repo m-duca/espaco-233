@@ -1,7 +1,7 @@
-image bgintro_0 = im.Scale("bg intro_0.png", 1920, 1080)
-image bgintro_1 = im.Scale("bg intro_1.png", 1920, 1080)
-image bgintro_2 = im.Scale("bg intro_2.png", 1920, 1080)
-image bgintro_3 = im.Scale("bg intro_3.png", 1920, 1080)
+#image bgintro_0 = im.Scale("bg intro_0.png", 1920, 1080)
+##image bgintro_1 = im.Scale("bg intro_1.png", 1920, 1080)
+#image bgintro_2 = im.Scale("bg intro_2.png", 1920, 1080)
+#image bgintro_3 = im.Scale("bg intro_3.png", 1920, 1080)
 
 
 image bgship_0 = im.Scale("bg ship_0.png", 1920, 1080)

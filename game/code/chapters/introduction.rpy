@@ -4,7 +4,7 @@ label introduction:
     $ show_quick_menu = True
     call fade_music
 
-    scene bgintro_0 with fade
+    scene bg intro_0 with fade
 
     play music "musics/introducao.ogg" fadein 1.0
 
@@ -28,7 +28,7 @@ label introduction:
 
     "Antes de viajar, Loren avisa sua irmã o que estava prestes a fazer."
 
-    scene bgintro_1 with fade
+    scene bg intro_1 with fade
 
     t "Lo por favor me dei..."
 
@@ -56,7 +56,7 @@ label introduction:
 
     l "Relaxa, a Laser vai te mandar um dinheiro por conta da minha falta, ajuda sua família com isso. Agora eu vou indo, tchau maninha."
 
-    scene bgintro_2 with fade
+    scene bg intro_2 with fade
 
     "No dia da viagem, Loren está totalmente preparada, sem remorso algum ela entra na estação de lançamento, tudo já está quase pronto para a decolagem."
 
@@ -71,7 +71,7 @@ label introduction:
     play sound "sfxs/porta nave.ogg"
     pause 3.0
 
-    scene bgintro_3 with fade
+    scene bg intro_3 with fade
 
     "Alguns minutos depois caminhando, o assistente a leva para a sala de preservação e redução de sentidos para uma criogenização perfeita, para que seja possível sua viagem sem parecer que envelheceu um ano sequer."
     #mudei "o assistente a pergunta se tem mais alguma mensagem..."

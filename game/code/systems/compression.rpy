@@ -30,7 +30,6 @@ init python:
 
     # Função que faz a descompressão de um arquivo .zip, onde precisamos passar o nome do .zip
     def decompress(zip_name):
-
         # Pegue a referência do .zip em modo leitura
         zip = zipfile.ZipFile(zip_name + ".zip", "r")
 
@@ -42,7 +41,3 @@ init python:
 
         # Delete o .zip, pois não precisamos mais dele
         os.remove(zip_name + ".zip")
-
-    # Função para verificar se um arquivo .zip existe, precisando informar o nome do .zip
-    def zip_exists(zip_name):
-        return zipfile.is_zipfile(zip_name)
