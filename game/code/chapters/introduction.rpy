@@ -4,6 +4,8 @@ label introduction:
     call fade_music
 
     $ decompress("intro")
+    #$ decompress("characters")
+
 
     image b_earth = im.Scale("images/bg intro_0.png", 1920, 1080)
     image b_room = im.Scale("images/bg intro_1.png", 1920, 1080)

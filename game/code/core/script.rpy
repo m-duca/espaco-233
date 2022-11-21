@@ -58,6 +58,12 @@ label start:
 # Executada ao fechar o Jogo
 label quit:
 
-    
+    python:
+        compress("splashscreen", "splashscreen_", 4)
+        compress("intro", "bg intro_", 4)
+        compress("buttons", "button_", 8)
+        compress("ship", "bg ship_", 7)
+        compress("space", "bg space_", 1)
+        #compress("characters", "character_", 2)
 
     return

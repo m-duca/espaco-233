@@ -1,4 +1,5 @@
 label chapter5:
+    #compress("characters", "character_", 2)
 
     image b_space = im.Scale("images/bg space_0.png", 1920, 1080)
     scene b_space with fade
