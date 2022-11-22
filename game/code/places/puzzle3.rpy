@@ -2,6 +2,8 @@ label puzzle3:
 
     #$ puzzle3_completed = True
 
+    $ soma = int()
+
     image b_puzzle3 = im.Scale("images/bg ship_6.png", 1920, 1080)
 
     call steps
@@ -46,30 +48,39 @@ label mid_puzzle3:
 
     return
 
-
 label do_puzzle3:
 
     image b_puzzle3 = im.Scale("images/bg ship_6.png", 1920, 1080)
 
     scene b_puzzle3 with fade
+
+    #Se selecionar qualquer opção soma na variável e desaparece a opção
     menu:
         "Progresso das Turbinas: 0\%"
 
-        "Distribua 5\% de energia":
+        "Distribua 151\% de energia":
             play sound "sfxs/tecla 1.ogg"
             l "Começando devagar..."
 
-        "Distribua 10\% de energia":
+        "Distribua 93\% de energia":
             play sound "sfxs/som ambiente.ogg"
-            jump mid_puzzle3
 
-        "Distribua 20\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-            jump mid_puzzle3
+        #Esse aqui
+        "Distribua 116\% de energia":
 
-        "Distribua 40\% de energia":
             play sound "sfxs/som ambiente.ogg"
-            jump mid_puzzle3
+
+        #Esse aqui
+        "Distribua 279\% de energia":
+            play sound "sfxs/som ambiente.ogg"
+
+        #Esse aqui
+        "Distribua 67\% de energia":
+            play sound "sfxs/som ambiente.ogg"
+
+        #Esse aqui
+        "Distribua 38\% de energia":
+            play sound "sfxs/som ambiente.ogg"
 
         "Deixar para fazer depois":
             jump central
@@ -78,21 +89,28 @@ label do_puzzle3:
     menu:
         "Progresso das Turbinas: 25\%"
 
-        "Distribua 5\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-            jump mid_puzzle3
+        "Distribua 151\% de energia":
+            play sound "sfxs/tecla 1.ogg"
+            l "Começando devagar..."
 
-        "Distribua 10\% de energia":
+        "Distribua 93\% de energia":
             play sound "sfxs/som ambiente.ogg"
-            jump mid_puzzle3
 
-        "Distribua 20\% de energia":
-            play sound "sfxs/tecla 2.ogg"
-            l "Vamos estressar um pouquinho o sistema."
 
-        "Distribua 40\% de energia":
+        "Distribua 116\% de energia":
             play sound "sfxs/som ambiente.ogg"
-            jump mid_puzzle3
+
+
+        "Distribua 279\% de energia":
+            play sound "sfxs/som ambiente.ogg"
+
+
+        "Distribua 67\% de energia":
+            play sound "sfxs/som ambiente.ogg"
+
+
+        "Distribua 38\% de energia":
+            play sound "sfxs/som ambiente.ogg"
 
         "Deixar para fazer depois":
             jump central
@@ -101,21 +119,28 @@ label do_puzzle3:
     menu:
         "Progresso das Turbinas: 50\%"
 
-        "Distribua 5\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-            jump mid_puzzle3
-
-        "Distribua 10\% de energia":
+        "Distribua 151\% de energia":
             play sound "sfxs/tecla 1.ogg"
-            l "Acho que é o suficiente."
+            l "Começando devagar..."
 
-        "Distribua 20\% de energia":
+        "Distribua 93\% de energia":
             play sound "sfxs/som ambiente.ogg"
-            jump mid_puzzle3
 
-        "Distribua 40\% de energia":
+
+        "Distribua 116\% de energia":
             play sound "sfxs/som ambiente.ogg"
-            jump mid_puzzle3
+
+
+        "Distribua 279\% de energia":
+            play sound "sfxs/som ambiente.ogg"
+
+
+        "Distribua 67\% de energia":
+            play sound "sfxs/som ambiente.ogg"
+
+
+        "Distribua 38\% de energia":
+            play sound "sfxs/som ambiente.ogg"
 
         "Deixar para fazer depois":
             jump central
@@ -124,7 +149,32 @@ label do_puzzle3:
     menu:
         "Progresso das Turbinas: 75\%"
 
-        "Distribua 5\% de energia":
+        #"Distribua 5\% de energia":
+            #play sound "sfxs/tecla 2.ogg"
+            #$ puzzle3_completed = True
+            #pause 0.5
+            #play sound "sfxs/motor ligando.ogg"
+            #pause 2.0
+            #"Progresso das Turbinas: 100\%, acionando-as..."
+            #l "Ufa! mais um problema resolvido."
+
+        "Distribua 151\% de energia":
+            play sound "sfxs/som ambiente.ogg"
+
+        "Distribua 93\% de energia":
+            play sound "sfxs/som ambiente.ogg"
+
+        "Distribua 116\% de energia":
+            play sound "sfxs/som ambiente.ogg"
+
+        "Distribua 279\% de energia":
+            play sound "sfxs/som ambiente.ogg"
+
+        "Distribua 67\% de energia":
+            play sound "sfxs/som ambiente.ogg"
+
+        "Distribua 38\% de energia":
+            $ if soma == 500
             play sound "sfxs/tecla 2.ogg"
             $ puzzle3_completed = True
             pause 0.5
@@ -133,17 +183,6 @@ label do_puzzle3:
             "Progresso das Turbinas: 100\%, acionando-as..."
             l "Ufa! mais um problema resolvido."
 
-        "Distribua 10\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-            jump mid_puzzle3
-
-        "Distribua 20\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-            jump mid_puzzle3
-
-        "Distribua 40\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-            jump mid_puzzle3
 
         "Deixar para fazer depois":
             jump central
