@@ -6,7 +6,7 @@ label chapter2:
     image b_instruction = im.Scale("images/bg ship_2.png", 1920, 1080)
     image b_central = im.Scale("images/bg ship_3.png", 1920, 1080)
 
-    play sound "sfxs/porta nave.ogg"
+    play sound "sfxs/porta nave.ogg" volume 1.0
     pause 3.0
 
     scene b_instruction with fade
@@ -15,7 +15,7 @@ label chapter2:
 
     "Chegando na sala, está completamente sozinha, ela se sentia feliz pensando novamente estar adiantada e comemora levemente por sua conquista."
 
-    play sound "sfxs/voice/risada.ogg"
+    play sound "sfxs/voice/risada.ogg" volume 0.95
     pause 1.0
 
     "Ao se sentar a apresentação começa automaticamente, ela estranha pois achava que mais pessoas deveriam chegar antes de tudo começar."
@@ -26,7 +26,7 @@ label chapter2:
 
     i2 "Desculpe senhorita Loren, mas todos que deveriam estar aqui já chegaram."
 
-    play sound "sfxs/voice/pensativa.ogg"
+    play sound "sfxs/voice/pensativa.ogg" volume 1.0
     "Com receio, ela estranha totalmente a situação e sai da apresentação procurando por alguém."
 
     scene b_central with hpunch
@@ -40,7 +40,7 @@ label chapter2:
     i "Isso não seria possível pois faltam 712500000000000km para o destino final, ou seja, 75 anos."
 
     scene b_central with vpunch
-    play sound "sfxs/voice/surpresa.ogg"
+    play sound "sfxs/voice/surpresa.ogg" volume 1.0
     l "COMO ASSIM CARALHO, EU TÔ PRESA NO ESPAÇO POR UMA MERDA DE MÁ SORTE?"
 
     i "Não má sorte, ou talvez azar, mas pelo simples fato de… pelo fato de… desculpe, mas não sei o motivo de você estar acordada."
@@ -49,15 +49,15 @@ label chapter2:
 
     i "Claro, seria um prazer."
 
-    play sound "sfxs/tecla 1.ogg"
+    play sound "sfxs/tecla 1.ogg" volume 1.0
     pause 1.0
-    play sound "sfxs/tecla 2.ogg"
+    play sound "sfxs/tecla 2.ogg" volume 1.0
     pause 1.0
-    play sound "sfxs/tecla 1.ogg"
+    play sound "sfxs/tecla 1.ogg" volume 1.0
     pause 1.0
-    play sound "sfxs/tecla 2.ogg"
+    play sound "sfxs/tecla 2.ogg" volume 1.0
     pause 1.0
-    play sound "sfxs/som ambiente.ogg"
+    play sound "sfxs/som ambiente.ogg" volume 0.9
     pause 1.0
 
     i "..."
@@ -68,7 +68,7 @@ label chapter2:
 
     i "Eu não posso fazer isso."
 
-    play sound "sfxs/voice/duvida.ogg"
+    play sound "sfxs/voice/duvida.ogg" volume 1.0
 
     l "POR QUE NÃO?"
 
@@ -78,7 +78,7 @@ label chapter2:
 
     i "Seria uma opção."
 
-    play sound "sfxs/voice/resmungo.ogg"
+    play sound "sfxs/voice/resmungo.ogg" volume 1.0
 
     l "VAI CAGAR!"
 

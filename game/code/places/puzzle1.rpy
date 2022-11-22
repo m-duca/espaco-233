@@ -37,15 +37,15 @@ label do_puzzle1:
         "Escolha um dos fios soltos para conectar:"
 
         "Amarelo":
-            play sound "sfxs/som ambiente.ogg"
+            play sound "sfxs/som ambiente.ogg" volume 0.8
             jump intro_puzzle1
 
         "Rosa":
-            play sound "sfxs/click encaixe.ogg"
+            play sound "sfxs/click encaixe.ogg" volume 0.9
             l "Um já foi!"
 
         "Azul":
-            play sound "sfxs/som ambiente.ogg"
+            play sound "sfxs/som ambiente.ogg" volume 0.8
             jump intro_puzzle1
 
         "Deixar para fazer depois":
@@ -58,11 +58,11 @@ label do_puzzle1:
         "Escolha o próximo fio solto para conectar:"
 
         "Amarelo":
-            play sound "sfxs/click encaixe.ogg"
+            play sound "sfxs/click encaixe.ogg" volume 0.9
             l "Agora só resta o fio azul."
 
         "Azul":
-            play sound "sfxs/som ambiente.ogg"
+            play sound "sfxs/som ambiente.ogg" volume 0.8
             jump intro_puzzle1
 
         "Deixar para fazer depois":
@@ -73,7 +73,7 @@ label do_puzzle1:
         "Escolha o último fio solto para conectar:"
 
         "Azul":
-            play sound "sfxs/click encaixe.ogg"
+            play sound "sfxs/click encaixe.ogg" volume 0.9
             l "Ótimo! Deu tudo certo."
             $ puzzle1_completed = True
 

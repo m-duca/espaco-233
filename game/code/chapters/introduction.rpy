@@ -14,7 +14,7 @@ label introduction:
 
     scene b_earth with fade
 
-    play music "musics/introducao.ogg" fadein 1.0
+    play music "musics/introducao.ogg" fadein 1.0 volume 0.5
 
     "10 de julho de 2095, a era da mais alta tecnologia no mundo."
 
@@ -44,7 +44,7 @@ label introduction:
 
     t "Mas me desculpa eu não..."
 
-    play sound "sfxs/voice/surpresa.ogg"
+    play sound "sfxs/voice/surpresa.ogg" volume 1.0
     l "Não quero ouvir Tina! Sério, só vim te avisar que eu estou indo embora, já me decidi e vou viajar."
 
     t "Como assim indo embora? Viajar pra onde Lo? O que você vai fazer?"
@@ -53,7 +53,7 @@ label introduction:
 
     t "O que? Por quê? Foi pelo o que eu fiz? Se for por favor Lo, mesmo assim não é algo que você precise se mudar pra outro planeta, viajar por anos e nunca mais ter a vida que têm aqui. Não faz isso por favor."
 
-    play sound "sfxs/voice/risada.ogg"
+    play sound "sfxs/voice/risada.ogg" volume 0.95
     l "{b}*Gargalha*{/b} Não decidi ir me mudar pra casa do caralho simplesmente pelo o que aconteceu, eu realmente estou até bem, me sinto livre depois de tudo."
 
     l "Você pode continuar o que estava fazendo à vontade. Fala como se não parecesse verdade."
@@ -76,7 +76,7 @@ label introduction:
 
     a "A pois bem, me acompanhe por favor."
 
-    play sound "sfxs/porta nave.ogg"
+    play sound "sfxs/porta nave.ogg" volume 1.0
     pause 3.0
 
     scene b_capsule_intro with fade
@@ -89,7 +89,7 @@ label introduction:
 
     a "Certo."
 
-    play sound "sfxs/telefone.ogg"
+    play sound "sfxs/telefone.ogg" volume 1.0
     "{b}*Toooo* *Toooo*{/b}"
 
     b "Alô?"
@@ -114,19 +114,19 @@ label introduction:
 
     b "Não minha filha por favor não faça isso, eu te imploro volte para casa!"
 
-    play sound "sfxs/voice/pensativa.ogg"
+    play sound "sfxs/voice/pensativa.ogg" volume 1.0
     l "Não dá mais mãe... Eu já estou indo."
 
-    play sound "sfxs/tecla 1.ogg"
+    play sound "sfxs/tecla 1.ogg" volume 1.0
     pause 1.0
-    play sound "sfxs/tecla 2.ogg"
+    play sound "sfxs/tecla 2.ogg" volume 1.0
 
     "Loren começa a cair no sono escutando as últimas palavras de sua mãe e sentindo um pouco de arrependimento por estar ali, mas já não conseguia dizer mais nenhuma palavra pois a anestesia geral estava quase completa."
     #tava escrito "Nos últimos segundos consciente, Loren apenas escuta a voz de sua mãe a chamar."
     #"Em seus últimos segundos consciente, Loren consegue apenas escutar a voz de sua mãe a chamando."
     b "Eu te amo também minha filha volta pra ca...sa por...favor vol..."
 
-    play sound "sfxs/motor ligando.ogg" fadein 1.0 fadeout 0.0
+    play sound "sfxs/motor ligando.ogg" fadein 1.0 fadeout 0.0 volume 1.0
 
     "Dentro da nave nada mais acontece, sua viagem inicia, todos os passageiros estão adormecidos em suas cabines."
 
@@ -134,7 +134,7 @@ label introduction:
 
     "Após a decolagem concluída os últimos tripulantes da nave se autocolocam para adormecerem, o capitão sendo o último, checa tudo antes de continuar com a viagem."
 
-    play sound "sfxs/motor rodando.ogg" fadein 1.0 fadeout 0.0
+    play sound "sfxs/motor rodando.ogg" fadein 1.0 fadeout 0.0 volume 1.0
     "Todos os parâmetros estão corretos, combustível necessário cheio e com tanques reservas carregados, tudo no seu devido lugar, traça a rota e está tudo como deveria estar, nada iria atrapalhar essa viagem."
 
     $ compress("intro", "bg intro_", 4)

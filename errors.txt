@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/code/places/puzzle3.rpy", line 121: end of line expected.
-    "Distribua 93\% de energia" if option93 == False::
-                                                     ^
+File "game/code/core/options.rpy", line 69: invalid syntax
+    audio.main_menu_music volume 0.5
+                           ^
 
 Ren'Py Version: Ren'Py 8.0.2.22081402
-Tue Nov 22 12:15:05 2022
+Tue Nov 22 16:59:00 2022

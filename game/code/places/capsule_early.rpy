@@ -9,7 +9,7 @@ label capsule_early:
 
         $ decompress("buttons")
 
-        play music "musics/ambiente nave.ogg"
+        play music "musics/ambiente nave.ogg" volume 1.0
         $ first_time_capsule = False
 
 

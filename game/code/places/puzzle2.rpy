@@ -49,7 +49,7 @@ label do_puzzle2:
             l "Um pouco fácil."
 
         "Desviar para a direita":
-            play sound "sfxs/voice/resmungo.ogg"
+            play sound "sfxs/voice/resmungo.ogg" volume 1.0
             jump intro_puzzle2
 
     scene b_puzzle2 with fade
@@ -60,7 +60,7 @@ label do_puzzle2:
             l "Ufa! Essa foi por pouco..."
 
         "Ir para cima":
-            play sound "sfxs/voice/resmungo.ogg"
+            play sound "sfxs/voice/resmungo.ogg" volume 1.0
             jump intro_puzzle2
 
 
@@ -69,7 +69,7 @@ label do_puzzle2:
         "Uma gaveta cheia de pregos começa a chegar perto!"
 
         "Correr":
-            play sound "sfxs/voice/resmungo.ogg"
+            play sound "sfxs/voice/resmungo.ogg" volume 1.0
             jump intro_puzzle2
 
         "Ir calmamente":

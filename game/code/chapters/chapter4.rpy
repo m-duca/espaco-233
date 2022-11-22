@@ -12,7 +12,7 @@ label chapter4:
 
     "Loren nunca imaginou que faria isso na sua vida e não estava preparada para aquilo, mas se era a única forma de conseguir se salvar ela faria sem nem pensar."
 
-    play sound "sfxs/porta nave.ogg"
+    play sound "sfxs/porta nave.ogg" volume 1.0
 
     "Colocou o traje e abriu aquela porta para enfim acabar com seu último empecilho, pegando uma nova cobertura para o tanque e seu fixador para prendê-lo, ela sai da nave."
 
@@ -41,7 +41,7 @@ label chapter4:
 
     call fade_music
 
-    play music "musics/final creditos.ogg" fadein 1.0
+    play music "musics/final creditos.ogg" fadein 1.0 volume 1.0
 
     $ compress("ship", "bg ship_", 7)
 

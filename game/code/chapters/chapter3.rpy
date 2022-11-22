@@ -11,7 +11,7 @@ label chapter3:
 
     "Após todo o sufoco e determinação de Loren ela consegue consertar todos os defeitos encontrados na nave e sua esperança é finalmente restaurada, ela corre alegremente pelos corredores, pulando e saltitando pra lá e pra cá."
 
-    play sound "sfxs/voice/risada.ogg"
+    play sound "sfxs/voice/risada.ogg" volume 0.95
 
     l "Finalmente, meu deus, como foi difícil, mas até que enfim, vou poder voltar a dormir e VIVER, AEEEEE CARA..."
 
@@ -21,13 +21,13 @@ label chapter3:
 
     i "Não é isso, mas eu receio que não acabou."
 
-    play sound "sfxs/voice/duvida.ogg"
+    play sound "sfxs/voice/duvida.ogg" volume 1.0
 
     l "NÃO ACABOU? Mas você disse que só tinham 3 problemas na nave, e agora não acabou?"
 
     i "Me desculpe, até aquele momento eu achava que só existiam aqueles defeitos, mas como o sistema estava danificado, eu não consegui identificar todos eles."
 
-    play sound "sfxs/voice/resmungo.ogg"
+    play sound "sfxs/voice/resmungo.ogg" volume 1.0
 
     l "DROGA!"
 
@@ -37,7 +37,7 @@ label chapter3:
 
     i "Mas por conta de todo o tempo que estamos arrumando as outras partes da nave, o combustível já está quase acabando nesse tanque, e com isso se ele se esgotar eu não conseguirei te pôr novamente em sua cabine."
 
-    play sound "sfxs/voice/resmungo.ogg"
+    play sound "sfxs/voice/resmungo.ogg" volume 1.0
 
     l "QUAL É UNIVERSO, beleza deixa eu ir logo."
 

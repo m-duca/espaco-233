@@ -6,7 +6,7 @@ label chapter5:
 
     "O oxigênio do traje começa a sair e não a mais nada que Loren possa fazer."
 
-    play sound "sfxs/soldando.ogg"
+    play sound "sfxs/soldando.ogg" volume 1.0
     #tava escrito "e ele para de vazar." no final
     "Ela já tinha aceitado que seu fim estava próximo, mas como uma última esperança, corta um pedaço de seu traje e faz uma isolação com sucesso no tanque parando o vazamento."
 

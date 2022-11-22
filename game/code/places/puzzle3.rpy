@@ -74,41 +74,41 @@ label do_puzzle3:
         "Energia depositada: 0"
 
         "Distribua 151 de energia" if option151 == False:
-            play sound "sfxs/tecla 1.ogg"
+            play sound "sfxs/tecla 1.ogg" volume 1.0
             $ option151 = True
             $ soma = soma + 151
             l "Começando devagar..."
 
         "Distribua 93 de energia" if option93 == False:
-            play sound "sfxs/tecla 2.ogg"
+            play sound "sfxs/tecla 2.ogg" volume 1.0
             $ option93 = True
             $ soma = soma + 93
             l "Começando devagar..."
 
         #Esse aqui
         "Distribua 116 de energia" if option116 == False:
-            play sound "sfxs/tecla 1.ogg"
+            play sound "sfxs/tecla 1.ogg" volume 1.0
             $ option116 = True
             $ soma = soma + 116
             l "Começando devagar..."
 
         #Esse aqui
         "Distribua 279 de energia" if option279 == False:
-            play sound "sfxs/tecla 2.ogg"
+            play sound "sfxs/tecla 2.ogg" volume 1.0
             $ option279 = True
             $ soma = soma + 279
             l "Começando devagar..."
 
         #Esse aqui
         "Distribua 67 de energia" if option67 == False:
-            play sound "sfxs/tecla 1.ogg"
+            play sound "sfxs/tecla 1.ogg" volume 1.0
             $ option67 = True
             $ soma = soma + 67
             l "Começando devagar..."
 
         #Esse aqui
         "Distribua 38 de energia" if option38 == False:
-            play sound "sfxs/tecla 2.ogg"
+            play sound "sfxs/tecla 2.ogg" volume 1.0
             $ option38 = True
             $ soma = soma + 38
             l "Começando devagar..."
@@ -129,37 +129,37 @@ label do_puzzle3:
         "Energia depositada: [soma]"
 
         "Distribua 151 de energia" if option151 == False:
-            play sound "sfxs/tecla 1.ogg"
+            play sound "sfxs/tecla 1.ogg" volume 1.0
             $ option151 = True
             $ soma = soma + 151
 
         "Distribua 93 de energia" if option93 == False:
-            play sound "sfxs/tecla 2.ogg"
+            play sound "sfxs/tecla 2.ogg" volume 1.0
             $ option93 = True
             $ soma = soma + 93
 
         #Esse aqui
         "Distribua 116 de energia" if option116 == False:
-            play sound "sfxs/tecla 1.ogg"
+            play sound "sfxs/tecla 1.ogg" volume 1.0
             $ option116 = True
             $ soma = soma + 116
 
 
         #Esse aqui
         "Distribua 279 de energia" if option279 == False:
-            play sound "sfxs/tecla 2.ogg"
+            play sound "sfxs/tecla 2.ogg" volume 1.0
             $ option279 = True
             $ soma = soma + 279
 
         #Esse aqui
         "Distribua 67 de energia" if option67 == False:
-            play sound "sfxs/tecla 1.ogg"
+            play sound "sfxs/tecla 1.ogg" volume 1.0
             $ option67 = True
             $ soma = soma + 67
 
         #Esse aqui
         "Distribua 38 de energia" if option38 == False:
-            play sound "sfxs/tecla 2.ogg"
+            play sound "sfxs/tecla 2.ogg" volume 1.0
             $ option38 = True
             $ soma = soma + 38
 
@@ -179,41 +179,41 @@ label do_puzzle3:
         "Energia depositada: [soma]"
 
         "Distribua 151 de energia" if option151 == False:
-            play sound "sfxs/tecla 1.ogg"
+            play sound "sfxs/tecla 1.ogg" volume 1.0
             $ option151 = True
             $ soma = soma + 151
             l "Quase lá!"
 
         "Distribua 93 de energia" if option93 == False:
-            play sound "sfxs/tecla 2.ogg"
+            play sound "sfxs/tecla 2.ogg" volume 1.0
             $ option93 = True
             $ soma = soma + 93
             l "Quase lá!"
 
         #Esse aqui
         "Distribua 116 de energia" if option116 == False:
-            play sound "sfxs/tecla 1.ogg"
+            play sound "sfxs/tecla 1.ogg" volume 1.0
             $ option116 = True
             $ soma = soma + 116
             l "Quase lá!"
 
         #Esse aqui
         "Distribua 279 de energia" if option279 == False:
-            play sound "sfxs/tecla 2.ogg"
+            play sound "sfxs/tecla 2.ogg" volume 1.0
             $ option279 = True
             $ soma = soma + 279
             l "Quase lá!"
 
         #Esse aqui
         "Distribua 67 de energia" if option67 == False:
-            play sound "sfxs/tecla 1.ogg"
+            play sound "sfxs/tecla 1.ogg" volume 1.0
             $ option67 = True
             $ soma = soma + 67
             l "Quase lá!"
 
         #Esse aqui
         "Distribua 38 de energia" if option38 == False:
-            play sound "sfxs/tecla 2.ogg"
+            play sound "sfxs/tecla 2.ogg" volume 1.0
             $ option38 = True
             $ soma = soma + 38
             l "Quase lá!"
@@ -234,37 +234,37 @@ label do_puzzle3:
         "Energia depositada: [soma]"
 
         "Distribua 151 de energia" if option151 == False:
-            play sound "sfxs/tecla 1.ogg"
+            play sound "sfxs/tecla 1.ogg" volume 1.0
             $ option151 = True
             $ soma = soma + 151
 
         "Distribua 93 de energia" if option93 == False:
-            play sound "sfxs/tecla 2.ogg"
+            play sound "sfxs/tecla 2.ogg" volume 1.0
             $ option93 = True
             $ soma = soma + 93
 
         #Esse aqui
         "Distribua 116 de energia" if option116 == False:
-            play sound "sfxs/tecla 1.ogg"
+            play sound "sfxs/tecla 1.ogg" volume 1.0
             $ option116 = True
             $ soma = soma + 116
 
 
         #Esse aqui
         "Distribua 279 de energia" if option279 == False:
-            play sound "sfxs/tecla 2.ogg"
+            play sound "sfxs/tecla 2.ogg" volume 1.0
             $ option279 = True
             $ soma = soma + 279
 
         #Esse aqui
         "Distribua 67 de energia" if option67 == False:
-            play sound "sfxs/tecla 2.ogg"
+            play sound "sfxs/tecla 2.ogg" volume 1.0
             $ option67 = True
             $ soma = soma + 67
 
         #Esse aqui
         "Distribua 38 de energia" if option38 == False:
-            play sound "sfxs/tecla 1.ogg"
+            play sound "sfxs/tecla 1.ogg" volume 1.0
             $ option38 = True
             $ soma = soma + 38
 
@@ -289,13 +289,13 @@ label do_puzzle3:
             option67 = False
             option38 = False
             soma = 0
-        play sound "sfxs/som ambiente.ogg"
+        play sound "sfxs/som ambiente.ogg" volume 0.8
         jump mid_puzzle3
     else:
-        play sound "sfxs/tecla 2.ogg"
+        play sound "sfxs/tecla 2.ogg" volume 1.0
         $ puzzle3_completed = True
         pause 0.5
-        play sound "sfxs/motor ligando.ogg"
+        play sound "sfxs/motor ligando.ogg" volume 1.0
         pause 2.0
         "Progresso das Turbinas: 100\%, acionando-as..."
         l "Ufa! mais um problema resolvido."

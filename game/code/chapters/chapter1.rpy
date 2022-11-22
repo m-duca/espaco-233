@@ -9,12 +9,12 @@ label chapter1:
 
     pause 1.0
 
-    play sound "sfxs/voice/laser.ogg" fadeout 0.0
+    play sound "sfxs/voice/laser.ogg" fadeout 0.0 volume 1.0
     pause 2.0
 
     scene b_capsule with fade
 
-    play music "musics/tensao.ogg" fadein 1.0
+    play music "musics/tensao.ogg" fadein 1.0 volume 0.5
 
     i1 "Bem vinda a sua viagem espacial para o planeta Gilon, você deve estar se sentindo um pouco zonza no momento Loren, mas logo mais estará bem melhor."
 
