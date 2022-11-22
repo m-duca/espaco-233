@@ -1,4 +1,4 @@
-Tue Nov 22 17:05:08 2022
+Tue Nov 22 17:42:40 2022
 Windows-10-10.0.19041
 Ren'Py 8.0.2.22081402
  
@@ -22,7 +22,7 @@ Initial gc. took 0.01s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.17s
+Creating interface object took 0.16s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
@@ -44,5 +44,28 @@ Vendor: "b'NVIDIA Corporation'"
 Renderer: b'NVIDIA GeForce RTX 3060/PCIe/SSE2'
 Version: b'4.6.0 NVIDIA 522.25'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(1338, 753)
 Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1440, 837) drawable=(1440, 837)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s

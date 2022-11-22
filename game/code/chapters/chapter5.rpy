@@ -78,7 +78,7 @@ label credits:
 
 
 init python:
-    credits = ('Caike Grion dos Santos', 'Game Design'), ('João Pedro Queiroz de Melo', 'Arte'), ('Lucas Neves Timar', 'Programação'), ('Lucas Proetti Quadros', 'Som'), ('Matheus Santos Duca', 'Programação')
+    credits = ('Caike Grion dos Santos', 'Game Design'), ('João Pedro Queiroz de Melo', 'Arte'), ('Lucas Neves Timar', 'Programação'), ('Lucas Proetti Quadros', 'Som'), ('Matheus Santos Duca', 'Programação'), ('', 'AGRADECIMENTOS ESPECIAIS:'), ('Nathalia Proetti Quadros', 'Dubladora')
     credits_s = "{size=80}EQUIPE 404\n\n"
     c1 = ''
     for c in credits:
@@ -88,7 +88,7 @@ init python:
         c1=c[0]
 
 init:
-    image cred = Text(credits_s, font="space age.ttf", text_align=0.5)
+    image cred = Text(credits_s, font="fonts/space age.ttf", text_align=0.5)
     image cred = Text(credits_s, text_align=0.5)
     image theend = Text("{size=80}FIM", text_align=0.5)
     image thanks = Text("{size=80}Obrigado por Jogar!", text_align=0.5)
