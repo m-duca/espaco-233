@@ -2,12 +2,11 @@ label puzzle3:
 
     #$ puzzle3_completed = True
 
-    $ soma = int()
-
     image b_puzzle3 = im.Scale("images/bg ship_6.png", 1920, 1080)
 
     call steps
 
+    #scene black with fade
     scene bgship_6 with fade
 
     if puzzle3_completed == False:
@@ -22,6 +21,7 @@ label intro_puzzle3:
 
     image b_puzzle3 = im.Scale("images/bg ship_6.png", 1920, 1080)
 
+    #scene black with fade
     scene b_puzzle3 with fade
 
     #play sound "sfxs/eletronicos.ogg"
@@ -38,156 +38,267 @@ label mid_puzzle3:
 
     image b_puzzle3 = im.Scale("images/bg ship_6.png", 1920, 1080)
 
+    #scene black with fade
     scene b_puzzle3 with fade
 
     "Loren liga o computador e então começa a acessar o sistema."
 
     "Ao acessar o controle das turbinas, ela se depara com uma distribuição de energia, que deve se feita de forma equilibrada."
 
+    i "Segundo o banco de dados da nave, o sistema se comporta bem com o valor 500"
+
+    i "Tente alcançar este valor"
+
+
     jump do_puzzle3
 
     return
+
+define option151 = False
+define option93 = False
+define option116 = False
+define option279 = False
+define option67 = False
+define option38 = False
+define soma = 0
 
 label do_puzzle3:
 
     image b_puzzle3 = im.Scale("images/bg ship_6.png", 1920, 1080)
 
+    #scene black with fade
     scene b_puzzle3 with fade
 
     #Se selecionar qualquer opção soma na variável e desaparece a opção
     menu:
-        "Progresso das Turbinas: 0\%"
+        "Energia depositada: 0"
 
-        "Distribua 151\% de energia":
+        "Distribua 151 de energia" if option151 == False:
             play sound "sfxs/tecla 1.ogg"
+            $ option151 = True
+            $ soma = soma + 151
             l "Começando devagar..."
 
-        "Distribua 93\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-
-        #Esse aqui
-        "Distribua 116\% de energia":
-
-            play sound "sfxs/som ambiente.ogg"
-
-        #Esse aqui
-        "Distribua 279\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-
-        #Esse aqui
-        "Distribua 67\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-
-        #Esse aqui
-        "Distribua 38\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-
-        "Deixar para fazer depois":
-            jump central
-
-    scene b_puzzle3 with fade
-    menu:
-        "Progresso das Turbinas: 25\%"
-
-        "Distribua 151\% de energia":
-            play sound "sfxs/tecla 1.ogg"
-            l "Começando devagar..."
-
-        "Distribua 93\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-
-
-        "Distribua 116\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-
-
-        "Distribua 279\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-
-
-        "Distribua 67\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-
-
-        "Distribua 38\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-
-        "Deixar para fazer depois":
-            jump central
-
-    scene b_puzzle3 with fade
-    menu:
-        "Progresso das Turbinas: 50\%"
-
-        "Distribua 151\% de energia":
-            play sound "sfxs/tecla 1.ogg"
-            l "Começando devagar..."
-
-        "Distribua 93\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-
-
-        "Distribua 116\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-
-
-        "Distribua 279\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-
-
-        "Distribua 67\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-
-
-        "Distribua 38\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-
-        "Deixar para fazer depois":
-            jump central
-
-    scene b_puzzle3 with fade
-    menu:
-        "Progresso das Turbinas: 75\%"
-
-        #"Distribua 5\% de energia":
-            #play sound "sfxs/tecla 2.ogg"
-            #$ puzzle3_completed = True
-            #pause 0.5
-            #play sound "sfxs/motor ligando.ogg"
-            #pause 2.0
-            #"Progresso das Turbinas: 100\%, acionando-as..."
-            #l "Ufa! mais um problema resolvido."
-
-        "Distribua 151\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-
-        "Distribua 93\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-
-        "Distribua 116\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-
-        "Distribua 279\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-
-        "Distribua 67\% de energia":
-            play sound "sfxs/som ambiente.ogg"
-
-        "Distribua 38\% de energia":
-            $ if soma == 500
+        "Distribua 93 de energia" if option93 == False:
             play sound "sfxs/tecla 2.ogg"
-            $ puzzle3_completed = True
-            pause 0.5
-            play sound "sfxs/motor ligando.ogg"
-            pause 2.0
-            "Progresso das Turbinas: 100\%, acionando-as..."
-            l "Ufa! mais um problema resolvido."
+            $ option93 = True
+            $ soma = soma + 93
+            l "Começando devagar..."
 
+        #Esse aqui
+        "Distribua 116 de energia" if option116 == False:
+            play sound "sfxs/tecla 1.ogg"
+            $ option116 = True
+            $ soma = soma + 116
+            l "Começando devagar..."
+
+        #Esse aqui
+        "Distribua 279 de energia" if option279 == False:
+            play sound "sfxs/tecla 2.ogg"
+            $ option279 = True
+            $ soma = soma + 279
+            l "Começando devagar..."
+
+        #Esse aqui
+        "Distribua 67 de energia" if option67 == False:
+            play sound "sfxs/tecla 1.ogg"
+            $ option67 = True
+            $ soma = soma + 67
+            l "Começando devagar..."
+
+        #Esse aqui
+        "Distribua 38 de energia" if option38 == False:
+            play sound "sfxs/tecla 2.ogg"
+            $ option38 = True
+            $ soma = soma + 38
+            l "Começando devagar..."
 
         "Deixar para fazer depois":
+            python:
+                option151 = False
+                option93 = False
+                option116 = False
+                option279 = False
+                option67 = False
+                option38 = False
+                soma = 0
             jump central
 
+    scene b_puzzle3 with fade
+    menu:
+        "Energia depositada: [soma]"
 
-    jump central
+        "Distribua 151 de energia" if option151 == False:
+            play sound "sfxs/tecla 1.ogg"
+            $ option151 = True
+            $ soma = soma + 151
+
+        "Distribua 93 de energia" if option93 == False:
+            play sound "sfxs/tecla 2.ogg"
+            $ option93 = True
+            $ soma = soma + 93
+
+        #Esse aqui
+        "Distribua 116 de energia" if option116 == False:
+            play sound "sfxs/tecla 1.ogg"
+            $ option116 = True
+            $ soma = soma + 116
+
+
+        #Esse aqui
+        "Distribua 279 de energia" if option279 == False:
+            play sound "sfxs/tecla 2.ogg"
+            $ option279 = True
+            $ soma = soma + 279
+
+        #Esse aqui
+        "Distribua 67 de energia" if option67 == False:
+            play sound "sfxs/tecla 1.ogg"
+            $ option67 = True
+            $ soma = soma + 67
+
+        #Esse aqui
+        "Distribua 38 de energia" if option38 == False:
+            play sound "sfxs/tecla 2.ogg"
+            $ option38 = True
+            $ soma = soma + 38
+
+        "Deixar para fazer depois":
+            python:
+                option151 = False
+                option93 = False
+                option116 = False
+                option279 = False
+                option67 = False
+                option38 = False
+                soma = 0
+            jump central
+
+    scene b_puzzle3 with fade
+    menu:
+        "Energia depositada: [soma]"
+
+        "Distribua 151 de energia" if option151 == False:
+            play sound "sfxs/tecla 1.ogg"
+            $ option151 = True
+            $ soma = soma + 151
+            l "Quase lá!"
+
+        "Distribua 93 de energia" if option93 == False:
+            play sound "sfxs/tecla 2.ogg"
+            $ option93 = True
+            $ soma = soma + 93
+            l "Quase lá!"
+
+        #Esse aqui
+        "Distribua 116 de energia" if option116 == False:
+            play sound "sfxs/tecla 1.ogg"
+            $ option116 = True
+            $ soma = soma + 116
+            l "Quase lá!"
+
+        #Esse aqui
+        "Distribua 279 de energia" if option279 == False:
+            play sound "sfxs/tecla 2.ogg"
+            $ option279 = True
+            $ soma = soma + 279
+            l "Quase lá!"
+
+        #Esse aqui
+        "Distribua 67 de energia" if option67 == False:
+            play sound "sfxs/tecla 1.ogg"
+            $ option67 = True
+            $ soma = soma + 67
+            l "Quase lá!"
+
+        #Esse aqui
+        "Distribua 38 de energia" if option38 == False:
+            play sound "sfxs/tecla 2.ogg"
+            $ option38 = True
+            $ soma = soma + 38
+            l "Quase lá!"
+
+        "Deixar para fazer depois":
+            python:
+                option151 = False
+                option93 = False
+                option116 = False
+                option279 = False
+                option67 = False
+                option38 = False
+                soma = 0
+            jump central
+
+    scene b_puzzle3 with fade
+    menu:
+        "Energia depositada: [soma]"
+
+        "Distribua 151 de energia" if option151 == False:
+            play sound "sfxs/tecla 1.ogg"
+            $ option151 = True
+            $ soma = soma + 151
+
+        "Distribua 93 de energia" if option93 == False:
+            play sound "sfxs/tecla 2.ogg"
+            $ option93 = True
+            $ soma = soma + 93
+
+        #Esse aqui
+        "Distribua 116 de energia" if option116 == False:
+            play sound "sfxs/tecla 1.ogg"
+            $ option116 = True
+            $ soma = soma + 116
+
+
+        #Esse aqui
+        "Distribua 279 de energia" if option279 == False:
+            play sound "sfxs/tecla 2.ogg"
+            $ option279 = True
+            $ soma = soma + 279
+
+        #Esse aqui
+        "Distribua 67 de energia" if option67 == False:
+            play sound "sfxs/tecla 2.ogg"
+            $ option67 = True
+            $ soma = soma + 67
+
+        #Esse aqui
+        "Distribua 38 de energia" if option38 == False:
+            play sound "sfxs/tecla 1.ogg"
+            $ option38 = True
+            $ soma = soma + 38
+
+        "Deixar para fazer depois":
+            python:
+                option151 = False
+                option93 = False
+                option116 = False
+                option279 = False
+                option67 = False
+                option38 = False
+                soma = 0
+            jump central
+
+    #Verifica se a soma final deu 500
+    if soma != 500:
+        python:
+            option151 = False
+            option93 = False
+            option116 = False
+            option279 = False
+            option67 = False
+            option38 = False
+            soma = 0
+        play sound "sfxs/som ambiente.ogg"
+        jump mid_puzzle3
+    else:
+        play sound "sfxs/tecla 2.ogg"
+        $ puzzle3_completed = True
+        pause 0.5
+        play sound "sfxs/motor ligando.ogg"
+        pause 2.0
+        "Progresso das Turbinas: 100\%, acionando-as..."
+        l "Ufa! mais um problema resolvido."
+        jump central
 
     return
