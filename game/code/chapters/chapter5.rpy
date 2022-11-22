@@ -43,6 +43,8 @@ label chapter5:
 
         "Não falar nada...":
 
+            "Loren decide partir em silencio à deriva no espaço."
+
             scene b_space with fade
 
     pause 3.0
