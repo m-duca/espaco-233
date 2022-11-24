@@ -4,6 +4,7 @@ init python:
     import zipfile
     import zlib
 
+    # Módulo para manipulação de caminhos
     from pathlib import Path
 
     # Módulo para manipulação de recursos do SO
@@ -18,7 +19,7 @@ init python:
     # Função que cria um arquivo .zip, onde precisamos passar um nome para o zip, o prefixo da imagem e a quantidade
     def compress(zip_name, image_prefix, image_range):
         if zip_exists(zip_name) == False:
-            # Crie o .zip em modo leitura com o tipo de compressão ZIP_DEFLATED
+            # Crie o .zip em modo escrita com o tipo de compressão ZIP_DEFLATED
             zip = zipfile.ZipFile(zip_name + ".zip", "w", compression=zipfile.ZIP_DEFLATED)
 
             # Adicione as imagens no .zip a partir da quantidade informada
@@ -46,7 +47,7 @@ init python:
             # Delete o .zip, pois não precisamos mais dele
             os.remove(zip_name + ".zip")
 
-    # Função para verificar se um arquvio .zip existe
+    # Função para verificar se um arquivo .zip existe
     def zip_exists(zip_name):
 
         # Usando a classe Path e o .txt de refêrencia para a pasta imagem, informamos o caminho do .zip

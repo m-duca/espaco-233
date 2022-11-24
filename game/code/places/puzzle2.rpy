@@ -15,8 +15,6 @@ return
 
 label intro_puzzle2:
 
-    image b_puzzle2 = im.Scale("images/bg ship_5.png", 1920, 1080)
-
     scene b_puzzle2 with fade
 
     i "Parece que o sistema de gravidade dessa sala de armazéns está desativado, que tal a senhorita tentar consertá-lo?"
