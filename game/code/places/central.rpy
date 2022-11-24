@@ -11,7 +11,7 @@ label central:
         $ first_time_central = False
     else:
         call steps
-        $ compress("objects", "objects_", 1)
+        $ compress("objects", "objects_", 2)
 
     scene b_central with fade
 

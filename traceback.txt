@@ -1,6 +1,6 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('button_0.png') at 0x0000000005cc59d0>:
+While loading <renpy.display.im.Image object ('button_0.png') at 0x0000000005c791f0>:
   File "game/code/places/central.rpy", line 18, in script
     call screen buttons_navigation (True, True, True, True)
   File "renpy/common/000statements.rpy", line 609, in execute_call_screen
@@ -73,4 +73,4 @@ OSError: Couldn't find file 'button_0.png'.
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.0.2.22081402
 Espaço 233 1.0
-Thu Nov 24 12:06:27 2022
+Thu Nov 24 13:36:10 2022

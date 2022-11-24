@@ -25,6 +25,7 @@ label puzzle2:
         show box1 at bounce1
         show box2 at bounce2
 
+
     scene b_puzzle2 with fade
 
     if puzzle2_completed == False:
@@ -43,6 +44,7 @@ label intro_puzzle2:
 
     show box1 at bounce1
     show box2 at bounce2
+
 
     i "Parece que o sistema de gravidade dessa sala de armazéns está desativado, que tal a senhorita tentar consertá-lo?"
 
@@ -69,6 +71,7 @@ label do_puzzle2:
 
     image box1 = "images/object_0.png"
     image box2 = "images/object_0.png"
+
 
     show box1 at bounce1
     show box2 at bounce2
@@ -117,7 +120,7 @@ label do_puzzle2:
 
     "Loren chega ao final da sala, conseguindo então apertar o botão e ativar o sistema de gravidade novamente."
 
-    $ compress("objects", "object_", 1)
+    $ compress("objects", "object_", 2)
     jump central
 
     return
