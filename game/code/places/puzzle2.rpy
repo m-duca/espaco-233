@@ -72,7 +72,6 @@ label do_puzzle2:
     image box1 = "images/object_0.png"
     image box2 = "images/object_0.png"
 
-
     show box1 at bounce1
     show box2 at bounce2
 
