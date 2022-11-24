@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/code/core/options.rpy", line 69: invalid syntax
-    audio.main_menu_music volume 0.5
-                           ^
+File "game/code/places/central.rpy", line 14: expected statement.
+    compress("objects", "objects_", 1)
+                                      ^
 
 Ren'Py Version: Ren'Py 8.0.2.22081402
-Tue Nov 22 16:59:00 2022
+Thu Nov 24 12:05:08 2022
