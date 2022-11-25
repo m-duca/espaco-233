@@ -9,7 +9,7 @@ label splashscreen:
         compress("buttons", "button_", 8)
         compress("objects", "object_", 1)
         compress("ship", "bg ship_", 7)
-        compress("space", "bg space_", 1)
+        compress("space", "bg space_", 2)
         #compress("characters", "character_", 2)
 
     $ show_quick_menu = True
@@ -65,7 +65,7 @@ label quit:
         compress("buttons", "button_", 8)
         compress("objects", "object_", 1)
         compress("ship", "bg ship_", 7)
-        compress("space", "bg space_", 1)
+        compress("space", "bg space_", 2)
         #compress("characters", "character_", 2)
 
     return

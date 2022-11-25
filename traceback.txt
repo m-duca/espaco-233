@@ -1,32 +1,61 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/code/places/central.rpy", line 14, in script
-    $ compress("objects", "objects_", 2)
-  File "game/code/places/central.rpy", line 14, in <module>
-    $ compress("objects", "objects_", 2)
-  File "game/code/systems/compression.rpy", line 27, in compress
-    zip.write(image_prefix + str(i) + ".png")
-FileNotFoundError: [WinError 2] O sistema não pode encontrar o arquivo especificado: 'objects_0.png'
+  File "game/code/core/screens.rpy", line 351, in execute
+    screen main_menu():
+  File "game/code/core/screens.rpy", line 351, in execute
+    screen main_menu():
+  File "game/code/core/screens.rpy", line 356, in execute
+    add gui.main_menu_background
+Exception: An empty string cannot be used as a displayable.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/code/places/central.rpy", line 14, in script
-    $ compress("objects", "objects_", 2)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
   File "C:\Renpy\renpy\ast.py", line 1131, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "C:\Renpy\renpy\python.py", line 1052, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/code/places/central.rpy", line 14, in <module>
-    $ compress("objects", "objects_", 2)
-  File "game/code/systems/compression.rpy", line 27, in compress
-    zip.write(image_prefix + str(i) + ".png")
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/zipfile.py", line 1727, in write
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/zipfile.py", line 501, in from_file
-FileNotFoundError: [WinError 2] O sistema não pode encontrar o arquivo especificado: 'objects_0.png'
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "C:\Renpy\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Renpy\renpy\display\core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs) # type: ignore
+  File "C:\Renpy\renpy\display\core.py", line 3804, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Renpy\renpy\display\core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Renpy\renpy\display\core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Renpy\renpy\display\core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "C:\Renpy\renpy\display\screen.py", line 451, in visit_all
+    callback(self)
+  File "C:\Renpy\renpy\display\core.py", line 3804, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Renpy\renpy\display\screen.py", line 462, in per_interact
+    self.update()
+  File "C:\Renpy\renpy\display\screen.py", line 653, in update
+    self.screen.function(**self.scope)
+  File "game/code/core/screens.rpy", line 351, in execute
+    screen main_menu():
+  File "game/code/core/screens.rpy", line 351, in execute
+    screen main_menu():
+  File "game/code/core/screens.rpy", line 356, in execute
+    add gui.main_menu_background
+  File "C:\Renpy\renpy\sl2\sldisplayables.py", line 449, in sl2add
+    d = renpy.easy.displayable(d, scope=scope)
+  File "C:\Renpy\renpy\easy.py", line 112, in displayable
+    raise Exception("An empty string cannot be used as a displayable.")
+Exception: An empty string cannot be used as a displayable.
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.0.2.22081402
 Espaço 233 1.0
-Thu Nov 24 20:59:09 2022
+Fri Nov 25 06:49:42 2022

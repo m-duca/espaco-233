@@ -2,6 +2,8 @@ label chapter5:
     #compress("characters", "character_", 2)
 
     image b_space = im.Scale("images/bg space_0.png", 1920, 1080)
+    image b_final = im.Scale("images/bg space_1.png", 1920, 1080)
+
     scene b_space with fade
 
     "O oxigênio do traje começa a sair e não a mais nada que Loren possa fazer."
@@ -31,7 +33,7 @@ label chapter5:
 
         "Conte o que aconteceu para a tripulação...":
 
-            scene b_space with fade
+            scene b_final with fade
 
             "Com isso Loren diz suas últimas palavras, para que não importa o que aconteça, todos se lembrem de quem ela foi."
 
@@ -45,12 +47,14 @@ label chapter5:
 
             "Loren decide partir em silencio à deriva no espaço."
 
-            scene b_space with fade
+            scene b_final with fade
 
     pause 3.0
     call credits
 
-    scene b_space with fade
+    scene b_final with fade
+
+    $ compress("space", "bg space_", 2)
 
     return
 

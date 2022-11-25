@@ -6,6 +6,6 @@ label corridor:
 
     scene b_corridor with fade
 
-    call screen buttons_navigation (True, True, False, False)
+    call screen buttons_navigation (False, False, True, True)
 
 return
