@@ -119,7 +119,7 @@ label do_puzzle2:
 
     "Loren chega ao final da sala, conseguindo então apertar o botão e ativar o sistema de gravidade novamente."
 
-    $ compress("objects", "object_", 2)
+    $ compress("objects", "object_", 1)
     jump central
 
     return
