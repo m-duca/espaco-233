@@ -1,13 +1,12 @@
 label puzzle3:
 
     #$ puzzle3_completed = True
+    call steps
 
     image b_puzzle3 = im.Scale("images/bg ship_6.png", 1920, 1080)
 
-    call steps
-
     #scene black with fade
-    scene bgship_6 with fade
+    scene bg ship_6 with fade
 
     if puzzle3_completed == False:
         jump intro_puzzle3
