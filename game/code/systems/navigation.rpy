@@ -23,16 +23,16 @@ init python:
 
     # Dicionário de Cima
     possibilities_up = {
-        "corridor_early" : "capsule_early",
-        "corridor" : "capsule",
+        "corridor_early" : "chapter2",
+        "corridor" : "instruction_room",
         "central" : "puzzle1",
         "puzzle3" : "central"
     }
 
     # Dicionário de Baixo
     possibilities_down = {
-        "corridor_early" : "chapter2",
-        "corridor" : "instruction_room",
+        "corridor_early" : "capsule_early",
+        "corridor" : "capsule",
         "capsule_early" : "corridor_early",
         "capsule" : "corridor",
         "central" : "puzzle3",

@@ -82,7 +82,7 @@ label credits:
 
 
 init python:
-    credits = ('Caike Grion dos Santos', 'Game Design'), ('João Pedro Queiroz de Melo', 'Arte'), ('Lucas Neves Timar', 'Programação'), ('Lucas Proetti Quadros', 'Som'), ('Matheus Santos Duca', 'Programação'), ('', 'AGRADECIMENTOS ESPECIAIS:'), ('Nathalia Proetti Quadros', 'Dubladora')
+    credits = ('Caike Grion dos Santos', 'Game Design'), ('João Pedro Queiroz de Melo', 'Arte'), ('Lucas Neves Timar', 'Programação'), ('Lucas Proetti Quadros', 'Som'), ('Matheus Santos Duca', 'Programação'), ('', 'AGRADECIMENTOS ESPECIAIS:'), ('Nathalia Proetti Quadros', 'Dubladora'), ('Marcos Nogueira', 'Arte Personagens')
     credits_s = "{size=80}EQUIPE 404\n\n"
     c1 = ''
     for c in credits:
