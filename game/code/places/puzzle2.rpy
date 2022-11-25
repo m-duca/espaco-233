@@ -14,11 +14,13 @@ label puzzle2:
 
     call steps
 
-    $ decompress("objects")
+
 
     image b_puzzle2 = im.Scale("images/bg ship_5.png", 1920, 1080)
 
     if puzzle2_completed == False:
+        $ decompress("objects")
+
         image box1 = "images/object_0.png"
         image box2 = "images/object_0.png"
 
@@ -58,6 +60,7 @@ label intro_puzzle2:
         "SIM":
             jump do_puzzle2
         "NÃO":
+            $ compress("objects", "object_", 1)
             jump central
 
     return
