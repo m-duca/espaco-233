@@ -37,7 +37,7 @@ label chapter2:
 
     l "Como assim? E como eu posso estar acordada."
 
-    i "Isso não seria possível pois faltam 712500000000000km para o destino final, ou seja, 75 anos."
+    i "Isso não seria possível pois faltam 712500000000000km para o destino final, ou seja, 80 anos."
 
     scene b_central with vpunch
     play sound "sfxs/voice/surpresa.ogg" volume 1.0
@@ -72,7 +72,7 @@ label chapter2:
 
     l "POR QUE NÃO?"
 
-    i "Eu não tenho acesso as cabines de hibernação, e nenhuma delas poderia ativar ou desativar pois existem alguns problemas na nave?"
+    i "Eu não tenho acesso as cabines de hibernação, e nenhuma delas poderia ativar ou desativar pois existem alguns problemas na nave."
 
     l "PROBLEMAS? Então eu faço o que agora, sento no chão e espero morrer com o tempo nessa nave?"
 

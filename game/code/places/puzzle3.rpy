@@ -6,7 +6,7 @@ label puzzle3:
     image b_puzzle3 = im.Scale("images/bg ship_6.png", 1920, 1080)
 
     #scene black with fade
-    scene bg ship_6 with fade
+    scene b_puzzle3 with fade
 
     if puzzle3_completed == False:
         jump intro_puzzle3
@@ -42,11 +42,11 @@ label mid_puzzle3:
 
     "Loren liga o computador e então começa a acessar o sistema."
 
-    "Ao acessar o controle das turbinas, ela se depara com uma distribuição de energia, que deve se feita de forma equilibrada."
+    "Ao acessar o controle das turbinas, ela se depara com uma distribuição de energia, que deve ser feita de forma equilibrada."
 
-    i "Segundo o banco de dados da nave, o sistema se comporta bem com o valor 500"
+    i "Segundo o banco de dados da nave, o sistema se comporta bem com o valor 500."
 
-    i "Tente alcançar este valor"
+    i "Tente alcançar este valor."
 
 
     jump do_puzzle3
