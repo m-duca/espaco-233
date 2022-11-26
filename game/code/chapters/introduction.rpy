@@ -4,13 +4,14 @@ label introduction:
     call fade_music
 
     $ decompress("intro")
-    #$ decompress("characters")
+    #$ decompress("loren")
 
 
     image b_earth = im.Scale("images/bg intro_0.png", 1920, 1080)
     image b_room = im.Scale("images/bg intro_1.png", 1920, 1080)
     image b_ship = im.Scale("images/bg intro_2.png", 1920, 1080)
     image b_capsule_intro = im.Scale("images/bg intro_3.png", 1920, 1080)
+    #image loren_idle = im.Scale("images/loren_0.png", 1000, 1000)
 
     scene b_earth with fade
 
@@ -40,6 +41,7 @@ label introduction:
 
     t "Lo por favor me dei..."
 
+    # show loren_idle at center with fade
     l "Eu não quero nenhuma explicação sua ou qualquer coisa que você queira me falar."
 
     t "Mas me desculpa eu não..."
@@ -138,6 +140,7 @@ label introduction:
     "Todos os parâmetros estão corretos, combustível necessário cheio e com tanques reservas carregados, tudo no seu devido lugar, traça a rota e está tudo como deveria estar, nada iria atrapalhar essa viagem."
 
     $ compress("intro", "bg intro_", 4)
+    #$ compress("loren", "loren_", 1)
 
     jump chapter1
 

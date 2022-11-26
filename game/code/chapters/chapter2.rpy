@@ -1,10 +1,20 @@
+transform aiden_bounce:
+    xalign 0.5 yalign 0.45
+    linear 0.5 yalign 0.0
+    linear 1.0 yalign 0.45
+    repeat
+
 label chapter2:
 
     call steps
     call fade_music
 
+    $ decompress("aiden")
+
     image b_instruction = im.Scale("images/bg ship_2.png", 1920, 1080)
     image b_central = im.Scale("images/bg ship_3.png", 1920, 1080)
+    image aiden_idle = im.Scale("images/aiden_0.png", 1000, 1000)
+    image aiden_worried = im.Scale("images/aiden_1.png", 1000, 1000)
 
     play sound "sfxs/porta nave.ogg" volume 1.0
     pause 3.0
@@ -29,17 +39,19 @@ label chapter2:
     play sound "sfxs/voice/pensativa.ogg" volume 1.0
     "Com receio, ela estranha totalmente a situação e sai da apresentação procurando por alguém."
 
-    scene b_central with hpunch
+    scene b_central with pushright
 
     "Ela corre desesperadamente e acha um ponto de informações e pergunta aonde estão todos, e tem uma resposta muito desagradável."
 
+    show aiden_idle at aiden_bounce with fade
     i "Não há ninguém acordado."
 
     l "Como assim? E como eu posso estar acordada."
 
     i "Isso não seria possível pois faltam 712500000000000km para o destino final, ou seja, 80 anos."
 
-    scene b_central with vpunch
+    #scene b_central with vpunch
+
     play sound "sfxs/voice/surpresa.ogg" volume 1.0
     l "COMO ASSIM CARALHO, EU TÔ PRESA NO ESPAÇO POR UMA MERDA DE MÁ SORTE?"
 
@@ -60,6 +72,8 @@ label chapter2:
     play sound "sfxs/som ambiente.ogg" volume 0.9
     pause 1.0
 
+    hide aiden_idle
+    show aiden_worried at aiden_bounce
     i "..."
 
     i "Opa, tenho um pequeno problema."
@@ -75,6 +89,10 @@ label chapter2:
     i "Eu não tenho acesso as cabines de hibernação, e nenhuma delas poderia ativar ou desativar pois existem alguns problemas na nave."
 
     l "PROBLEMAS? Então eu faço o que agora, sento no chão e espero morrer com o tempo nessa nave?"
+
+
+    hide aiden_worried
+    show aiden_idle at aiden_bounce
 
     i "Seria uma opção."
 
@@ -96,6 +114,8 @@ label chapter2:
 
     scene b_central with fade
 
+    hide aiden_worried
+    show aiden_idle at aiden_bounce
     i "Existem 3 erros ocorrendo atualmente na nave, e você pode consertá-los na ordem que quiser:"
 
     i "{b}1º{/b} Pelo visto o sistema de análises da nave está comprometido, é preciso localizar o problema e arrumar o que danificou o sistema."
@@ -113,8 +133,9 @@ label chapter2:
 
     l "Okay, okay, vamos lá."
 
-    scene b_central with fade
+    #scene b_central with fade
 
+    $ compress("aiden", "aiden_", 2)
     #gameplay começa aqui
     jump central
 

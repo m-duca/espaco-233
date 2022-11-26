@@ -1,61 +1,76 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/code/core/screens.rpy", line 351, in execute
-    screen main_menu():
-  File "game/code/core/screens.rpy", line 351, in execute
-    screen main_menu():
-  File "game/code/core/screens.rpy", line 356, in execute
-    add gui.main_menu_background
-Exception: An empty string cannot be used as a displayable.
+While loading <renpy.display.im.Image object ('button_0.png') at 0x0000000005d29bb0>:
+  File "game/code/places/central.rpy", line 17, in script
+    call screen buttons_navigation (True, True, True, True)
+  File "renpy/common/000statements.rpy", line 609, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+OSError: Couldn't find file 'button_0.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
-    python hide:
-  File "C:\Renpy\renpy\ast.py", line 1131, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Renpy\renpy\python.py", line 1052, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
-    python hide:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
-    ui.interact()
+  File "game/code/places/central.rpy", line 17, in script
+    call screen buttons_navigation (True, True, True, True)
+  File "C:\Renpy\renpy\ast.py", line 2232, in execute
+    self.call("execute")
+  File "C:\Renpy\renpy\ast.py", line 2220, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Renpy\renpy\statements.py", line 281, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 609, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Renpy\renpy\exports.py", line 3174, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
   File "C:\Renpy\renpy\ui.py", line 299, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "C:\Renpy\renpy\display\core.py", line 3377, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs) # type: ignore
-  File "C:\Renpy\renpy\display\core.py", line 3804, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "C:\Renpy\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Renpy\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Renpy\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  [Previous line repeated 1 more time]
-  File "C:\Renpy\renpy\display\screen.py", line 451, in visit_all
-    callback(self)
-  File "C:\Renpy\renpy\display\core.py", line 3804, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "C:\Renpy\renpy\display\screen.py", line 462, in per_interact
-    self.update()
-  File "C:\Renpy\renpy\display\screen.py", line 653, in update
-    self.screen.function(**self.scope)
-  File "game/code/core/screens.rpy", line 351, in execute
-    screen main_menu():
-  File "game/code/core/screens.rpy", line 351, in execute
-    screen main_menu():
-  File "game/code/core/screens.rpy", line 356, in execute
-    add gui.main_menu_background
-  File "C:\Renpy\renpy\sl2\sldisplayables.py", line 449, in sl2add
-    d = renpy.easy.displayable(d, scope=scope)
-  File "C:\Renpy\renpy\easy.py", line 112, in displayable
-    raise Exception("An empty string cannot be used as a displayable.")
-Exception: An empty string cannot be used as a displayable.
+  File "C:\Renpy\renpy\display\core.py", line 3906, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Renpy\renpy\display\core.py", line 2602, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 495, in renpy.display.render.render_screen
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Renpy\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Renpy\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Renpy\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Renpy\renpy\display\screen.py", line 704, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Renpy\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Renpy\renpy\display\behavior.py", line 882, in render
+    rv = super(Button, self).render(width, height, st, at)
+  File "C:\Renpy\renpy\display\layout.py", line 1334, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Renpy\renpy\display\im.py", line 627, in render
+    return cache.get(self, render=True)
+  File "C:\Renpy\renpy\display\im.py", line 295, in get
+    surf = image.load()
+  File "C:\Renpy\renpy\display\im.py", line 720, in load
+    raise e
+  File "C:\Renpy\renpy\display\im.py", line 685, in load
+    filelike = renpy.loader.load(self.filename)
+  File "C:\Renpy\renpy\loader.py", line 820, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'button_0.png'.
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.0.2.22081402
 Espaço 233 1.0
-Fri Nov 25 06:49:42 2022
+Sat Nov 26 16:54:07 2022
