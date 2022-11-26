@@ -74,6 +74,7 @@ label introduction:
 
     a "Bom dia, vai embarcar conosco hoje ou apenas veio para ver o lançamento na nave?"
 
+    # show loren at center with fade
     l "Oi, vim para embarcar mesmo, viajante número 233 direto para o planeta Gilon."
 
     a "A pois bem, me acompanhe por favor."

@@ -1,4 +1,4 @@
-transform aiden_bounce:
+transform aiden_bounce1:
     xalign 0.5 yalign 0.45
     linear 0.5 yalign 0.0
     linear 1.0 yalign 0.45
@@ -43,7 +43,7 @@ label chapter2:
 
     "Ela corre desesperadamente e acha um ponto de informações e pergunta aonde estão todos, e tem uma resposta muito desagradável."
 
-    show aiden_idle at aiden_bounce with fade
+    show aiden_idle at aiden_bounce1 with fade
     i "Não há ninguém acordado."
 
     l "Como assim? E como eu posso estar acordada."
@@ -73,7 +73,7 @@ label chapter2:
     pause 1.0
 
     hide aiden_idle
-    show aiden_worried at aiden_bounce
+    show aiden_worried at aiden_bounce1
     i "..."
 
     i "Opa, tenho um pequeno problema."
@@ -92,7 +92,7 @@ label chapter2:
 
 
     hide aiden_worried
-    show aiden_idle at aiden_bounce
+    show aiden_idle at aiden_bounce1
 
     i "Seria uma opção."
 
@@ -115,7 +115,7 @@ label chapter2:
     scene b_central with fade
 
     hide aiden_worried
-    show aiden_idle at aiden_bounce
+    show aiden_idle at aiden_bounce1
     i "Existem 3 erros ocorrendo atualmente na nave, e você pode consertá-los na ordem que quiser:"
 
     i "{b}1º{/b} Pelo visto o sistema de análises da nave está comprometido, é preciso localizar o problema e arrumar o que danificou o sistema."
@@ -135,7 +135,7 @@ label chapter2:
 
     #scene b_central with fade
 
-    $ compress("aiden", "aiden_", 2)
+    $ compress("aiden", "aiden_", 4)
     #gameplay começa aqui
     jump central
 
