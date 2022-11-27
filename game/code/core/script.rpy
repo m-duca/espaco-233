@@ -5,7 +5,7 @@ label splashscreen:
 
     python:
         decompress("splashscreen")
-        compress("intro", "bg intro_", 4)
+        compress("intro", "bg intro_", 5)
         compress("buttons", "button_", 8)
         compress("objects", "object_", 1)
         compress("ship", "bg ship_", 7)
@@ -62,7 +62,7 @@ label quit:
 
     python:
         compress("splashscreen", "splashscreen_", 4)
-        compress("intro", "bg intro_", 4)
+        compress("intro", "bg intro_", 5)
         compress("buttons", "button_", 8)
         compress("objects", "object_", 1)
         compress("ship", "bg ship_", 7)

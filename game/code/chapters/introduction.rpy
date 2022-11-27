@@ -9,8 +9,9 @@ label introduction:
 
     image b_earth = im.Scale("images/bg intro_0.png", 1920, 1080)
     image b_room = im.Scale("images/bg intro_1.png", 1920, 1080)
-    image b_ship = im.Scale("images/bg intro_2.png", 1920, 1080)
+    image b_hangar = im.Scale("images/bg intro_2.png", 1920, 1080)
     image b_capsule_intro = im.Scale("images/bg intro_3.png", 1920, 1080)
+    image b_ship = im.Scale("images/bg intro_4.png", 1920, 1080)
 
     image loren_idle = im.Scale("images/loren_0.png", 800, 800)
     image loren_angry = im.Scale("images/loren_1.png", 800, 800)
@@ -76,7 +77,7 @@ label introduction:
 
     l "Relaxa, a Laser vai te mandar um dinheiro por conta da minha falta, ajuda sua família com isso. Agora eu vou indo, tchau maninha."
 
-    scene b_ship with fade
+    scene b_hangar with fade
 
     "No dia da viagem, Loren está totalmente preparada, sem remorso algum ela entra na estação de lançamento, tudo já está quase pronto para a decolagem."
 
@@ -141,6 +142,8 @@ label introduction:
 
     play sound "sfxs/motor ligando.ogg" fadein 1.0 fadeout 0.0 volume 1.0
 
+    scene b_ship with fade
+
     "Dentro da nave nada mais acontece, sua viagem inicia, todos os passageiros estão adormecidos em suas cabines."
 
     "Para que dali 95 anos todos acordem esperando os últimos 5 anos de viagem interestelar para a chegada em sua nova casa."
@@ -150,7 +153,7 @@ label introduction:
     play sound "sfxs/motor rodando.ogg" fadein 1.0 fadeout 0.0 volume 1.0
     "Todos os parâmetros estão corretos, combustível necessário cheio e com tanques reservas carregados, tudo no seu devido lugar, traça a rota e está tudo como deveria estar, nada iria atrapalhar essa viagem."
 
-    $ compress("intro", "bg intro_", 4)
+    $ compress("intro", "bg intro_", 5)
     $ compress("loren", "loren_", 4)
 
     jump chapter1
