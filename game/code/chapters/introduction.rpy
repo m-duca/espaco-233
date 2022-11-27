@@ -4,14 +4,18 @@ label introduction:
     call fade_music
 
     $ decompress("intro")
-    #$ decompress("loren")
+    $ decompress("loren")
 
 
     image b_earth = im.Scale("images/bg intro_0.png", 1920, 1080)
     image b_room = im.Scale("images/bg intro_1.png", 1920, 1080)
     image b_ship = im.Scale("images/bg intro_2.png", 1920, 1080)
     image b_capsule_intro = im.Scale("images/bg intro_3.png", 1920, 1080)
-    #image loren_idle = im.Scale("images/loren_0.png", 1000, 1000)
+
+    image loren_idle = im.Scale("images/loren_0.png", 800, 800)
+    image loren_angry = im.Scale("images/loren_1.png", 800, 800)
+    image loren_smile = im.Scale("images/loren_2.png", 800, 800)
+    image loren_worried = im.Scale("images/loren_3.png", 800, 800)
 
     scene b_earth with fade
 
@@ -41,25 +45,31 @@ label introduction:
 
     t "Lo por favor me dei..."
 
-    # show loren_idle at center with fade
+    show loren_angry at center with fade
     l "Eu não quero nenhuma explicação sua ou qualquer coisa que você queira me falar."
 
     t "Mas me desculpa eu não..."
 
-    play sound "sfxs/voice/surpresa.ogg" volume 1.0
+    play sound "sfxs/voice/resmungo.ogg" volume 1.0
     l "Não quero ouvir Tina! Sério, só vim te avisar que eu estou indo embora, já me decidi e vou viajar."
 
     t "Como assim indo embora? Viajar pra onde Lo? O que você vai fazer?"
 
+    hide loren_angry
+    show loren_idle at center
     l "Eu me inscrevi no programa da Laser e vou pra outro planeta começar uma nova vida!"
 
     t "O que? Por quê? Foi pelo o que eu fiz? Se for por favor Lo, mesmo assim não é algo que você precise se mudar pra outro planeta, viajar por anos e nunca mais ter a vida que têm aqui. Não faz isso por favor."
 
+    hide loren_idle
+    show loren_smile at center
     play sound "sfxs/voice/risada.ogg" volume 0.95
     l "{b}*Gargalha*{/b} Não decidi ir me mudar pra casa do caralho simplesmente pelo o que aconteceu, eu realmente estou até bem, me sinto livre depois de tudo."
 
     l "Você pode continuar o que estava fazendo à vontade. Fala como se não parecesse verdade."
 
+    hide loren_smile
+    show loren_idle at center
     l "Eu quero ter uma nova vida fora daqui, a viagem é daqui uma semana, só preciso terminar de enviar os documentos e fazer minhas malas."
 
     t "Então é isso, você nem vai ter um pingo de consideração pela sua irmã e simplesmente vai embora."
@@ -74,7 +84,7 @@ label introduction:
 
     a "Bom dia, vai embarcar conosco hoje ou apenas veio para ver o lançamento na nave?"
 
-    # show loren at center with fade
+    show loren_idle at center with fade
     l "Oi, vim para embarcar mesmo, viajante número 233 direto para o planeta Gilon."
 
     a "A pois bem, me acompanhe por favor."
@@ -141,7 +151,7 @@ label introduction:
     "Todos os parâmetros estão corretos, combustível necessário cheio e com tanques reservas carregados, tudo no seu devido lugar, traça a rota e está tudo como deveria estar, nada iria atrapalhar essa viagem."
 
     $ compress("intro", "bg intro_", 4)
-    #$ compress("loren", "loren_", 1)
+    $ compress("loren", "loren_", 4)
 
     jump chapter1
 

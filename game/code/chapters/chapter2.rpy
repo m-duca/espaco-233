@@ -9,12 +9,18 @@ label chapter2:
     call steps
     call fade_music
 
+    $ decompress("loren")
     $ decompress("aiden")
+
 
     image b_instruction = im.Scale("images/bg ship_2.png", 1920, 1080)
     image b_central = im.Scale("images/bg ship_3.png", 1920, 1080)
+
     image aiden_idle = im.Scale("images/aiden_0.png", 1000, 1000)
     image aiden_worried = im.Scale("images/aiden_1.png", 1000, 1000)
+
+    image loren_worried = im.Scale("images/loren_3.png", 800, 800)
+
 
     play sound "sfxs/porta nave.ogg" volume 1.0
     pause 3.0
@@ -32,6 +38,7 @@ label chapter2:
 
     "Ela levanta a mão e faz uma pergunta à inteligência artificial."
 
+    show loren_worried at center with fade
     l "Com licença, não era pra ter mais pessoas aqui antes de começarem as explicações?"
 
     i2 "Desculpe senhorita Loren, mas todos que deveriam estar aqui já chegaram."
@@ -39,6 +46,7 @@ label chapter2:
     play sound "sfxs/voice/pensativa.ogg" volume 1.0
     "Com receio, ela estranha totalmente a situação e sai da apresentação procurando por alguém."
 
+    $ compress("loren", "loren_", 4)
     scene b_central with pushright
 
     "Ela corre desesperadamente e acha um ponto de informações e pergunta aonde estão todos, e tem uma resposta muito desagradável."
